@@ -77,6 +77,26 @@ import '../presentation/financial_analytics_module/income_dashboard_screen_two_s
 import '../presentation/financial_analytics_module/income_dashboard_screen_three_screen/income_dashboard_screen_three_screen.dart';
 import '../presentation/financial_analytics_module/phone_verification_screen_five_screen/phone_verification_screen_five_screen.dart';
 
+// Bonus Rewards Module Screens (from app_8)
+import '../presentation/bonus_rewards_module/app_download_screen/app_download_screen.dart';
+import '../presentation/bonus_rewards_module/achievement_bonus_screen/achievement_bonus_screen.dart';
+import '../presentation/bonus_rewards_module/registration_bonus_screen/registration_bonus_screen.dart';
+import '../presentation/bonus_rewards_module/sign_in_rewards_screen/sign_in_rewards_screen.dart';
+import '../presentation/bonus_rewards_module/casino_gaming_hub_screen/casino_gaming_hub_screen.dart';
+import '../presentation/bonus_rewards_module/continuous_sign_in_makeup_screen/continuous_sign_in_makeup_screen.dart';
+import '../presentation/bonus_rewards_module/continuous_sign_in_screen/continuous_sign_in_screen.dart';
+import '../presentation/bonus_rewards_module/agent_level_system_screen/agent_level_system_screen.dart';
+import '../presentation/bonus_rewards_module/agent_income_modal_screen/agent_income_modal_screen.dart';
+import '../presentation/bonus_rewards_module/gaming_home_screen/gaming_home_screen.dart';
+import '../presentation/bonus_rewards_module/qualified_bonus_screen/qualified_bonus_screen.dart';
+import '../presentation/bonus_rewards_module/continuous_sign_in_activity_screen/continuous_sign_in_activity_screen.dart';
+import '../presentation/bonus_rewards_module/bonus_dashboard_screen/bonus_dashboard_screen.dart';
+import '../presentation/bonus_rewards_module/betting_bonus_screen/betting_bonus_screen.dart';
+import '../presentation/bonus_rewards_module/gaming_app_download_screen/gaming_app_download_screen.dart';
+import '../presentation/bonus_rewards_module/signed_in_rewards_screen/signed_in_rewards_screen.dart';
+import '../presentation/bonus_rewards_module/jet_bet_casino_screen/jet_bet_casino_screen.dart';
+import '../presentation/bonus_rewards_module/deposit_bonus_history_screen/deposit_bonus_history_screen.dart';
+
 // Shared Screens
 import '../presentation/shared/app_navigation_screen/app_navigation_screen.dart';
 import '../presentation/splash_screen/splash_screen/splash_screen.dart';
@@ -194,6 +214,27 @@ import '../presentation/financial_analytics_module/income_dashboard_screen_two_s
 import '../presentation/financial_analytics_module/income_dashboard_screen_three_screen/binding/income_dashboard_screen_three_binding.dart';
 import '../presentation/financial_analytics_module/phone_verification_screen_five_screen/binding/phone_verification_screen_five_binding.dart';
 
+// Bonus Rewards Module Bindings (from app_8)
+import '../presentation/bonus_rewards_module/app_download_screen/binding/app_download_binding.dart';
+import '../presentation/bonus_rewards_module/achievement_bonus_screen/binding/achievement_bonus_binding.dart';
+import '../presentation/bonus_rewards_module/registration_bonus_screen/binding/registration_bonus_binding.dart';
+import '../presentation/bonus_rewards_module/sign_in_rewards_screen/binding/sign_in_rewards_binding.dart';
+import '../presentation/bonus_rewards_module/casino_gaming_hub_screen/binding/casino_gaming_hub_binding.dart';
+import '../presentation/bonus_rewards_module/continuous_sign_in_makeup_screen/binding/continuous_sign_in_makeup_binding.dart';
+import '../presentation/bonus_rewards_module/continuous_sign_in_screen/binding/continuous_sign_in_binding.dart';
+import '../presentation/bonus_rewards_module/agent_level_system_screen/binding/agent_level_system_binding.dart';
+import '../presentation/bonus_rewards_module/agent_income_modal_screen/binding/agent_income_modal_binding.dart';
+import '../presentation/bonus_rewards_module/gaming_home_screen/binding/gaming_home_binding.dart';
+import '../presentation/bonus_rewards_module/qualified_bonus_screen/binding/qualified_bonus_binding.dart';
+import '../presentation/bonus_rewards_module/continuous_sign_in_activity_screen/binding/continuous_sign_in_activity_binding.dart';
+import '../presentation/bonus_rewards_module/bonus_dashboard_screen/binding/bonus_dashboard_binding.dart';
+import '../presentation/bonus_rewards_module/betting_bonus_screen/binding/betting_bonus_binding.dart';
+import '../presentation/bonus_rewards_module/gaming_app_download_screen/binding/gaming_app_download_binding.dart';
+import '../presentation/bonus_rewards_module/signed_in_rewards_screen/binding/signed_in_rewards_binding.dart';
+import '../presentation/bonus_rewards_module/jet_bet_casino_screen/binding/jet_bet_casino_binding.dart';
+import '../presentation/bonus_rewards_module/deposit_bonus_history_screen/binding/deposit_bonus_history_binding.dart';
+import '../presentation/bonus_rewards_module/app_navigation_screen/binding/app_navigation_binding.dart' as bonus_nav;
+
 import '../presentation/shared/app_navigation_screen/binding/app_navigation_binding.dart';
 import '../presentation/splash_screen/splash_screen/binding/splash_binding.dart';
 
@@ -278,6 +319,27 @@ class AppRoutes {
   static const String incomeDashboardScreenTwo = '/financial/income_dashboard_screen_two';
   static const String incomeDashboardScreenThree = '/financial/income_dashboard_screen_three';
   static const String phoneVerificationScreenFive = '/financial/phone_verification_screen_five';
+
+  // Bonus Rewards Module Routes (from app_8)
+  static const String bonusAppDownloadScreen = '/bonus/app_download_screen';
+  static const String bonusAchievementBonusScreen = '/bonus/achievement_bonus_screen';
+  static const String bonusRegistrationBonusScreen = '/bonus/registration_bonus_screen';
+  static const String bonusSignInRewardsScreen = '/bonus/sign_in_rewards_screen';
+  static const String bonusCasinoGamingHubScreen = '/bonus/casino_gaming_hub_screen';
+  static const String bonusContinuousSignInMakeupScreen = '/bonus/continuous_sign_in_makeup_screen';
+  static const String bonusContinuousSignInScreen = '/bonus/continuous_sign_in_screen';
+  static const String bonusAgentLevelSystemScreen = '/bonus/agent_level_system_screen';
+  static const String bonusAgentIncomeModalScreen = '/bonus/agent_income_modal_screen';
+  static const String bonusGamingHomeScreen = '/bonus/gaming_home_screen';
+  static const String bonusQualifiedBonusScreen = '/bonus/qualified_bonus_screen';
+  static const String bonusContinuousSignInActivityScreen = '/bonus/continuous_sign_in_activity_screen';
+  static const String bonusBonusDashboardScreen = '/bonus/bonus_dashboard_screen';
+  static const String bonusBettingBonusScreen = '/bonus/betting_bonus_screen';
+  static const String bonusGamingAppDownloadScreen = '/bonus/gaming_app_download_screen';
+  static const String bonusSignedInRewardsScreen = '/bonus/signed_in_rewards_screen';
+  static const String bonusJetBetCasinoScreen = '/bonus/jet_bet_casino_screen';
+  static const String bonusDepositBonusHistoryScreen = '/bonus/deposit_bonus_history_screen';
+  static const String bonusAppNavigationScreen = '/bonus/app_navigation_screen';
 
   // Gaming Casino Module Routes
   static const String casinoGameDetailModalScreen = '/gaming/casino_game_detail_modal_screen';
@@ -749,6 +811,103 @@ class AppRoutes {
       name: phoneVerificationScreenFive,
       page: () => const PhoneVerificationScreenFive(),
       bindings: [PhoneVerificationScreenFiveBinding()],
+    ),
+
+    // Bonus Rewards Module Pages (from app_8)
+    GetPage(
+      name: bonusAppDownloadScreen,
+      page: () => AppDownloadScreen(),
+      bindings: [AppDownloadBinding()],
+    ),
+    GetPage(
+      name: bonusAchievementBonusScreen,
+      page: () => AchievementBonusScreen(),
+      bindings: [AchievementBonusBinding()],
+    ),
+    GetPage(
+      name: bonusRegistrationBonusScreen,
+      page: () => RegistrationBonusScreen(),
+      bindings: [RegistrationBonusBinding()],
+    ),
+    GetPage(
+      name: bonusSignInRewardsScreen,
+      page: () => SignInRewardsScreen(),
+      bindings: [SignInRewardsBinding()],
+    ),
+    GetPage(
+      name: bonusCasinoGamingHubScreen,
+      page: () => CasinoGamingHubScreen(),
+      bindings: [CasinoGamingHubBinding()],
+    ),
+    GetPage(
+      name: bonusContinuousSignInMakeupScreen,
+      page: () => ContinuousSignInMakeupScreen(),
+      bindings: [ContinuousSignInMakeupBinding()],
+    ),
+    GetPage(
+      name: bonusContinuousSignInScreen,
+      page: () => ContinuousSignInScreen(),
+      bindings: [ContinuousSignInBinding()],
+    ),
+    GetPage(
+      name: bonusAgentLevelSystemScreen,
+      page: () => AgentLevelSystemScreen(),
+      bindings: [AgentLevelSystemBinding()],
+    ),
+    GetPage(
+      name: bonusAgentIncomeModalScreen,
+      page: () => AgentIncomeModalScreen(),
+      bindings: [AgentIncomeModalBinding()],
+    ),
+    GetPage(
+      name: bonusGamingHomeScreen,
+      page: () => GamingHomeScreen(),
+      bindings: [GamingHomeBinding()],
+    ),
+    GetPage(
+      name: bonusQualifiedBonusScreen,
+      page: () => QualifiedBonusScreen(),
+      bindings: [QualifiedBonusBinding()],
+    ),
+    GetPage(
+      name: bonusContinuousSignInActivityScreen,
+      page: () => ContinuousSignInActivityScreen(),
+      bindings: [ContinuousSignInActivityBinding()],
+    ),
+    GetPage(
+      name: bonusBonusDashboardScreen,
+      page: () => BonusDashboardScreen(),
+      bindings: [BonusDashboardBinding()],
+    ),
+    GetPage(
+      name: bonusBettingBonusScreen,
+      page: () => BettingBonusScreen(),
+      bindings: [BettingBonusBinding()],
+    ),
+    GetPage(
+      name: bonusGamingAppDownloadScreen,
+      page: () => GamingAppDownloadScreen(),
+      bindings: [GamingAppDownloadBinding()],
+    ),
+    GetPage(
+      name: bonusSignedInRewardsScreen,
+      page: () => SignedInRewardsScreen(),
+      bindings: [SignedInRewardsBinding()],
+    ),
+    GetPage(
+      name: bonusJetBetCasinoScreen,
+      page: () => JetBetCasinoScreen(),
+      bindings: [JetBetCasinoBinding()],
+    ),
+    GetPage(
+      name: bonusDepositBonusHistoryScreen,
+      page: () => DepositBonusHistoryScreen(),
+      bindings: [DepositBonusHistoryBinding()],
+    ),
+    GetPage(
+      name: bonusAppNavigationScreen,
+      page: () => bonus_nav.AppNavigationScreen(),
+      bindings: [bonus_nav.AppNavigationBinding()],
     ),
 
     // Shared Pages
