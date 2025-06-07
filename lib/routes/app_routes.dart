@@ -57,6 +57,26 @@ import '../presentation/vip_rewards_module/vip_weekly_salary_submitted_screen/vi
 import '../presentation/vip_rewards_module/vip_monthly_salary_benefits_screen/vip_monthly_salary_benefits_screen.dart';
 import '../presentation/vip_rewards_module/vip_weekly_salary_pending_screen/vip_weekly_salary_pending_screen.dart';
 
+// Financial Analytics Module Screens (from app_7)
+import '../presentation/financial_analytics_module/phone_verification_screen/phone_verification_screen.dart';
+import '../presentation/financial_analytics_module/social_share_screen/social_share_screen.dart';
+import '../presentation/financial_analytics_module/phone_verification_screen_two_screen/phone_verification_screen_two_screen.dart';
+import '../presentation/financial_analytics_module/jackpot_history_screen/jackpot_history_screen.dart';
+import '../presentation/financial_analytics_module/rewards_screen/rewards_screen.dart';
+import '../presentation/financial_analytics_module/teams_dashboard_screen/teams_dashboard_screen.dart';
+import '../presentation/financial_analytics_module/agent_jackpot_history_screen/agent_jackpot_history_screen.dart';
+import '../presentation/financial_analytics_module/income_analytics_dashboard_screen/income_analytics_dashboard_screen.dart';
+import '../presentation/financial_analytics_module/rewards_congratulations_screen/rewards_congratulations_screen.dart';
+import '../presentation/financial_analytics_module/phone_verification_screen_three_screen/phone_verification_screen_three_screen.dart';
+import '../presentation/financial_analytics_module/team_hierarchy_modal_screen/team_hierarchy_modal_screen.dart';
+import '../presentation/financial_analytics_module/income_dashboard_screen/income_dashboard_screen.dart';
+import '../presentation/financial_analytics_module/agent_jackpot_history_screen_two_screen/agent_jackpot_history_screen_two_screen.dart';
+import '../presentation/financial_analytics_module/gift_code_exchange_screen/gift_code_exchange_screen.dart';
+import '../presentation/financial_analytics_module/phone_verification_screen_four_screen/phone_verification_screen_four_screen.dart';
+import '../presentation/financial_analytics_module/income_dashboard_screen_two_screen/income_dashboard_screen_two_screen.dart';
+import '../presentation/financial_analytics_module/income_dashboard_screen_three_screen/income_dashboard_screen_three_screen.dart';
+import '../presentation/financial_analytics_module/phone_verification_screen_five_screen/phone_verification_screen_five_screen.dart';
+
 // Shared Screens
 import '../presentation/shared/app_navigation_screen/app_navigation_screen.dart';
 import '../presentation/splash_screen/splash_screen/splash_screen.dart';
@@ -114,6 +134,26 @@ import '../presentation/vip_rewards_module/vip_cashback_eligible_screen/binding/
 import '../presentation/vip_rewards_module/vip_weekly_salary_submitted_screen/binding/vip_weekly_salary_submitted_binding.dart';
 import '../presentation/vip_rewards_module/vip_monthly_salary_benefits_screen/binding/vip_monthly_salary_benefits_binding.dart';
 import '../presentation/vip_rewards_module/vip_weekly_salary_pending_screen/binding/vip_weekly_salary_pending_binding.dart';
+
+// Financial Analytics Module Bindings
+import '../presentation/financial_analytics_module/phone_verification_screen/binding/phone_verification_binding.dart';
+import '../presentation/financial_analytics_module/social_share_screen/binding/social_share_binding.dart';
+import '../presentation/financial_analytics_module/phone_verification_screen_two_screen/binding/phone_verification_screen_two_binding.dart';
+import '../presentation/financial_analytics_module/jackpot_history_screen/binding/jackpot_history_binding.dart';
+import '../presentation/financial_analytics_module/rewards_screen/binding/rewards_binding.dart';
+import '../presentation/financial_analytics_module/teams_dashboard_screen/binding/teams_dashboard_binding.dart';
+import '../presentation/financial_analytics_module/agent_jackpot_history_screen/binding/agent_jackpot_history_binding.dart';
+import '../presentation/financial_analytics_module/income_analytics_dashboard_screen/binding/income_analytics_dashboard_binding.dart';
+import '../presentation/financial_analytics_module/rewards_congratulations_screen/binding/rewards_congratulations_binding.dart';
+import '../presentation/financial_analytics_module/phone_verification_screen_three_screen/binding/phone_verification_screen_three_binding.dart';
+import '../presentation/financial_analytics_module/team_hierarchy_modal_screen/binding/team_hierarchy_modal_binding.dart';
+import '../presentation/financial_analytics_module/income_dashboard_screen/binding/income_dashboard_binding.dart';
+import '../presentation/financial_analytics_module/agent_jackpot_history_screen_two_screen/binding/agent_jackpot_history_screen_two_binding.dart';
+import '../presentation/financial_analytics_module/gift_code_exchange_screen/binding/gift_code_exchange_binding.dart';
+import '../presentation/financial_analytics_module/phone_verification_screen_four_screen/binding/phone_verification_screen_four_binding.dart';
+import '../presentation/financial_analytics_module/income_dashboard_screen_two_screen/binding/income_dashboard_screen_two_binding.dart';
+import '../presentation/financial_analytics_module/income_dashboard_screen_three_screen/binding/income_dashboard_screen_three_binding.dart';
+import '../presentation/financial_analytics_module/phone_verification_screen_five_screen/binding/phone_verification_screen_five_binding.dart';
 
 import '../presentation/shared/app_navigation_screen/binding/app_navigation_binding.dart';
 import '../presentation/splash_screen/splash_screen/binding/splash_binding.dart';
@@ -179,6 +219,26 @@ class AppRoutes {
   static const String vipWeeklySalarySubmittedScreen = '/vip/vip_weekly_salary_submitted_screen';
   static const String vipMonthlySalaryBenefitsScreen = '/vip/vip_monthly_salary_benefits_screen';
   static const String vipWeeklySalaryPendingScreen = '/vip/vip_weekly_salary_pending_screen';
+
+  // Financial Analytics Module Routes
+  static const String phoneVerificationScreen = '/financial/phone_verification_screen';
+  static const String socialShareScreen = '/financial/social_share_screen';
+  static const String phoneVerificationScreenTwo = '/financial/phone_verification_screen_two';
+  static const String jackpotHistoryScreen = '/financial/jackpot_history_screen';
+  static const String rewardsScreen = '/financial/rewards_screen';
+  static const String teamsDashboardScreen = '/financial/teams_dashboard_screen';
+  static const String agentJackpotHistoryScreen = '/financial/agent_jackpot_history_screen';
+  static const String incomeAnalyticsDashboardScreen = '/financial/income_analytics_dashboard_screen';
+  static const String rewardsCongratulationsScreen = '/financial/rewards_congratulations_screen';
+  static const String phoneVerificationScreenThree = '/financial/phone_verification_screen_three';
+  static const String teamHierarchyModalScreen = '/financial/team_hierarchy_modal_screen';
+  static const String incomeDashboardScreen = '/financial/income_dashboard_screen';
+  static const String agentJackpotHistoryScreenTwo = '/financial/agent_jackpot_history_screen_two';
+  static const String giftCodeExchangeScreen = '/financial/gift_code_exchange_screen';
+  static const String phoneVerificationScreenFour = '/financial/phone_verification_screen_four';
+  static const String incomeDashboardScreenTwo = '/financial/income_dashboard_screen_two';
+  static const String incomeDashboardScreenThree = '/financial/income_dashboard_screen_three';
+  static const String phoneVerificationScreenFive = '/financial/phone_verification_screen_five';
 
   // Shared Routes
   static const String splashScreen = '/splash_screen';
@@ -445,6 +505,98 @@ class AppRoutes {
       name: vipWeeklySalaryPendingScreen,
       page: () => VipWeeklySalaryPendingScreen(),
       bindings: [VipWeeklySalaryPendingBinding()],
+    ),
+
+    // Financial Analytics Module Pages
+    GetPage(
+      name: phoneVerificationScreen,
+      page: () => const PhoneVerificationScreen(),
+      bindings: [PhoneVerificationBinding()],
+    ),
+    GetPage(
+      name: socialShareScreen,
+      page: () => const SocialShareScreen(),
+      bindings: [SocialShareBinding()],
+    ),
+    GetPage(
+      name: phoneVerificationScreenTwo,
+      page: () => const PhoneVerificationScreenTwo(),
+      bindings: [PhoneVerificationScreenTwoBinding()],
+    ),
+    GetPage(
+      name: jackpotHistoryScreen,
+      page: () => JackpotHistoryScreen(),
+      bindings: [JackpotHistoryBinding()],
+    ),
+    GetPage(
+      name: rewardsScreen,
+      page: () => const RewardsScreen(),
+      bindings: [RewardsBinding()],
+    ),
+    GetPage(
+      name: teamsDashboardScreen,
+      page: () => TeamsDashboardScreen(),
+      bindings: [TeamsDashboardBinding()],
+    ),
+    GetPage(
+      name: agentJackpotHistoryScreen,
+      page: () => AgentJackpotHistoryScreen(),
+      bindings: [AgentJackpotHistoryBinding()],
+    ),
+    GetPage(
+      name: incomeAnalyticsDashboardScreen,
+      page: () => IncomeAnalyticsDashboardScreen(),
+      bindings: [IncomeAnalyticsDashboardBinding()],
+    ),
+    GetPage(
+      name: rewardsCongratulationsScreen,
+      page: () => const RewardsCongratulationsScreen(),
+      bindings: [RewardsCongratulationsBinding()],
+    ),
+    GetPage(
+      name: phoneVerificationScreenThree,
+      page: () => const PhoneVerificationScreenThree(),
+      bindings: [PhoneVerificationScreenThreeBinding()],
+    ),
+    GetPage(
+      name: teamHierarchyModalScreen,
+      page: () => const TeamHierarchyModalScreen(),
+      bindings: [TeamHierarchyModalBinding()],
+    ),
+    GetPage(
+      name: incomeDashboardScreen,
+      page: () => IncomeDashboardScreen(),
+      bindings: [IncomeDashboardBinding()],
+    ),
+    GetPage(
+      name: agentJackpotHistoryScreenTwo,
+      page: () => const AgentJackpotHistoryScreenTwo(),
+      bindings: [AgentJackpotHistoryScreenTwoBinding()],
+    ),
+    GetPage(
+      name: giftCodeExchangeScreen,
+      page: () => const GiftCodeExchangeScreen(),
+      bindings: [GiftCodeExchangeBinding()],
+    ),
+    GetPage(
+      name: phoneVerificationScreenFour,
+      page: () => const PhoneVerificationScreenFour(),
+      bindings: [PhoneVerificationScreenFourBinding()],
+    ),
+    GetPage(
+      name: incomeDashboardScreenTwo,
+      page: () => IncomeDashboardScreenTwo(),
+      bindings: [IncomeDashboardScreenTwoBinding()],
+    ),
+    GetPage(
+      name: incomeDashboardScreenThree,
+      page: () => IncomeDashboardScreenThree(),
+      bindings: [IncomeDashboardScreenThreeBinding()],
+    ),
+    GetPage(
+      name: phoneVerificationScreenFive,
+      page: () => const PhoneVerificationScreenFive(),
+      bindings: [PhoneVerificationScreenFiveBinding()],
     ),
 
     // Shared Pages
