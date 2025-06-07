@@ -1,0 +1,3 @@
+class InvitationBonusModel {
+  InvitationBonusModel();
+}

@@ -1,0 +1,37 @@
+name: illy_unified_application
+description: A unified Flutter project combining agent, auth, and VIP modules.
+version: 1.0.0+1
+environment: 
+  sdk: ^3.5.4
+dependencies: 
+  flutter: 
+    sdk: flutter
+  flutter_localizations: 
+    sdk: flutter
+  cached_network_image: ^3.3.0
+  flutter_svg: ^2.0.9
+  shared_preferences: ^2.5.3
+  connectivity_plus: ^6.1.4
+  get: ^4.7.2
+  web: any
+dev_dependencies: 
+  flutter_test: 
+    sdk: flutter
+flutter: 
+  uses-material-design: true
+  assets: 
+    - assets/
+    - assets/images/
+  fonts: 
+    - family: Noto Sans
+      fonts: 
+        - asset: assets/fonts/NotoSansBold.ttf
+          weight: 700
+        - asset: assets/fonts/NotoSansDisplayBold.ttf
+          weight: 700
+        - asset: assets/fonts/NotoSansMedium.ttf
+          weight: 500
+    - family: Lilita One
+      fonts: 
+        - asset: assets/fonts/LilitaOne.ttf
+          weight: 400

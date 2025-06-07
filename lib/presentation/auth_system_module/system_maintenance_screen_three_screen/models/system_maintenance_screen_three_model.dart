@@ -1,0 +1,3 @@
+class SystemMaintenanceScreenThreeModel {
+  SystemMaintenanceScreenThreeModel();
+}

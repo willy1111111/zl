@@ -1,0 +1,243 @@
+import 'package:flutter/material.dart';
+import '../../../../core/app_export.dart';
+import '../../../../widgets/custom_image_view.dart';
+import 'controller/system_maintenance_screen_two_controller.dart';
+
+class SystemMaintenanceScreenTwo
+    extends GetWidget<SystemMaintenanceScreenTwoController> {
+  SystemMaintenanceScreenTwo({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: appTheme.colorFF1E20,
+      body: SafeArea(
+        child: SizedBox(
+          width: double.maxFinite,
+          height: double.maxFinite,
+          child: Stack(
+            children: [
+              // Background Images
+              Positioned(
+                top: 0,
+                left: 0,
+                child: CustomImageView(
+                  imagePath: ImageConstant.img21,
+                  height: 812.h,
+                  width: 375.h,
+                  fit: BoxFit.cover,
+                ),
+              ),
+              Positioned(
+                top: 42.h,
+                left: 0,
+                child: CustomImageView(
+                  imagePath: ImageConstant.img11,
+                  height: 680.h,
+                  width: 375.h,
+                  fit: BoxFit.cover,
+                ),
+              ),
+
+              // Main Content Frame
+              Positioned(
+                top: 61.h,
+                left: 0,
+                child: Container(
+                  width: 375.h,
+                  height: 508.h,
+                  decoration: BoxDecoration(
+                    color: appTheme.colorFF1E20,
+                    boxShadow: [
+                      BoxShadow(
+                        color: appTheme.colorFF8888,
+                        blurRadius: 20.h,
+                        offset: Offset(0, 4.h),
+                      ),
+                    ],
+                  ),
+                  child: Stack(
+                    children: [
+                      // Title
+                      Positioned(
+                        top: 34.h,
+                        left: 31.h,
+                        child: SizedBox(
+                          width: 314.h,
+                          height: 26.h,
+                          child: Text(
+                            'System maintenance notification',
+                            style: TextStyleHelper.instance.title20Bold
+                                .copyWith(height: 1.15),
+                          ),
+                        ),
+                      ),
+
+                      // Maintenance Time
+                      Positioned(
+                        top: 64.h,
+                        left: 42.h,
+                        child: SizedBox(
+                          width: 290.h,
+                          height: 19.h,
+                          child: Text(
+                            'Maintenance time: 12/11/2023 03:00 ~ 04:00',
+                            style: TextStyleHelper.instance.body14Bold.copyWith(
+                                color: appTheme.colorFFFFC6, height: 1.21),
+                          ),
+                        ),
+                      ),
+
+                      // Maintenance Illustration
+                      Positioned(
+                        top: 106.h,
+                        left: 86.h,
+                        child: CustomImageView(
+                          imagePath: ImageConstant
+                              .imgB08e54516adf3b9b17a0d2e617b4da8810c857789c77golgq6fw1200,
+                          height: 144.h,
+                          width: 204.h,
+                          fit: BoxFit.contain,
+                        ),
+                      ),
+
+                      // Additional Maintenance Icon
+                      Positioned(
+                        top: 168.h,
+                        left: 224.h,
+                        child: CustomImageView(
+                          imagePath: ImageConstant
+                              .img6fa1b410450091b3c4718be0b516971f921ab98515b32vaysx6,
+                          height: 87.h,
+                          width: 116.h,
+                          fit: BoxFit.contain,
+                        ),
+                      ),
+
+                      // Message Container
+                      Positioned(
+                        top: 268.h,
+                        left: 15.h,
+                        child: Container(
+                          width: 345.h,
+                          height: 188.h,
+                          decoration: BoxDecoration(
+                            color: appTheme.colorFF2528,
+                            borderRadius: BorderRadius.circular(8.h),
+                            border: Border.all(
+                              color: appTheme.colorFF3535,
+                              width: 1.h,
+                            ),
+                          ),
+                          child: Stack(
+                            children: [
+                              // Dear Teams Header
+                              Positioned(
+                                top: 15.h,
+                                left: 15.h,
+                                child: SizedBox(
+                                  width: 104.h,
+                                  height: 22.h,
+                                  child: Text(
+                                    'Dear Teamss:',
+                                    style: TextStyleHelper.instance.title16Bold
+                                        .copyWith(height: 1.19),
+                                  ),
+                                ),
+                              ),
+
+                              // Main Message Text
+                              Positioned(
+                                top: 49.h,
+                                left: 15.h,
+                                child: SizedBox(
+                                  width: 311.h,
+                                  height: 120.h,
+                                  child: RichText(
+                                    text: TextSpan(
+                                      style: TextStyleHelper.instance.body14Bold
+                                          .copyWith(height: 1.71),
+                                      children: [
+                                        TextSpan(
+                                          text:
+                                              'In order to ensure the stability of the server, we will ',
+                                          style: TextStyleHelper
+                                              .instance.textStyle8
+                                              .copyWith(
+                                                  color: appTheme.colorFF8089),
+                                        ),
+                                        TextSpan(
+                                          text:
+                                              'shut down the server for maintenance.\nDuring this period you will not be able to log in normally. We apologize for the inconvenience!',
+                                          style: TextStyleHelper
+                                              .instance.textStyle8
+                                              .copyWith(
+                                                  color: appTheme.colorFF51A0),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ),
+
+                              // Website Logo/Text
+                              Positioned(
+                                bottom: 15.h,
+                                right: 15.h,
+                                child: Text(
+                                  'Jbet88.co',
+                                  style: TextStyleHelper.instance.body14Bold
+                                      .copyWith(
+                                          color: appTheme.whiteCustom,
+                                          height: 1.21),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+
+              // Bottom Status Bar
+              Positioned(
+                bottom: 0,
+                left: 0,
+                child: Container(
+                  width: 375.h,
+                  height: 90.h,
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                      colors: [
+                        Color(0xFF232B32),
+                        appTheme.colorFF2528,
+                      ],
+                    ),
+                    boxShadow: [
+                      BoxShadow(
+                        color: appTheme.blackCustom,
+                        blurRadius: 4.h,
+                        offset: Offset(0, -4.h),
+                      ),
+                    ],
+                  ),
+                  child: Center(
+                    child: Text(
+                      'Please wait..',
+                      style: TextStyleHelper.instance.title16Bold
+                          .copyWith(color: appTheme.colorFF8089, height: 1.19),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
