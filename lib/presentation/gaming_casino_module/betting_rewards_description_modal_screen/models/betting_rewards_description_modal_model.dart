@@ -1,0 +1,3 @@
+class BettingRewardsDescriptionModalModel {
+  BettingRewardsDescriptionModalModel();
+}
