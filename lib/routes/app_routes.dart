@@ -235,6 +235,46 @@ import '../presentation/bonus_rewards_module/jet_bet_casino_screen/binding/jet_b
 import '../presentation/bonus_rewards_module/deposit_bonus_history_screen/binding/deposit_bonus_history_binding.dart';
 import '../presentation/bonus_rewards_module/app_navigation_screen/binding/app_navigation_binding.dart' as bonus_nav;
 
+// Casino Sign-in Module Screens (from app_9)
+import '../presentation/casino_sign_in_module/daily_sign_in_rewards_screen/daily_sign_in_rewards_screen.dart';
+import '../presentation/casino_sign_in_module/phone_verification_screen/phone_verification_screen.dart';
+import '../presentation/casino_sign_in_module/j_bet88_registration_screen/j_bet88_registration_screen.dart';
+import '../presentation/casino_sign_in_module/game_reward_claim_screen/game_reward_claim_screen.dart';
+import '../presentation/casino_sign_in_module/sign_in_re_sign_screen/sign_in_re_sign_screen.dart';
+import '../presentation/casino_sign_in_module/j_bet88_login_screen/j_bet88_login_screen.dart';
+import '../presentation/casino_sign_in_module/fourth_day_sign_in_screen/fourth_day_sign_in_screen.dart';
+import '../presentation/casino_sign_in_module/registration_success_screen/registration_success_screen.dart';
+import '../presentation/casino_sign_in_module/user_agreement_screen/user_agreement_screen.dart';
+import '../presentation/casino_sign_in_module/congratulations_bonus_screen/congratulations_bonus_screen.dart';
+import '../presentation/casino_sign_in_module/j_bet88_registration_screen_two_screen/j_bet88_registration_screen_two_screen.dart';
+import '../presentation/casino_sign_in_module/j_bet88_registration_screen_three_screen/j_bet88_registration_screen_three_screen.dart';
+import '../presentation/casino_sign_in_module/money_rain_event_screen/money_rain_event_screen.dart';
+import '../presentation/casino_sign_in_module/free_sign_in_rewards_screen/free_sign_in_rewards_screen.dart';
+import '../presentation/casino_sign_in_module/fifth_day_sign_in_screen/fifth_day_sign_in_screen.dart';
+import '../presentation/casino_sign_in_module/casino_bonus_rewards_screen/casino_bonus_rewards_screen.dart';
+import '../presentation/casino_sign_in_module/account_setup_completion_screen/account_setup_completion_screen.dart';
+import '../presentation/casino_sign_in_module/j_bet88_login_screen_two_screen/j_bet88_login_screen_two_screen.dart';
+
+// Casino Sign-in Module Bindings
+import '../presentation/casino_sign_in_module/daily_sign_in_rewards_screen/binding/daily_sign_in_rewards_binding.dart';
+import '../presentation/casino_sign_in_module/phone_verification_screen/binding/phone_verification_binding.dart';
+import '../presentation/casino_sign_in_module/j_bet88_registration_screen/binding/j_bet88_registration_binding.dart';
+import '../presentation/casino_sign_in_module/game_reward_claim_screen/binding/game_reward_claim_binding.dart';
+import '../presentation/casino_sign_in_module/sign_in_re_sign_screen/binding/sign_in_re_sign_binding.dart';
+import '../presentation/casino_sign_in_module/j_bet88_login_screen/binding/j_bet88_login_binding.dart';
+import '../presentation/casino_sign_in_module/fourth_day_sign_in_screen/binding/fourth_day_sign_in_binding.dart';
+import '../presentation/casino_sign_in_module/registration_success_screen/binding/registration_success_binding.dart';
+import '../presentation/casino_sign_in_module/user_agreement_screen/binding/user_agreement_binding.dart';
+import '../presentation/casino_sign_in_module/congratulations_bonus_screen/binding/congratulations_bonus_binding.dart';
+import '../presentation/casino_sign_in_module/j_bet88_registration_screen_two_screen/binding/j_bet88_registration_screen_two_binding.dart';
+import '../presentation/casino_sign_in_module/j_bet88_registration_screen_three_screen/binding/j_bet88_registration_screen_three_binding.dart';
+import '../presentation/casino_sign_in_module/money_rain_event_screen/binding/money_rain_event_binding.dart';
+import '../presentation/casino_sign_in_module/free_sign_in_rewards_screen/binding/free_sign_in_rewards_binding.dart';
+import '../presentation/casino_sign_in_module/fifth_day_sign_in_screen/binding/fifth_day_sign_in_binding.dart';
+import '../presentation/casino_sign_in_module/casino_bonus_rewards_screen/binding/casino_bonus_rewards_binding.dart';
+import '../presentation/casino_sign_in_module/account_setup_completion_screen/binding/account_setup_completion_binding.dart';
+import '../presentation/casino_sign_in_module/j_bet88_login_screen_two_screen/binding/j_bet88_login_screen_two_binding.dart';
+
 import '../presentation/shared/app_navigation_screen/binding/app_navigation_binding.dart';
 import '../presentation/splash_screen/splash_screen/binding/splash_binding.dart';
 
@@ -361,6 +401,27 @@ class AppRoutes {
   static const String betboRewardsScreenTwo = '/gaming/betbo_rewards_screen_two';
   static const String naradGamingDashboardScreen = '/gaming/narad_gaming_dashboard_screen';
   static const String gamingAppNavigationScreen = '/gaming/app_navigation_screen';
+
+  // Casino Sign-in Module Routes
+  static const String casinoSignInModule = '/casino_sign_in';
+  static const String dailySignInRewardsScreen = '/casino_sign_in/daily_sign_in_rewards_screen';
+  static const String phoneVerificationScreen = '/casino_sign_in/phone_verification_screen';
+  static const String jBet88RegistrationScreen = '/casino_sign_in/j_bet88_registration_screen';
+  static const String gameRewardClaimScreen = '/casino_sign_in/game_reward_claim_screen';
+  static const String signInReSignScreen = '/casino_sign_in/sign_in_re_sign_screen';
+  static const String jBet88LoginScreen = '/casino_sign_in/j_bet88_login_screen';
+  static const String fourthDaySignInScreen = '/casino_sign_in/fourth_day_sign_in_screen';
+  static const String registrationSuccessScreen = '/casino_sign_in/registration_success_screen';
+  static const String userAgreementScreen = '/casino_sign_in/user_agreement_screen';
+  static const String congratulationsBonusScreen = '/casino_sign_in/congratulations_bonus_screen';
+  static const String jBet88RegistrationScreenTwo = '/casino_sign_in/j_bet88_registration_screen_two';
+  static const String jBet88RegistrationScreenThree = '/casino_sign_in/j_bet88_registration_screen_three';
+  static const String moneyRainEventScreen = '/casino_sign_in/money_rain_event_screen';
+  static const String freeSignInRewardsScreen = '/casino_sign_in/free_sign_in_rewards_screen';
+  static const String fifthDaySignInScreen = '/casino_sign_in/fifth_day_sign_in_screen';
+  static const String casinoBonusRewardsScreen = '/casino_sign_in/casino_bonus_rewards_screen';
+  static const String accountSetupCompletionScreen = '/casino_sign_in/account_setup_completion_screen';
+  static const String jBet88LoginScreenTwo = '/casino_sign_in/j_bet88_login_screen_two';
 
   // Shared Routes
   static const String splashScreen = '/splash_screen';
@@ -908,6 +969,98 @@ class AppRoutes {
       name: bonusAppNavigationScreen,
       page: () => bonus_nav.AppNavigationScreen(),
       bindings: [bonus_nav.AppNavigationBinding()],
+    ),
+
+    // Casino Sign-in Module Pages
+    GetPage(
+      name: dailySignInRewardsScreen,
+      page: () => DailySignInRewardsScreen(),
+      bindings: [DailySignInRewardsBinding()],
+    ),
+    GetPage(
+      name: phoneVerificationScreen,
+      page: () => PhoneVerificationScreen(),
+      bindings: [PhoneVerificationBinding()],
+    ),
+    GetPage(
+      name: jBet88RegistrationScreen,
+      page: () => JBet88RegistrationScreen(),
+      bindings: [JBet88RegistrationBinding()],
+    ),
+    GetPage(
+      name: gameRewardClaimScreen,
+      page: () => GameRewardClaimScreen(),
+      bindings: [GameRewardClaimBinding()],
+    ),
+    GetPage(
+      name: signInReSignScreen,
+      page: () => SignInReSignScreen(),
+      bindings: [SignInReSignBinding()],
+    ),
+    GetPage(
+      name: jBet88LoginScreen,
+      page: () => JBet88LoginScreen(),
+      bindings: [JBet88LoginBinding()],
+    ),
+    GetPage(
+      name: fourthDaySignInScreen,
+      page: () => FourthDaySignInScreen(),
+      bindings: [FourthDaySignInBinding()],
+    ),
+    GetPage(
+      name: registrationSuccessScreen,
+      page: () => RegistrationSuccessScreen(),
+      bindings: [RegistrationSuccessBinding()],
+    ),
+    GetPage(
+      name: userAgreementScreen,
+      page: () => UserAgreementScreen(),
+      bindings: [UserAgreementBinding()],
+    ),
+    GetPage(
+      name: congratulationsBonusScreen,
+      page: () => CongratulationsBonusScreen(),
+      bindings: [CongratulationsBonusBinding()],
+    ),
+    GetPage(
+      name: jBet88RegistrationScreenTwo,
+      page: () => JBet88RegistrationScreenTwoScreen(),
+      bindings: [JBet88RegistrationScreenTwoBinding()],
+    ),
+    GetPage(
+      name: jBet88RegistrationScreenThree,
+      page: () => JBet88RegistrationScreenThreeScreen(),
+      bindings: [JBet88RegistrationScreenThreeBinding()],
+    ),
+    GetPage(
+      name: moneyRainEventScreen,
+      page: () => MoneyRainEventScreen(),
+      bindings: [MoneyRainEventBinding()],
+    ),
+    GetPage(
+      name: freeSignInRewardsScreen,
+      page: () => FreeSignInRewardsScreen(),
+      bindings: [FreeSignInRewardsBinding()],
+    ),
+    GetPage(
+      name: fifthDaySignInScreen,
+      page: () => FifthDaySignInScreen(),
+      bindings: [FifthDaySignInBinding()],
+    ),
+    GetPage(
+      name: casinoBonusRewardsScreen,
+      page: () => CasinoBonusRewardsScreen(),
+      bindings: [CasinoBonusRewardsBinding()],
+    ),
+    GetPage(
+      name: accountSetupCompletionScreen,
+      page: () => AccountSetupCompletionScreen(),
+      bindings: [AccountSetupCompletionBinding()],
+    ),
+    GetPage(
+      name: jBet88LoginScreenTwo,
+      page: () => JBet88LoginScreenTwoScreen(),
+      bindings: [JBet88LoginScreenTwoBinding()],
     ),
 
     // Shared Pages
