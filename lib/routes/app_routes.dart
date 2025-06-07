@@ -143,6 +143,45 @@ import '../presentation/financial_analytics_module/jackpot_history_screen/bindin
 import '../presentation/financial_analytics_module/rewards_screen/binding/rewards_binding.dart';
 import '../presentation/financial_analytics_module/teams_dashboard_screen/binding/teams_dashboard_binding.dart';
 import '../presentation/financial_analytics_module/agent_jackpot_history_screen/binding/agent_jackpot_history_binding.dart';
+
+// Gaming Casino Module Imports
+import '../presentation/gaming_casino_module/casino_game_detail_modal_screen/casino_game_detail_modal_screen.dart';
+import '../presentation/gaming_casino_module/betting_rewards_description_modal_screen/betting_rewards_description_modal_screen.dart';
+import '../presentation/gaming_casino_module/agent_ranking_bonus_rules_screen/agent_ranking_bonus_rules_screen.dart';
+import '../presentation/gaming_casino_module/gaming_bonus_rewards_screen/gaming_bonus_rewards_screen.dart';
+import '../presentation/gaming_casino_module/jetso_casino_home_screen/jetso_casino_home_screen.dart';
+import '../presentation/gaming_casino_module/current_ranking_leaderboard_screen/current_ranking_leaderboard_screen.dart';
+import '../presentation/gaming_casino_module/bet88_agent_jackpot_ranking_screen/bet88_agent_jackpot_ranking_screen.dart';
+import '../presentation/gaming_casino_module/vip_daily_salary_dashboard_screen/vip_daily_salary_dashboard_screen.dart';
+import '../presentation/gaming_casino_module/jet_br_gaming_promotions_screen/jet_br_gaming_promotions_screen.dart';
+import '../presentation/gaming_casino_module/bet88_agent_jackpot_ranking_screen_two_screen/bet88_agent_jackpot_ranking_screen_two_screen.dart';
+import '../presentation/gaming_casino_module/agent_jackpot_history_ranking_screen/agent_jackpot_history_ranking_screen.dart';
+import '../presentation/gaming_casino_module/jbet88_user_dashboard_screen/jbet88_user_dashboard_screen.dart';
+import '../presentation/gaming_casino_module/current_ranking_leaderboard_screen_two_screen/current_ranking_leaderboard_screen_two_screen.dart';
+import '../presentation/gaming_casino_module/jet_bet_gaming_hub_screen/jet_bet_gaming_hub_screen.dart';
+import '../presentation/gaming_casino_module/provedor_de_jogos_bonus_screen/provedor_de_jogos_bonus_screen.dart';
+import '../presentation/gaming_casino_module/betbo_rewards_screen/betbo_rewards_screen.dart';
+import '../presentation/gaming_casino_module/betbo_rewards_screen_two_screen/betbo_rewards_screen_two_screen.dart';
+import '../presentation/gaming_casino_module/narad_gaming_dashboard_screen/narad_gaming_dashboard_screen.dart';
+
+import '../presentation/gaming_casino_module/casino_game_detail_modal_screen/binding/casino_game_detail_modal_binding.dart';
+import '../presentation/gaming_casino_module/betting_rewards_description_modal_screen/binding/betting_rewards_description_modal_binding.dart';
+import '../presentation/gaming_casino_module/agent_ranking_bonus_rules_screen/binding/agent_ranking_bonus_rules_binding.dart';
+import '../presentation/gaming_casino_module/gaming_bonus_rewards_screen/binding/gaming_bonus_rewards_binding.dart';
+import '../presentation/gaming_casino_module/jetso_casino_home_screen/binding/jetso_casino_home_binding.dart';
+import '../presentation/gaming_casino_module/current_ranking_leaderboard_screen/binding/current_ranking_leaderboard_binding.dart';
+import '../presentation/gaming_casino_module/bet88_agent_jackpot_ranking_screen/binding/bet88_agent_jackpot_ranking_binding.dart';
+import '../presentation/gaming_casino_module/vip_daily_salary_dashboard_screen/binding/vip_daily_salary_dashboard_binding.dart';
+import '../presentation/gaming_casino_module/jet_br_gaming_promotions_screen/binding/jet_br_gaming_promotions_binding.dart';
+import '../presentation/gaming_casino_module/bet88_agent_jackpot_ranking_screen_two_screen/binding/bet88_agent_jackpot_ranking_screen_two_binding.dart';
+import '../presentation/gaming_casino_module/agent_jackpot_history_ranking_screen/binding/agent_jackpot_history_ranking_binding.dart';
+import '../presentation/gaming_casino_module/jbet88_user_dashboard_screen/binding/jbet88_user_dashboard_binding.dart';
+import '../presentation/gaming_casino_module/current_ranking_leaderboard_screen_two_screen/binding/current_ranking_leaderboard_screen_two_binding.dart';
+import '../presentation/gaming_casino_module/jet_bet_gaming_hub_screen/binding/jet_bet_gaming_hub_binding.dart';
+import '../presentation/gaming_casino_module/provedor_de_jogos_bonus_screen/binding/provedor_de_jogos_bonus_binding.dart';
+import '../presentation/gaming_casino_module/betbo_rewards_screen/binding/betbo_rewards_binding.dart';
+import '../presentation/gaming_casino_module/betbo_rewards_screen_two_screen/binding/betbo_rewards_screen_two_binding.dart';
+import '../presentation/gaming_casino_module/narad_gaming_dashboard_screen/binding/narad_gaming_dashboard_binding.dart';
 import '../presentation/financial_analytics_module/income_analytics_dashboard_screen/binding/income_analytics_dashboard_binding.dart';
 import '../presentation/financial_analytics_module/rewards_congratulations_screen/binding/rewards_congratulations_binding.dart';
 import '../presentation/financial_analytics_module/phone_verification_screen_three_screen/binding/phone_verification_screen_three_binding.dart';
@@ -239,6 +278,27 @@ class AppRoutes {
   static const String incomeDashboardScreenTwo = '/financial/income_dashboard_screen_two';
   static const String incomeDashboardScreenThree = '/financial/income_dashboard_screen_three';
   static const String phoneVerificationScreenFive = '/financial/phone_verification_screen_five';
+
+  // Gaming Casino Module Routes
+  static const String casinoGameDetailModalScreen = '/gaming/casino_game_detail_modal_screen';
+  static const String bettingRewardsDescriptionModalScreen = '/gaming/betting_rewards_description_modal_screen';
+  static const String gamingAgentRankingBonusRulesScreen = '/gaming/agent_ranking_bonus_rules_screen';
+  static const String gamingBonusRewardsScreen = '/gaming/gaming_bonus_rewards_screen';
+  static const String jetsoCasinoHomeScreen = '/gaming/jetso_casino_home_screen';
+  static const String currentRankingLeaderboardScreen = '/gaming/current_ranking_leaderboard_screen';
+  static const String bet88AgentJackpotRankingScreen = '/gaming/bet88_agent_jackpot_ranking_screen';
+  static const String gamingVipDailySalaryDashboardScreen = '/gaming/vip_daily_salary_dashboard_screen';
+  static const String jetBrGamingPromotionsScreen = '/gaming/jet_br_gaming_promotions_screen';
+  static const String bet88AgentJackpotRankingScreenTwo = '/gaming/bet88_agent_jackpot_ranking_screen_two';
+  static const String agentJackpotHistoryRankingScreen = '/gaming/agent_jackpot_history_ranking_screen';
+  static const String jbet88UserDashboardScreen = '/gaming/jbet88_user_dashboard_screen';
+  static const String currentRankingLeaderboardScreenTwo = '/gaming/current_ranking_leaderboard_screen_two';
+  static const String jetBetGamingHubScreen = '/gaming/jet_bet_gaming_hub_screen';
+  static const String provedorDeJogosBonusScreen = '/gaming/provedor_de_jogos_bonus_screen';
+  static const String betboRewardsScreen = '/gaming/betbo_rewards_screen';
+  static const String betboRewardsScreenTwo = '/gaming/betbo_rewards_screen_two';
+  static const String naradGamingDashboardScreen = '/gaming/narad_gaming_dashboard_screen';
+  static const String gamingAppNavigationScreen = '/gaming/app_navigation_screen';
 
   // Shared Routes
   static const String splashScreen = '/splash_screen';
@@ -542,6 +602,98 @@ class AppRoutes {
       name: agentJackpotHistoryScreen,
       page: () => AgentJackpotHistoryScreen(),
       bindings: [AgentJackpotHistoryBinding()],
+    ),
+
+    // Gaming Casino Module Routes
+    GetPage(
+      name: casinoGameDetailModalScreen,
+      page: () => CasinoGameDetailModalScreen(),
+      bindings: [CasinoGameDetailModalBinding()],
+    ),
+    GetPage(
+      name: bettingRewardsDescriptionModalScreen,
+      page: () => BettingRewardsDescriptionModalScreen(),
+      bindings: [BettingRewardsDescriptionModalBinding()],
+    ),
+    GetPage(
+      name: gamingAgentRankingBonusRulesScreen,
+      page: () => AgentRankingBonusRulesScreen(),
+      bindings: [AgentRankingBonusRulesBinding()],
+    ),
+    GetPage(
+      name: gamingBonusRewardsScreen,
+      page: () => GamingBonusRewardsScreen(),
+      bindings: [GamingBonusRewardsBinding()],
+    ),
+    GetPage(
+      name: jetsoCasinoHomeScreen,
+      page: () => JetsoCasinoHomeScreen(),
+      bindings: [JetsoCasinoHomeBinding()],
+    ),
+    GetPage(
+      name: currentRankingLeaderboardScreen,
+      page: () => CurrentRankingLeaderboardScreen(),
+      bindings: [CurrentRankingLeaderboardBinding()],
+    ),
+    GetPage(
+      name: bet88AgentJackpotRankingScreen,
+      page: () => Bet88AgentJackpotRankingScreen(),
+      bindings: [Bet88AgentJackpotRankingBinding()],
+    ),
+    GetPage(
+      name: gamingVipDailySalaryDashboardScreen,
+      page: () => VipDailySalaryDashboardScreen(),
+      bindings: [VipDailySalaryDashboardBinding()],
+    ),
+    GetPage(
+      name: jetBrGamingPromotionsScreen,
+      page: () => JetBrGamingPromotionsScreen(),
+      bindings: [JetBrGamingPromotionsBinding()],
+    ),
+    GetPage(
+      name: bet88AgentJackpotRankingScreenTwo,
+      page: () => Bet88AgentJackpotRankingScreenTwo(),
+      bindings: [Bet88AgentJackpotRankingScreenTwoBinding()],
+    ),
+    GetPage(
+      name: agentJackpotHistoryRankingScreen,
+      page: () => AgentJackpotHistoryRankingScreen(),
+      bindings: [AgentJackpotHistoryRankingBinding()],
+    ),
+    GetPage(
+      name: jbet88UserDashboardScreen,
+      page: () => Jbet88UserDashboardScreen(),
+      bindings: [Jbet88UserDashboardBinding()],
+    ),
+    GetPage(
+      name: currentRankingLeaderboardScreenTwo,
+      page: () => CurrentRankingLeaderboardScreenTwo(),
+      bindings: [CurrentRankingLeaderboardScreenTwoBinding()],
+    ),
+    GetPage(
+      name: jetBetGamingHubScreen,
+      page: () => JetBetGamingHubScreen(),
+      bindings: [JetBetGamingHubBinding()],
+    ),
+    GetPage(
+      name: provedorDeJogosBonusScreen,
+      page: () => ProvedorDeJogosBonusScreen(),
+      bindings: [ProvedorDeJogosBonusBinding()],
+    ),
+    GetPage(
+      name: betboRewardsScreen,
+      page: () => BetboRewardsScreen(),
+      bindings: [BetboRewardsBinding()],
+    ),
+    GetPage(
+      name: betboRewardsScreenTwo,
+      page: () => BetboRewardsScreenTwo(),
+      bindings: [BetboRewardsScreenTwoBinding()],
+    ),
+    GetPage(
+      name: naradGamingDashboardScreen,
+      page: () => NaradGamingDashboardScreen(),
+      bindings: [NaradGamingDashboardBinding()],
     ),
     GetPage(
       name: incomeAnalyticsDashboardScreen,
