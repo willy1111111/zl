@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../../core/app_export.dart';
 import '../../../../widgets/custom_app_bar.dart';
 import '../../../../widgets/custom_currency_display.dart';
-import '../../widgets/custom_image_view.dart';
+import '../../../../widgets/custom_image_view.dart';
 import './controller/jetbet_gaming_hub_controller.dart';
 import './widgets/game_card_widget.dart';
 import './widgets/promotional_card_widget.dart';
