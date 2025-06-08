@@ -495,6 +495,48 @@ import '../presentation/financial_security_casino_module/forgot_transaction_pass
 import '../presentation/financial_security_casino_module/forgot_transaction_password_screen_three_screen/forgot_transaction_password_screen_three_screen.dart';
 import '../presentation/financial_security_casino_module/bank_account_settings_screen_two_screen/bank_account_settings_screen_two_screen.dart';
 import '../presentation/financial_security_casino_module/bank_account_settings_screen_three_screen/bank_account_settings_screen_three_screen.dart';
+
+// Ticket Gaming Rewards Module Imports (from app_19)
+import '../presentation/ticket_gaming_rewards_module/golden_egg_ticket_collection_screen/golden_egg_ticket_collection_screen.dart';
+import '../presentation/ticket_gaming_rewards_module/ticket_records_dashboard_screen/ticket_records_dashboard_screen.dart';
+import '../presentation/ticket_gaming_rewards_module/gaming_ticket_spin_wheel_screen/gaming_ticket_spin_wheel_screen.dart';
+import '../presentation/ticket_gaming_rewards_module/spiritual_radiance_screen/spiritual_radiance_screen.dart';
+import '../presentation/ticket_gaming_rewards_module/ticket_claim_info_screen/ticket_claim_info_screen.dart';
+import '../presentation/ticket_gaming_rewards_module/red_package_ticket_event_screen/red_package_ticket_event_screen.dart';
+import '../presentation/ticket_gaming_rewards_module/rewards_achievements_screen/rewards_achievements_screen.dart';
+import '../presentation/ticket_gaming_rewards_module/lucky_wheel_ticket_event_screen/lucky_wheel_ticket_event_screen.dart';
+import '../presentation/ticket_gaming_rewards_module/treasure_chest_ticket_claim_screen/treasure_chest_ticket_claim_screen.dart';
+import '../presentation/ticket_gaming_rewards_module/ticket_event_confirmation_dialog_screen/ticket_event_confirmation_dialog_screen.dart';
+import '../presentation/ticket_gaming_rewards_module/spin_wheel_gameplay_screen/spin_wheel_gameplay_screen.dart';
+import '../presentation/ticket_gaming_rewards_module/ticket_event_dashboard_screen/ticket_event_dashboard_screen.dart';
+import '../presentation/ticket_gaming_rewards_module/red_envelope_icon_screen/red_envelope_icon_screen.dart';
+import '../presentation/ticket_gaming_rewards_module/treasure_chest_display_screen/treasure_chest_display_screen.dart';
+import '../presentation/ticket_gaming_rewards_module/celebration_confetti_screen/celebration_confetti_screen.dart';
+import '../presentation/ticket_gaming_rewards_module/integrated_spin_wheel_gaming_screen/integrated_spin_wheel_gaming_screen.dart';
+import '../presentation/ticket_gaming_rewards_module/cash_voucher_reward_screen/cash_voucher_reward_screen.dart';
+import '../presentation/ticket_gaming_rewards_module/app_download_bonus_ticket_screen/app_download_bonus_ticket_screen.dart';
+import '../presentation/ticket_gaming_rewards_module/app_navigation_screen/app_navigation_screen.dart' as ticket_gaming_app_navigation;
+
+// Ticket Gaming Rewards Module Binding Imports (from app_19)
+import '../presentation/ticket_gaming_rewards_module/golden_egg_ticket_collection_screen/binding/golden_egg_ticket_collection_binding.dart' as golden_egg_ticket_collection_binding;
+import '../presentation/ticket_gaming_rewards_module/ticket_records_dashboard_screen/binding/ticket_records_dashboard_binding.dart' as ticket_records_dashboard_binding;
+import '../presentation/ticket_gaming_rewards_module/gaming_ticket_spin_wheel_screen/binding/gaming_ticket_spin_wheel_binding.dart' as gaming_ticket_spin_wheel_binding;
+import '../presentation/ticket_gaming_rewards_module/spiritual_radiance_screen/binding/spiritual_radiance_binding.dart' as spiritual_radiance_binding;
+import '../presentation/ticket_gaming_rewards_module/ticket_claim_info_screen/binding/ticket_claim_info_binding.dart' as ticket_claim_info_binding;
+import '../presentation/ticket_gaming_rewards_module/red_package_ticket_event_screen/binding/red_package_ticket_event_binding.dart' as red_package_ticket_event_binding;
+import '../presentation/ticket_gaming_rewards_module/rewards_achievements_screen/binding/rewards_achievements_binding.dart' as rewards_achievements_binding;
+import '../presentation/ticket_gaming_rewards_module/lucky_wheel_ticket_event_screen/binding/lucky_wheel_ticket_event_binding.dart' as lucky_wheel_ticket_event_binding;
+import '../presentation/ticket_gaming_rewards_module/treasure_chest_ticket_claim_screen/binding/treasure_chest_ticket_claim_binding.dart' as treasure_chest_ticket_claim_binding;
+import '../presentation/ticket_gaming_rewards_module/ticket_event_confirmation_dialog_screen/binding/ticket_event_confirmation_dialog_binding.dart' as ticket_event_confirmation_dialog_binding;
+import '../presentation/ticket_gaming_rewards_module/spin_wheel_gameplay_screen/binding/spin_wheel_gameplay_binding.dart' as spin_wheel_gameplay_binding;
+import '../presentation/ticket_gaming_rewards_module/ticket_event_dashboard_screen/binding/ticket_event_dashboard_binding.dart' as ticket_event_dashboard_binding;
+import '../presentation/ticket_gaming_rewards_module/red_envelope_icon_screen/binding/red_envelope_icon_binding.dart' as red_envelope_icon_binding;
+import '../presentation/ticket_gaming_rewards_module/treasure_chest_display_screen/binding/treasure_chest_display_binding.dart' as treasure_chest_display_binding;
+import '../presentation/ticket_gaming_rewards_module/celebration_confetti_screen/binding/celebration_confetti_binding.dart' as celebration_confetti_binding;
+import '../presentation/ticket_gaming_rewards_module/integrated_spin_wheel_gaming_screen/binding/integrated_spin_wheel_gaming_binding.dart' as integrated_spin_wheel_gaming_binding;
+import '../presentation/ticket_gaming_rewards_module/cash_voucher_reward_screen/binding/cash_voucher_reward_binding.dart' as cash_voucher_reward_binding;
+import '../presentation/ticket_gaming_rewards_module/app_download_bonus_ticket_screen/binding/app_download_bonus_ticket_binding.dart' as app_download_bonus_ticket_binding;
+import '../presentation/ticket_gaming_rewards_module/app_navigation_screen/binding/app_navigation_binding.dart' as ticket_gaming_app_navigation_binding;
 import '../presentation/financial_security_casino_module/user_profile_settings_screen/user_profile_settings_screen.dart';
 import '../presentation/financial_security_casino_module/user_dashboard_screen/user_dashboard_initial_page.dart';
 
@@ -767,6 +809,46 @@ class AppRoutes {
   static const String financialSecurityCasinoMyTicketRewardsScreen = '/financial_security_casino/my_ticket_rewards_screen';
   static const String financialSecurityCasinoEmailBindingConfirmationScreen = '/financial_security_casino/email_binding_confirmation_screen';
   static const String financialSecurityCasinoAppNavigationScreen = '/financial_security_casino/app_navigation_screen';
+
+  // Ticket Gaming Rewards Module Routes (from app_19)
+  static const String ticketGamingRewardsGoldenEggTicketCollectionScreen =
+      '/ticket_gaming_rewards_golden_egg_ticket_collection_screen';
+  static const String ticketGamingRewardsTicketRecordsDashboardScreen =
+      '/ticket_gaming_rewards_ticket_records_dashboard_screen';
+  static const String ticketGamingRewardsGamingTicketSpinWheelScreen =
+      '/ticket_gaming_rewards_gaming_ticket_spin_wheel_screen';
+  static const String ticketGamingRewardsSpiritualRadianceScreen =
+      '/ticket_gaming_rewards_spiritual_radiance_screen';
+  static const String ticketGamingRewardsTicketClaimInfoScreen =
+      '/ticket_gaming_rewards_ticket_claim_info_screen';
+  static const String ticketGamingRewardsRedPackageTicketEventScreen =
+      '/ticket_gaming_rewards_red_package_ticket_event_screen';
+  static const String ticketGamingRewardsRewardsAchievementsScreen =
+      '/ticket_gaming_rewards_rewards_achievements_screen';
+  static const String ticketGamingRewardsLuckyWheelTicketEventScreen =
+      '/ticket_gaming_rewards_lucky_wheel_ticket_event_screen';
+  static const String ticketGamingRewardsTreasureChestTicketClaimScreen =
+      '/ticket_gaming_rewards_treasure_chest_ticket_claim_screen';
+  static const String ticketGamingRewardsTicketEventConfirmationDialogScreen =
+      '/ticket_gaming_rewards_ticket_event_confirmation_dialog_screen';
+  static const String ticketGamingRewardsSpinWheelGameplayScreen =
+      '/ticket_gaming_rewards_spin_wheel_gameplay_screen';
+  static const String ticketGamingRewardsTicketEventDashboardScreen =
+      '/ticket_gaming_rewards_ticket_event_dashboard_screen';
+  static const String ticketGamingRewardsRedEnvelopeIconScreen =
+      '/ticket_gaming_rewards_red_envelope_icon_screen';
+  static const String ticketGamingRewardsTreasureChestDisplayScreen =
+      '/ticket_gaming_rewards_treasure_chest_display_screen';
+  static const String ticketGamingRewardsCelebrationConfettiScreen =
+      '/ticket_gaming_rewards_celebration_confetti_screen';
+  static const String ticketGamingRewardsIntegratedSpinWheelGamingScreen =
+      '/ticket_gaming_rewards_integrated_spin_wheel_gaming_screen';
+  static const String ticketGamingRewardsCashVoucherRewardScreen =
+      '/ticket_gaming_rewards_cash_voucher_reward_screen';
+  static const String ticketGamingRewardsAppDownloadBonusTicketScreen =
+      '/ticket_gaming_rewards_app_download_bonus_ticket_screen';
+  static const String ticketGamingRewardsAppNavigationScreen =
+      '/ticket_gaming_rewards_app_navigation_screen';
   static const String financialSecurityCasinoTicketEventRewardsScreen = '/financial_security_casino/ticket_event_rewards_screen';
   static const String financialSecurityCasinoTicketEventRewardsScreenTwo = '/financial_security_casino/ticket_event_rewards_screen_two';
   static const String financialSecurityCasinoTicketEventRewardsScreenThree = '/financial_security_casino/ticket_event_rewards_screen_three';
@@ -2118,6 +2200,103 @@ class AppRoutes {
       name: financialSecurityCasinoAppNavigationScreen,
       page: () => financial_app_navigation.AppNavigationScreen(),
       bindings: [financial_app_navigation_binding.AppNavigationBinding()],
+    ),
+
+    // Ticket Gaming Rewards Module Routes (from app_19)
+    GetPage(
+      name: ticketGamingRewardsGoldenEggTicketCollectionScreen,
+      page: () => GoldenEggTicketCollectionScreen(),
+      bindings: [golden_egg_ticket_collection_binding.GoldenEggTicketCollectionBinding()],
+    ),
+    GetPage(
+      name: ticketGamingRewardsTicketRecordsDashboardScreen,
+      page: () => TicketRecordsDashboardScreen(),
+      bindings: [ticket_records_dashboard_binding.TicketRecordsDashboardBinding()],
+    ),
+    GetPage(
+      name: ticketGamingRewardsGamingTicketSpinWheelScreen,
+      page: () => GamingTicketSpinWheelScreen(),
+      bindings: [gaming_ticket_spin_wheel_binding.GamingTicketSpinWheelBinding()],
+    ),
+    GetPage(
+      name: ticketGamingRewardsSpiritualRadianceScreen,
+      page: () => SpiritualRadianceScreen(),
+      bindings: [spiritual_radiance_binding.SpiritualRadianceBinding()],
+    ),
+    GetPage(
+      name: ticketGamingRewardsTicketClaimInfoScreen,
+      page: () => TicketClaimInfoScreen(),
+      bindings: [ticket_claim_info_binding.TicketClaimInfoBinding()],
+    ),
+    GetPage(
+      name: ticketGamingRewardsRedPackageTicketEventScreen,
+      page: () => RedPackageTicketEventScreen(),
+      bindings: [red_package_ticket_event_binding.RedPackageTicketEventBinding()],
+    ),
+    GetPage(
+      name: ticketGamingRewardsRewardsAchievementsScreen,
+      page: () => RewardsAchievementsScreen(),
+      bindings: [rewards_achievements_binding.RewardsAchievementsBinding()],
+    ),
+    GetPage(
+      name: ticketGamingRewardsLuckyWheelTicketEventScreen,
+      page: () => LuckyWheelTicketEventScreen(),
+      bindings: [lucky_wheel_ticket_event_binding.LuckyWheelTicketEventBinding()],
+    ),
+    GetPage(
+      name: ticketGamingRewardsTreasureChestTicketClaimScreen,
+      page: () => TreasureChestTicketClaimScreen(),
+      bindings: [treasure_chest_ticket_claim_binding.TreasureChestTicketClaimBinding()],
+    ),
+    GetPage(
+      name: ticketGamingRewardsTicketEventConfirmationDialogScreen,
+      page: () => TicketEventConfirmationDialogScreen(),
+      bindings: [ticket_event_confirmation_dialog_binding.TicketEventConfirmationDialogBinding()],
+    ),
+    GetPage(
+      name: ticketGamingRewardsSpinWheelGameplayScreen,
+      page: () => SpinWheelGameplayScreen(),
+      bindings: [spin_wheel_gameplay_binding.SpinWheelGameplayBinding()],
+    ),
+    GetPage(
+      name: ticketGamingRewardsTicketEventDashboardScreen,
+      page: () => TicketEventDashboardScreen(),
+      bindings: [ticket_event_dashboard_binding.TicketEventDashboardBinding()],
+    ),
+    GetPage(
+      name: ticketGamingRewardsRedEnvelopeIconScreen,
+      page: () => RedEnvelopeIconScreen(),
+      bindings: [red_envelope_icon_binding.RedEnvelopeIconBinding()],
+    ),
+    GetPage(
+      name: ticketGamingRewardsTreasureChestDisplayScreen,
+      page: () => TreasureChestDisplayScreen(),
+      bindings: [treasure_chest_display_binding.TreasureChestDisplayBinding()],
+    ),
+    GetPage(
+      name: ticketGamingRewardsCelebrationConfettiScreen,
+      page: () => CelebrationConfettiScreen(),
+      bindings: [celebration_confetti_binding.CelebrationConfettiBinding()],
+    ),
+    GetPage(
+      name: ticketGamingRewardsIntegratedSpinWheelGamingScreen,
+      page: () => IntegratedSpinWheelGamingScreen(),
+      bindings: [integrated_spin_wheel_gaming_binding.IntegratedSpinWheelGamingBinding()],
+    ),
+    GetPage(
+      name: ticketGamingRewardsCashVoucherRewardScreen,
+      page: () => CashVoucherRewardScreen(),
+      bindings: [cash_voucher_reward_binding.CashVoucherRewardBinding()],
+    ),
+    GetPage(
+      name: ticketGamingRewardsAppDownloadBonusTicketScreen,
+      page: () => AppDownloadBonusTicketScreen(),
+      bindings: [app_download_bonus_ticket_binding.AppDownloadBonusTicketBinding()],
+    ),
+    GetPage(
+      name: ticketGamingRewardsAppNavigationScreen,
+      page: () => ticket_gaming_app_navigation.AppNavigationScreen(),
+      bindings: [ticket_gaming_app_navigation_binding.AppNavigationBinding()],
     ),
   ];
 }
