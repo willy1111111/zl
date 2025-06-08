@@ -1829,5 +1829,107 @@ class AppRoutes {
       page: () => CryptoWalletSetupPasswordScreen(),
       bindings: [CryptoWalletSetupPasswordBinding()],
     ),
+
+    // Gaming Casino Bonus Module Pages (from app_16)
+    GetPage(
+      name: gamingCasinoBonusGCashDepositRecordDetailScreen,
+      page: () => GCashDepositRecordDetailScreen(),
+      bindings: [GCashDepositRecordDetailBinding()],
+    ),
+    GetPage(
+      name: gamingCasinoBonusExperienceBonusGameScreen,
+      page: () => ExperienceBonusGameScreen(),
+      bindings: [ExperienceBonusGameBinding()],
+    ),
+    GetPage(
+      name: gamingCasinoBonusGamingCasinoVipRewardsScreen,
+      page: () => GamingCasinoVipRewardsScreen(),
+      bindings: [GamingCasinoVipRewardsBinding()],
+    ),
+    GetPage(
+      name: gamingCasinoBonusBonusCenterScreen,
+      page: () => BonusCenterScreen(),
+      bindings: [BonusCenterBinding()],
+    ),
+    GetPage(
+      name: gamingCasinoBonusGCashDepositRecordScreen,
+      page: () => GCashDepositRecordScreen(),
+      bindings: [GCashDepositRecordBinding()],
+    ),
+    GetPage(
+      name: gamingCasinoBonusGamingExperienceBonusActivationScreen,
+      page: () => GamingExperienceBonusActivationScreen(),
+      bindings: [GamingExperienceBonusActivationBinding()],
+    ),
+    GetPage(
+      name: gamingCasinoBonusExperienceBonusGameScreenTwo,
+      page: () => ExperienceBonusGameScreenTwo(),
+      bindings: [ExperienceBonusGameScreenTwoBinding()],
+    ),
+    GetPage(
+      name: gamingCasinoBonusGamingRewardsCongratulationsScreen,
+      page: () => GamingRewardsCongratulationsScreen(),
+      bindings: [GamingRewardsCongratulationsBinding()],
+    ),
+    GetPage(
+      name: gamingCasinoBonusJBet88GamingHubScreen,
+      page: () => JBet88GamingHubScreen(),
+      bindings: [JBet88GamingHubBinding()],
+    ),
+    GetPage(
+      name: gamingCasinoBonusDepositRecordListScreen,
+      page: () => DepositRecordListScreen(),
+      bindings: [DepositRecordListBinding()],
+    ),
+    GetPage(
+      name: gamingCasinoBonusGamingExperienceBonusActivationScreenTwo,
+      page: () => GamingExperienceBonusActivationScreenTwo(),
+      bindings: [GamingExperienceBonusActivationScreenTwoBinding()],
+    ),
+    GetPage(
+      name: gamingCasinoBonusNotificationsScreen,
+      page: () => NotificationsScreen(),
+      bindings: [NotificationsBinding()],
+    ),
+    GetPage(
+      name: gamingCasinoBonusGamingCasinoMobileAppHomeScreen,
+      page: () => GamingCasinoMobileAppHomeScreen(),
+      bindings: [GamingCasinoMobileAppHomeBinding()],
+    ),
+    GetPage(
+      name: gamingCasinoBonusGamingTipsBonusModalScreen,
+      page: () => GamingTipsBonusModalScreen(),
+      bindings: [GamingTipsBonusModalBinding()],
+    ),
+    GetPage(
+      name: gamingCasinoBonusJBet88GamingHubScreenTwo,
+      page: () => JBet88GamingHubScreenTwo(),
+      bindings: [JBet88GamingHubScreenTwoBinding()],
+    ),
+    GetPage(
+      name: gamingCasinoBonusAchievementBonusReceivedScreen,
+      page: () => AchievementBonusReceivedScreen(),
+      bindings: [AchievementBonusReceivedBinding()],
+    ),
+    GetPage(
+      name: gamingCasinoBonusGamingCasinoVipRewardsScreenTwo,
+      page: () => GamingCasinoVipRewardsScreenTwo(),
+      bindings: [GamingCasinoVipRewardsScreenTwoBinding()],
+    ),
+    GetPage(
+      name: gamingCasinoBonusNaradGamingDashboardScreen,
+      page: () => NaradGamingDashboardScreen(),
+      bindings: [NaradGamingDashboardBinding()],
+    ),
+    GetPage(
+      name: gamingCasinoBonusJBet88GamingHubScreenThree,
+      page: () => JBet88GamingHubScreenThree(),
+      bindings: [JBet88GamingHubScreenThreeBinding()],
+    ),
+    GetPage(
+      name: gamingCasinoBonusGCashDepositRecordListScreen,
+      page: () => GCashDepositRecordListScreen(),
+      bindings: [GCashDepositRecordListBinding()],
+    ),
   ];
 }

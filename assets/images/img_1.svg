@@ -1,8 +1,8 @@
 <svg width="356" height="13" viewBox="0 0 356 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="mask0_1_7657" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="356" height="13">
+<mask id="mask0_1_5030" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="356" height="13">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H356V13H0V0Z" fill="white"/>
 </mask>
-<g mask="url(#mask0_1_7657)">
+<g mask="url(#mask0_1_5030)">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M352.22 11.22C352.72 10.72 353 10.04 353 9.33V2.67C353 1.96 352.72 1.28 352.22 0.78C351.72 0.28 351.04 0 350.33 0H332.67C331.96 0 331.28 0.28 330.78 0.78C330.28 1.28 330 1.96 330 2.67V9.33C330 10.04 330.28 10.72 330.78 11.22C331.28 11.72 331.96 12 332.67 12H350.33C351.04 12 351.72 11.72 352.22 11.22Z" stroke="white" stroke-width="0.8"/>
 <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M355 7C355.61 6.75 356 6.15 356 5.5C356 4.85 355.61 4.25 355 4V7Z" fill="white"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M343.67 10C344.4 10 345 9.4 345 8.67V3.33C345 2.6 344.4 2 343.67 2H333.33C332.6 2 332 2.6 332 3.33V8.67C332 9.4 332.6 10 333.33 10H343.67Z" fill="white"/>
