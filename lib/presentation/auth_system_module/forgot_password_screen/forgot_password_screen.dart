@@ -1,34 +1,67 @@
 import 'package:flutter/material.dart';
+
 import '../../../../core/app_export.dart';
-import '../../../../widgets/custom_image_view.dart';
-import '../../../../widgets/custom_app_bar.dart';
 import '../../../../widgets/custom_button.dart';
-import 'controller/forgot_password_controller.dart';
+import '../../../../widgets/custom_image_view.dart';
+import './controller/forgot_password_controller.dart';
 
 class ForgotPasswordScreen extends GetWidget<ForgotPasswordController> {
-  ForgotPasswordScreen({Key? key}) : super(key: key);
+  const ForgotPasswordScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: appTheme.colorFF1E20,
-      appBar: _buildAppBar(),
-      body: Container(
-        width: double.maxFinite,
-        child: Column(
+      body: Stack(
+        children: [
+          // Background with header image
+          Positioned(
+            top: 0,
+            left: 0,
+            right: 0,
+            child: CustomImageView(
+              imagePath: ImageConstant.imgImage4,
+              height: 53.h,
+              width: double.infinity,
+              fit: BoxFit.cover,
+            ),
+          ),
+
+          // App Bar
+          _buildAppBar(),
+
+          // Main Content Card
+          _buildMainContentCard(),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildAppBar() {
+    return Positioned(
+      top: 0,
+      left: 0,
+      right: 0,
+      child: Container(
+        height: 64.h,
+        padding: EdgeInsets.symmetric(horizontal: 16.h),
+        child: Row(
           children: [
-            SizedBox(height: 53.h),
-            Expanded(
-              child: SingleChildScrollView(
-                padding: EdgeInsets.symmetric(horizontal: 27.h),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    _buildChristmasCard(),
-                    SizedBox(height: 32.h),
-                    _buildInstructionText(),
-                  ],
-                ),
+            GestureDetector(
+              onTap: () => Get.back(),
+              child: Row(
+                children: [
+                  CustomImageView(
+                    imagePath: ImageConstant.img,
+                    height: 20.h,
+                    width: 20.h,
+                  ),
+                  SizedBox(width: 8.h),
+                  Text(
+                    'Forgot password',
+                    style: TextStyleHelper.instance.title16Medium,
+                  ),
+                ],
               ),
             ),
           ],
@@ -37,98 +70,111 @@ class ForgotPasswordScreen extends GetWidget<ForgotPasswordController> {
     );
   }
 
-  PreferredSizeWidget _buildAppBar() {
-    return CustomAppBar(
-      showBackButton: true,
-      backButtonText: 'Forgot password',
-      backButtonIcon: ImageConstant.img22,
-      backgroundColor: appTheme.colorFF1E20,
-      onBackPressed: () {
-        Get.back();
-      },
-    );
-  }
-
-  Widget _buildChristmasCard() {
-    return Container(
-      width: 321.h,
-      height: 251.h,
-      decoration: BoxDecoration(
-        color: appTheme.colorFF2528,
-        border: Border.all(
-          color: appTheme.colorFF2C2C,
-          width: 1.h,
+  Widget _buildMainContentCard() {
+    return Positioned(
+      left: 28.h,
+      top: 211.h,
+      child: Container(
+        width: 321.h,
+        height: 251.h,
+        decoration: BoxDecoration(
+          color: appTheme.colorFF2528,
+          border: Border.all(color: appTheme.colorFF2C2C),
+          borderRadius: BorderRadius.circular(8.h),
+          boxShadow: [
+            BoxShadow(
+              color: appTheme.colorFF0000,
+              offset: Offset(0, 4),
+              blurRadius: 4.h,
+            ),
+          ],
         ),
-        borderRadius: BorderRadius.circular(8.h),
-        boxShadow: [
-          BoxShadow(
-            color: appTheme.colorFF0000,
-            offset: Offset(0, 4.h),
-            blurRadius: 4.h,
-            spreadRadius: 0,
-          ),
-        ],
-      ),
-      child: Stack(
-        children: [
-          Positioned(
-            top: 13.h,
-            left: 9.h,
-            child: Container(
-              width: 302.h,
-              height: 181.h,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(8.h),
-              ),
-              clipBehavior: Clip.antiAlias,
+        child: Stack(
+          children: [
+            // Christmas Panda Image
+            Positioned(
+              left: 9.h,
+              top: 13.h,
               child: CustomImageView(
-                imagePath: ImageConstant.img21181x302,
+                imagePath: ImageConstant.img21,
                 width: 302.h,
                 height: 181.h,
                 fit: BoxFit.cover,
               ),
             ),
-          ),
-          Positioned(
-            bottom: 16.h,
-            right: 48.h,
-            child: Container(
-              width: 263.h,
-              height: 34.h,
-              decoration: BoxDecoration(
-                color: appTheme.colorFF1E20,
-                borderRadius: BorderRadius.circular(6.h),
+
+            // Input Field
+            Positioned(
+              left: 9.h,
+              top: 205.h,
+              child: Container(
+                width: 134.h,
+                height: 34.h,
+                child: Obx(
+                  () => TextField(
+                    controller: controller.emailController,
+                    style: TextStyleHelper.instance.body14
+                        .copyWith(color: appTheme.whiteCustom),
+                    decoration: InputDecoration(
+                      hintText: 'Enter email or username',
+                      hintStyle: TextStyleHelper.instance.body14
+                          .copyWith(color: appTheme.colorFF9CA3),
+                      filled: true,
+                      fillColor: appTheme.colorFF4D6C,
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(6.h),
+                        borderSide: BorderSide(color: appTheme.colorFF1755),
+                      ),
+                      enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(6.h),
+                        borderSide: BorderSide(color: appTheme.colorFF1755),
+                      ),
+                      focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(6.h),
+                        borderSide:
+                            BorderSide(color: appTheme.colorFF2563, width: 2),
+                      ),
+                      contentPadding:
+                          EdgeInsets.symmetric(horizontal: 12.h, vertical: 8.h),
+                    ),
+                    onSubmitted: (value) => controller.sendRecoveryEmail(),
+                  ),
+                ),
               ),
             ),
-          ),
-          Positioned(
-            bottom: 16.h,
-            left: 15.h,
-            child: CustomButton(
-              iconPath: ImageConstant.imgGroup12450,
-              onPressed: () {
-                controller.onContinuePressed();
-              },
-              backgroundColor: appTheme.colorFFD3D4,
-              width: 51.h,
-              height: 34.h,
-              borderRadius: 8.h,
-              buttonType: CustomButtonType.filled,
-            ),
-          ),
-        ],
-      ),
-    );
-  }
 
-  Widget _buildInstructionText() {
-    return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 24.h),
-      child: Text(
-        'Follow the instructions to reset your password',
-        textAlign: TextAlign.center,
-        style: TextStyleHelper.instance.body14RegularInter
-            .copyWith(color: Color(0xFFFFFFFF).withAlpha(179)),
+            // Send Button
+            Positioned(
+              left: 152.h,
+              top: 205.h,
+              child: CustomButton(
+                variant: CustomButtonVariant.icon,
+                iconPath: ImageConstant.imgGroup12450,
+                width: 51.h,
+                height: 34.h,
+                backgroundColor: appTheme.colorFFD3D4,
+                borderRadius: 8.h,
+                iconWidth: 26.h,
+                iconHeight: 16.h,
+                onTap: () => controller.sendRecoveryEmail(),
+              ),
+            ),
+
+            // Additional Container
+            Positioned(
+              left: 182.h,
+              top: 205.h,
+              child: Container(
+                width: 129.h,
+                height: 34.h,
+                decoration: BoxDecoration(
+                  color: appTheme.colorFF1E20,
+                  borderRadius: BorderRadius.circular(6.h),
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
