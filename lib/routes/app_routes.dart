@@ -562,19 +562,28 @@ import '../presentation/financial_security_casino_module/user_profile_settings_s
 
 // Dialog Gaming Events Module Imports
 import '../presentation/dialog_gaming_events_module/red_package_purchase_dialog_screen/red_package_purchase_dialog_screen.dart';
+import '../presentation/dialog_gaming_events_module/red_package_purchase_dialog_screen/red_package_purchase_dialog_initial_page.dart';
 import '../presentation/dialog_gaming_events_module/game_failure_dialog_screen/game_failure_dialog_screen.dart';
 import '../presentation/dialog_gaming_events_module/golden_egg_reward_dialog_screen/golden_egg_reward_dialog_screen.dart';
 import '../presentation/dialog_gaming_events_module/ticket_event_task_screen/ticket_event_task_screen.dart';
+import '../presentation/dialog_gaming_events_module/ticket_event_progress_screen/ticket_event_progress_screen.dart';
 import '../presentation/dialog_gaming_events_module/lucky_wheel_spin_screen/lucky_wheel_spin_screen.dart';
 import '../presentation/dialog_gaming_events_module/help_invitation_modal_screen/help_invitation_modal_screen.dart';
+import '../presentation/dialog_gaming_events_module/robot_verification_dialog_screen/robot_verification_dialog_screen.dart';
+import '../presentation/dialog_gaming_events_module/reconnection_dialog_screen/reconnection_dialog_screen.dart';
+import '../presentation/dialog_gaming_events_module/ios_game_entry_hidden_screen/ios_game_entry_hidden_screen.dart';
 import '../presentation/dialog_gaming_events_module/app_navigation_screen/app_navigation_screen.dart' as dialog_gaming_events_app_navigation;
 
 import '../presentation/dialog_gaming_events_module/red_package_purchase_dialog_screen/binding/red_package_purchase_dialog_binding.dart';
 import '../presentation/dialog_gaming_events_module/game_failure_dialog_screen/binding/game_failure_dialog_binding.dart';
 import '../presentation/dialog_gaming_events_module/golden_egg_reward_dialog_screen/binding/golden_egg_reward_dialog_binding.dart';
 import '../presentation/dialog_gaming_events_module/ticket_event_task_screen/binding/ticket_event_task_binding.dart';
+import '../presentation/dialog_gaming_events_module/ticket_event_progress_screen/binding/ticket_event_progress_binding.dart';
 import '../presentation/dialog_gaming_events_module/lucky_wheel_spin_screen/binding/lucky_wheel_spin_binding.dart';
 import '../presentation/dialog_gaming_events_module/help_invitation_modal_screen/binding/help_invitation_modal_binding.dart';
+import '../presentation/dialog_gaming_events_module/robot_verification_dialog_screen/binding/robot_verification_dialog_binding.dart';
+import '../presentation/dialog_gaming_events_module/reconnection_dialog_screen/binding/reconnection_dialog_binding.dart';
+import '../presentation/dialog_gaming_events_module/ios_game_entry_hidden_screen/binding/ios_game_entry_hidden_binding.dart';
 import '../presentation/dialog_gaming_events_module/app_navigation_screen/binding/app_navigation_binding.dart' as dialog_gaming_events_app_navigation_binding;
 
 // ignore_for_file: must_be_immutable
@@ -876,6 +885,9 @@ class AppRoutes {
   static const String luckyWheelSpinScreen = '/dialog_gaming_events/lucky_wheel_spin';
   static const String helpInvitationModalScreen = '/dialog_gaming_events/help_invitation_modal';
   static const String ticketEventProgressScreen = '/dialog_gaming_events/ticket_event_progress';
+  static const String robotVerificationDialogScreen = '/dialog_gaming_events/robot_verification_dialog';
+  static const String reconnectionDialogScreen = '/dialog_gaming_events/reconnection_dialog';
+  static const String iosGameEntryHiddenScreen = '/dialog_gaming_events/ios_game_entry_hidden';
   static const String dialogGamingEventsAppNavigationScreen = '/dialog_gaming_events/app_navigation';
   static const String financialSecurityCasinoTicketEventRewardsScreen = '/financial_security_casino/ticket_event_rewards_screen';
   static const String financialSecurityCasinoTicketEventRewardsScreenTwo = '/financial_security_casino/ticket_event_rewards_screen_two';
@@ -2334,6 +2346,11 @@ class AppRoutes {
       bindings: [RedPackagePurchaseDialogBinding()],
     ),
     GetPage(
+      name: redPackagePurchaseDialogScreenInitialPage,
+      page: () => RedPackagePurchaseDialogInitialPage(),
+      bindings: [RedPackagePurchaseDialogBinding()],
+    ),
+    GetPage(
       name: gameFailureDialogScreen,
       page: () => GameFailureDialogScreen(),
       bindings: [GameFailureDialogBinding()],
@@ -2349,6 +2366,11 @@ class AppRoutes {
       bindings: [TicketEventTaskBinding()],
     ),
     GetPage(
+      name: ticketEventProgressScreen,
+      page: () => TicketEventProgressScreen(),
+      bindings: [TicketEventProgressBinding()],
+    ),
+    GetPage(
       name: luckyWheelSpinScreen,
       page: () => LuckyWheelSpinScreen(),
       bindings: [LuckyWheelSpinBinding()],
@@ -2357,6 +2379,21 @@ class AppRoutes {
       name: helpInvitationModalScreen,
       page: () => HelpInvitationModalScreen(),
       bindings: [HelpInvitationModalBinding()],
+    ),
+    GetPage(
+      name: robotVerificationDialogScreen,
+      page: () => RobotVerificationDialogScreen(),
+      bindings: [RobotVerificationDialogBinding()],
+    ),
+    GetPage(
+      name: reconnectionDialogScreen,
+      page: () => ReconnectionDialogScreen(),
+      bindings: [ReconnectionDialogBinding()],
+    ),
+    GetPage(
+      name: iosGameEntryHiddenScreen,
+      page: () => IosGameEntryHiddenScreen(),
+      bindings: [IosGameEntryHiddenBinding()],
     ),
     GetPage(
       name: dialogGamingEventsAppNavigationScreen,
