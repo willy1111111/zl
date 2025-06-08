@@ -560,6 +560,23 @@ import '../presentation/financial_security_casino_module/bank_account_settings_s
 import '../presentation/financial_security_casino_module/bank_account_settings_screen_three_screen/binding/bank_account_settings_screen_three_binding.dart';
 import '../presentation/financial_security_casino_module/user_profile_settings_screen/binding/user_profile_settings_binding.dart';
 
+// Dialog Gaming Events Module Imports
+import '../presentation/dialog_gaming_events_module/red_package_purchase_dialog_screen/red_package_purchase_dialog_screen.dart';
+import '../presentation/dialog_gaming_events_module/game_failure_dialog_screen/game_failure_dialog_screen.dart';
+import '../presentation/dialog_gaming_events_module/golden_egg_reward_dialog_screen/golden_egg_reward_dialog_screen.dart';
+import '../presentation/dialog_gaming_events_module/ticket_event_task_screen/ticket_event_task_screen.dart';
+import '../presentation/dialog_gaming_events_module/lucky_wheel_spin_screen/lucky_wheel_spin_screen.dart';
+import '../presentation/dialog_gaming_events_module/help_invitation_modal_screen/help_invitation_modal_screen.dart';
+import '../presentation/dialog_gaming_events_module/app_navigation_screen/app_navigation_screen.dart' as dialog_gaming_events_app_navigation;
+
+import '../presentation/dialog_gaming_events_module/red_package_purchase_dialog_screen/binding/red_package_purchase_dialog_binding.dart';
+import '../presentation/dialog_gaming_events_module/game_failure_dialog_screen/binding/game_failure_dialog_binding.dart';
+import '../presentation/dialog_gaming_events_module/golden_egg_reward_dialog_screen/binding/golden_egg_reward_dialog_binding.dart';
+import '../presentation/dialog_gaming_events_module/ticket_event_task_screen/binding/ticket_event_task_binding.dart';
+import '../presentation/dialog_gaming_events_module/lucky_wheel_spin_screen/binding/lucky_wheel_spin_binding.dart';
+import '../presentation/dialog_gaming_events_module/help_invitation_modal_screen/binding/help_invitation_modal_binding.dart';
+import '../presentation/dialog_gaming_events_module/app_navigation_screen/binding/app_navigation_binding.dart' as dialog_gaming_events_app_navigation_binding;
+
 // ignore_for_file: must_be_immutable
 class AppRoutes {
   // Agent Module Routes
@@ -849,6 +866,17 @@ class AppRoutes {
       '/ticket_gaming_rewards_app_download_bonus_ticket_screen';
   static const String ticketGamingRewardsAppNavigationScreen =
       '/ticket_gaming_rewards_app_navigation_screen';
+
+  // Dialog Gaming Events Module Routes
+  static const String redPackagePurchaseDialogScreen = '/dialog_gaming_events/red_package_purchase_dialog';
+  static const String redPackagePurchaseDialogScreenInitialPage = '/dialog_gaming_events/red_package_purchase_dialog_initial_page';
+  static const String gameFailureDialogScreen = '/dialog_gaming_events/game_failure_dialog';
+  static const String goldenEggRewardDialogScreen = '/dialog_gaming_events/golden_egg_reward_dialog';
+  static const String ticketEventTaskScreen = '/dialog_gaming_events/ticket_event_task';
+  static const String luckyWheelSpinScreen = '/dialog_gaming_events/lucky_wheel_spin';
+  static const String helpInvitationModalScreen = '/dialog_gaming_events/help_invitation_modal';
+  static const String ticketEventProgressScreen = '/dialog_gaming_events/ticket_event_progress';
+  static const String dialogGamingEventsAppNavigationScreen = '/dialog_gaming_events/app_navigation';
   static const String financialSecurityCasinoTicketEventRewardsScreen = '/financial_security_casino/ticket_event_rewards_screen';
   static const String financialSecurityCasinoTicketEventRewardsScreenTwo = '/financial_security_casino/ticket_event_rewards_screen_two';
   static const String financialSecurityCasinoTicketEventRewardsScreenThree = '/financial_security_casino/ticket_event_rewards_screen_three';
@@ -2297,6 +2325,43 @@ class AppRoutes {
       name: ticketGamingRewardsAppNavigationScreen,
       page: () => ticket_gaming_app_navigation.AppNavigationScreen(),
       bindings: [ticket_gaming_app_navigation_binding.AppNavigationBinding()],
+    ),
+
+    // Dialog Gaming Events Module Routes
+    GetPage(
+      name: redPackagePurchaseDialogScreen,
+      page: () => RedPackagePurchaseDialogScreen(),
+      bindings: [RedPackagePurchaseDialogBinding()],
+    ),
+    GetPage(
+      name: gameFailureDialogScreen,
+      page: () => GameFailureDialogScreen(),
+      bindings: [GameFailureDialogBinding()],
+    ),
+    GetPage(
+      name: goldenEggRewardDialogScreen,
+      page: () => GoldenEggRewardDialogScreen(),
+      bindings: [GoldenEggRewardDialogBinding()],
+    ),
+    GetPage(
+      name: ticketEventTaskScreen,
+      page: () => TicketEventTaskScreen(),
+      bindings: [TicketEventTaskBinding()],
+    ),
+    GetPage(
+      name: luckyWheelSpinScreen,
+      page: () => LuckyWheelSpinScreen(),
+      bindings: [LuckyWheelSpinBinding()],
+    ),
+    GetPage(
+      name: helpInvitationModalScreen,
+      page: () => HelpInvitationModalScreen(),
+      bindings: [HelpInvitationModalBinding()],
+    ),
+    GetPage(
+      name: dialogGamingEventsAppNavigationScreen,
+      page: () => dialog_gaming_events_app_navigation.AppNavigationScreen(),
+      bindings: [dialog_gaming_events_app_navigation_binding.AppNavigationBinding()],
     ),
   ];
 }
