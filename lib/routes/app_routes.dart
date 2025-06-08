@@ -201,6 +201,45 @@ import '../presentation/financial_analytics_module/rewards_screen/binding/reward
 import '../presentation/financial_analytics_module/teams_dashboard_screen/binding/teams_dashboard_binding.dart';
 import '../presentation/financial_analytics_module/agent_jackpot_history_screen/binding/agent_jackpot_history_binding.dart';
 
+// Gaming Withdrawal Module Imports (from app_13)
+import '../presentation/gaming_withdrawal_module/spin_game_victory_screen/spin_game_victory_screen.dart';
+import '../presentation/gaming_withdrawal_module/withdrawal_success_screen/withdrawal_success_screen.dart';
+import '../presentation/gaming_withdrawal_module/jetbet_gaming_hub_screen/jetbet_gaming_hub_screen.dart';
+import '../presentation/gaming_withdrawal_module/narad_gaming_hub_home_screen/narad_gaming_hub_home_screen.dart';
+import '../presentation/gaming_withdrawal_module/narad_casino_home_screen/narad_casino_home_screen.dart';
+import '../presentation/gaming_withdrawal_module/spin_game_cash_withdrawal_screen/spin_game_cash_withdrawal_screen.dart';
+import '../presentation/gaming_withdrawal_module/spin_wheel_victory_screen/spin_wheel_victory_screen.dart';
+import '../presentation/gaming_withdrawal_module/notice_notifications_screen/notice_notifications_screen.dart';
+import '../presentation/gaming_withdrawal_module/withdrawal_help_screen/withdrawal_help_screen.dart';
+import '../presentation/gaming_withdrawal_module/casino_spin_win_celebration_screen/casino_spin_win_celebration_screen.dart';
+import '../presentation/gaming_withdrawal_module/narad_casino_game_hub_screen/narad_casino_game_hub_screen.dart';
+import '../presentation/gaming_withdrawal_module/narad_casino_gaming_platform_screen/narad_casino_gaming_platform_screen.dart';
+import '../presentation/gaming_withdrawal_module/lucky_bonus_withdrawal_screen/lucky_bonus_withdrawal_screen.dart';
+import '../presentation/gaming_withdrawal_module/spin_game_reward_victory_screen/spin_game_reward_victory_screen.dart';
+import '../presentation/gaming_withdrawal_module/gaming_withdrawal_confirmation_screen/gaming_withdrawal_confirmation_screen.dart';
+import '../presentation/gaming_withdrawal_module/referral_bonus_dialog_screen/referral_bonus_dialog_screen.dart';
+import '../presentation/gaming_withdrawal_module/narad_gaming_platform_home_screen/narad_gaming_platform_home_screen.dart';
+import '../presentation/gaming_withdrawal_module/notice_empty_state_screen/notice_empty_state_screen.dart';
+
+import '../presentation/gaming_withdrawal_module/spin_game_victory_screen/binding/spin_game_victory_binding.dart';
+import '../presentation/gaming_withdrawal_module/withdrawal_success_screen/binding/withdrawal_success_binding.dart';
+import '../presentation/gaming_withdrawal_module/jetbet_gaming_hub_screen/binding/jetbet_gaming_hub_binding.dart';
+import '../presentation/gaming_withdrawal_module/narad_gaming_hub_home_screen/binding/narad_gaming_hub_home_binding.dart';
+import '../presentation/gaming_withdrawal_module/narad_casino_home_screen/binding/narad_casino_home_binding.dart';
+import '../presentation/gaming_withdrawal_module/spin_game_cash_withdrawal_screen/binding/spin_game_cash_withdrawal_binding.dart';
+import '../presentation/gaming_withdrawal_module/spin_wheel_victory_screen/binding/spin_wheel_victory_binding.dart';
+import '../presentation/gaming_withdrawal_module/notice_notifications_screen/binding/notice_notifications_binding.dart';
+import '../presentation/gaming_withdrawal_module/withdrawal_help_screen/binding/withdrawal_help_binding.dart';
+import '../presentation/gaming_withdrawal_module/casino_spin_win_celebration_screen/binding/casino_spin_win_celebration_binding.dart';
+import '../presentation/gaming_withdrawal_module/narad_casino_game_hub_screen/binding/narad_casino_game_hub_binding.dart';
+import '../presentation/gaming_withdrawal_module/narad_casino_gaming_platform_screen/binding/narad_casino_gaming_platform_binding.dart';
+import '../presentation/gaming_withdrawal_module/lucky_bonus_withdrawal_screen/binding/lucky_bonus_withdrawal_binding.dart';
+import '../presentation/gaming_withdrawal_module/spin_game_reward_victory_screen/binding/spin_game_reward_victory_binding.dart';
+import '../presentation/gaming_withdrawal_module/gaming_withdrawal_confirmation_screen/binding/gaming_withdrawal_confirmation_binding.dart';
+import '../presentation/gaming_withdrawal_module/referral_bonus_dialog_screen/binding/referral_bonus_dialog_binding.dart';
+import '../presentation/gaming_withdrawal_module/narad_gaming_platform_home_screen/binding/narad_gaming_platform_home_binding.dart';
+import '../presentation/gaming_withdrawal_module/notice_empty_state_screen/binding/notice_empty_state_binding.dart';
+
 // Gaming Casino Module Imports
 import '../presentation/gaming_casino_module/casino_game_detail_modal_screen/casino_game_detail_modal_screen.dart';
 import '../presentation/gaming_casino_module/betting_rewards_description_modal_screen/betting_rewards_description_modal_screen.dart';
@@ -519,6 +558,29 @@ class AppRoutes {
   static const String depositTransactionConfirmationScreen = '/deposit_payment/deposit_transaction_confirmation_screen';
   static const String jBet88DepositPromotionScreen = '/deposit_payment/j_bet88_deposit_promotion_screen';
   static const String naradGamingCasinoHomeScreen = '/deposit_payment/narad_gaming_casino_home_screen';
+
+  // Gaming Withdrawal Module Routes (from app_13)
+  static const String gamingWithdrawalModule = '/gaming_withdrawal';
+  static const String spinGameVictoryScreen = '/gaming_withdrawal/spin_game_victory_screen';
+  static const String withdrawalSuccessScreen = '/gaming_withdrawal/withdrawal_success_screen';
+  static const String jetbetGamingHubScreen = '/gaming_withdrawal/jetbet_gaming_hub_screen';
+  static const String jetbetGamingHubScreenInitialPage = '/gaming_withdrawal/jetbet_gaming_hub_screen_initial_page';
+  static const String naradGamingHubHomeScreen = '/gaming_withdrawal/narad_gaming_hub_home_screen';
+  static const String naradCasinoHomeScreen = '/gaming_withdrawal/narad_casino_home_screen';
+  static const String spinGameCashWithdrawalScreen = '/gaming_withdrawal/spin_game_cash_withdrawal_screen';
+  static const String spinWheelVictoryScreen = '/gaming_withdrawal/spin_wheel_victory_screen';
+  static const String noticeNotificationsScreen = '/gaming_withdrawal/notice_notifications_screen';
+  static const String withdrawalHelpScreen = '/gaming_withdrawal/withdrawal_help_screen';
+  static const String casinoSpinWinCelebrationScreen = '/gaming_withdrawal/casino_spin_win_celebration_screen';
+  static const String naradCasinoGameHubScreen = '/gaming_withdrawal/narad_casino_game_hub_screen';
+  static const String naradCasinoGamingPlatformScreen = '/gaming_withdrawal/narad_casino_gaming_platform_screen';
+  static const String luckyBonusWithdrawalScreen = '/gaming_withdrawal/lucky_bonus_withdrawal_screen';
+  static const String spinGameRewardVictoryScreen = '/gaming_withdrawal/spin_game_reward_victory_screen';
+  static const String gamingWithdrawalConfirmationScreen = '/gaming_withdrawal/gaming_withdrawal_confirmation_screen';
+  static const String referralBonusDialogScreen = '/gaming_withdrawal/referral_bonus_dialog_screen';
+  static const String naradGamingPlatformHomeScreen = '/gaming_withdrawal/narad_gaming_platform_home_screen';
+  static const String noticeEmptyStateScreen = '/gaming_withdrawal/notice_empty_state_screen';
+  static const String gamingWithdrawalAppNavigationScreen = '/gaming_withdrawal/app_navigation_screen';
 
   // Shared Routes
   static const String splashScreen = '/splash_screen';
@@ -1375,6 +1437,98 @@ class AppRoutes {
       name: naradGamingCasinoHomeScreen,
       page: () => NaradGamingCasinoHomeScreen(),
       bindings: [NaradGamingCasinoHomeBinding()],
+    ),
+
+    // Gaming Withdrawal Module Pages (from app_13)
+    GetPage(
+      name: spinGameVictoryScreen,
+      page: () => SpinGameVictoryScreen(),
+      bindings: [SpinGameVictoryBinding()],
+    ),
+    GetPage(
+      name: withdrawalSuccessScreen,
+      page: () => WithdrawalSuccessScreen(),
+      bindings: [WithdrawalSuccessBinding()],
+    ),
+    GetPage(
+      name: jetbetGamingHubScreen,
+      page: () => JetbetGamingHubScreen(),
+      bindings: [JetbetGamingHubBinding()],
+    ),
+    GetPage(
+      name: naradGamingHubHomeScreen,
+      page: () => NaradGamingHubHomeScreen(),
+      bindings: [NaradGamingHubHomeBinding()],
+    ),
+    GetPage(
+      name: naradCasinoHomeScreen,
+      page: () => NaradCasinoHomeScreen(),
+      bindings: [NaradCasinoHomeBinding()],
+    ),
+    GetPage(
+      name: spinGameCashWithdrawalScreen,
+      page: () => SpinGameCashWithdrawalScreen(),
+      bindings: [SpinGameCashWithdrawalBinding()],
+    ),
+    GetPage(
+      name: spinWheelVictoryScreen,
+      page: () => SpinWheelVictoryScreen(),
+      bindings: [SpinWheelVictoryBinding()],
+    ),
+    GetPage(
+      name: noticeNotificationsScreen,
+      page: () => NoticeNotificationsScreen(),
+      bindings: [NoticeNotificationsBinding()],
+    ),
+    GetPage(
+      name: withdrawalHelpScreen,
+      page: () => WithdrawalHelpScreen(),
+      bindings: [WithdrawalHelpBinding()],
+    ),
+    GetPage(
+      name: casinoSpinWinCelebrationScreen,
+      page: () => CasinoSpinWinCelebrationScreen(),
+      bindings: [CasinoSpinWinCelebrationBinding()],
+    ),
+    GetPage(
+      name: naradCasinoGameHubScreen,
+      page: () => NaradCasinoGameHubScreen(),
+      bindings: [NaradCasinoGameHubBinding()],
+    ),
+    GetPage(
+      name: naradCasinoGamingPlatformScreen,
+      page: () => NaradCasinoGamingPlatformScreen(),
+      bindings: [NaradCasinoGamingPlatformBinding()],
+    ),
+    GetPage(
+      name: luckyBonusWithdrawalScreen,
+      page: () => LuckyBonusWithdrawalScreen(),
+      bindings: [LuckyBonusWithdrawalBinding()],
+    ),
+    GetPage(
+      name: spinGameRewardVictoryScreen,
+      page: () => SpinGameRewardVictoryScreen(),
+      bindings: [SpinGameRewardVictoryBinding()],
+    ),
+    GetPage(
+      name: gamingWithdrawalConfirmationScreen,
+      page: () => GamingWithdrawalConfirmationScreen(),
+      bindings: [GamingWithdrawalConfirmationBinding()],
+    ),
+    GetPage(
+      name: referralBonusDialogScreen,
+      page: () => ReferralBonusDialogScreen(),
+      bindings: [ReferralBonusDialogBinding()],
+    ),
+    GetPage(
+      name: naradGamingPlatformHomeScreen,
+      page: () => NaradGamingPlatformHomeScreen(),
+      bindings: [NaradGamingPlatformHomeBinding()],
+    ),
+    GetPage(
+      name: noticeEmptyStateScreen,
+      page: () => NoticeEmptyStateScreen(),
+      bindings: [NoticeEmptyStateBinding()],
     ),
   ];
 }
