@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../core/app_export.dart';
-import '../../widgets/custom_gradient_button.dart';
-import '../../widgets/custom_image_view.dart';
+import '../../../../core/app_export.dart';
+import '../../../../widgets/custom_gradient_button.dart';
+import '../../../../widgets/custom_image_view.dart';
 import './controller/spin_game_cash_withdrawal_controller.dart';
 import './widgets/activity_item_widget.dart';
 

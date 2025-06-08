@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../core/app_export.dart';
-import '../../widgets/custom_image_view.dart';
+import '../../../../core/app_export.dart';
+import '../../../../widgets/custom_image_view.dart';
 import './controller/withdrawal_help_controller.dart';
 import './widgets/phone_number_item.dart';
 import './widgets/social_media_item.dart';

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../core/app_export.dart';
-import '../../widgets/custom_image_view.dart';
+import '../../../../core/app_export.dart';
+import '../../../../widgets/custom_image_view.dart';
 import './controller/gaming_withdrawal_confirmation_controller.dart';
 
 class GamingWithdrawalConfirmationScreen

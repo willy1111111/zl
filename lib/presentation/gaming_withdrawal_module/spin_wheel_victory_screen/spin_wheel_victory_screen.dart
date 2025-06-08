@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../core/app_export.dart';
-import '../../widgets/custom_gradient_button.dart';
-import '../../widgets/custom_image_view.dart';
+import '../../../../core/app_export.dart';
+import '../../../../widgets/custom_gradient_button.dart';
+import '../../../../widgets/custom_image_view.dart';
 import './controller/spin_wheel_victory_controller.dart';
 
 class SpinWheelVictoryScreen extends GetWidget<SpinWheelVictoryController> {

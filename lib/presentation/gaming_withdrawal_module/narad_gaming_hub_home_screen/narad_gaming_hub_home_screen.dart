@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import '../../core/app_export.dart';
-import '../../widgets/custom_app_bar.dart';
-import '../../widgets/custom_bottom_nav_bar.dart';
-import '../../widgets/custom_currency_display.dart';
+import '../../../../core/app_export.dart';
+import '../../../../widgets/custom_app_bar.dart';
+import '../../../../widgets/custom_bottom_nav_bar.dart';
+import '../../../../widgets/custom_currency_display.dart';
 import '../../widgets/custom_image_view.dart';
 import './controller/narad_gaming_hub_home_controller.dart';
 import './widgets/game_item_widget.dart';
