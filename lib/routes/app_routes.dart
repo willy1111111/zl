@@ -1931,5 +1931,32 @@ class AppRoutes {
       page: () => GCashDepositRecordListScreen(),
       bindings: [GCashDepositRecordListBinding()],
     ),
+
+    // User Management Notifications Module Pages (from app_17)
+    GetPage(
+      name: userManagementNotificationsUserDashboardScreen,
+      page: () => UserDashboardScreen(),
+      bindings: [UserDashboardBinding()],
+    ),
+    GetPage(
+      name: userManagementNotificationsNotificationsManagementScreen,
+      page: () => NotificationsManagementScreen(),
+      bindings: [NotificationsManagementBinding()],
+    ),
+    GetPage(
+      name: userManagementNotificationsCustomerSupportSuggestionScreen,
+      page: () => CustomerSupportSuggestionScreen(),
+      bindings: [CustomerSupportSuggestionBinding()],
+    ),
+    GetPage(
+      name: userManagementNotificationsGamingPlatformNotificationsScreen,
+      page: () => GamingPlatformNotificationsScreen(),
+      bindings: [GamingPlatformNotificationsBinding()],
+    ),
+    GetPage(
+      name: userManagementNotificationsBonusDashboardScreen,
+      page: () => BonusDashboardScreen(),
+      bindings: [BonusDashboardBinding()],
+    ),
   ];
 }
