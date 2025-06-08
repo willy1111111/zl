@@ -224,10 +224,12 @@ class TicketEventProgressScreen extends StatelessWidget {
   }
 
   Widget _buildSidebar() {
-    return CustomSidebar(
-      sidebarItems: controller.sidebarItems,
-      selectedIndex: controller.selectedSidebarIndex.value,
-      onItemTap: (index, item) => controller.onSidebarItemTap(index, item),
+    return Obx(
+      () => CustomSidebar(
+        sidebarItems: controller.sidebarItems,
+        selectedIndex: controller.selectedSidebarIndex.value,
+        onItemTap: (index, item) => controller.onSidebarItemTap(index, item),
+      ),
     );
   }
 

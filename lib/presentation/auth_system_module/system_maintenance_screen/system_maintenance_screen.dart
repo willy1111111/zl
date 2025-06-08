@@ -228,13 +228,15 @@ class SystemMaintenanceScreen extends GetWidget<SystemMaintenanceController> {
           ],
         );
       }),
-      bottomNavigationBar: CustomBottomNavBar(
-        isLoading: true,
-        loadingText:
-            controller.systemMaintenanceModel.value?.loadingText?.value ??
-                'Please wait..',
-        height: 90.h,
-        backgroundColor: appTheme.colorFF232B,
+      bottomNavigationBar: Obx(
+        () => CustomBottomNavBar(
+          isLoading: true,
+          loadingText:
+              controller.systemMaintenanceModel.value?.loadingText?.value ??
+                  'Please wait..',
+          height: 90.h,
+          backgroundColor: appTheme.colorFF232B,
+        ),
       ),
     );
   }
