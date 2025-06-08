@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../models/add_bank_account_model.dart';
 import '../models/wallet_type_option_model.dart';
-import '../../../core/app_export.dart';
+import '../../../../core/app_export.dart';
 
 class AddBankAccountController extends GetxController {
   // Text controllers

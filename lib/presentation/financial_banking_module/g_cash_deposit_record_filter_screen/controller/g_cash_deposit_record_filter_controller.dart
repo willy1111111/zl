@@ -2,7 +2,7 @@ import 'package:get/get.dart';
 import '../models/g_cash_deposit_record_filter_model.dart';
 import '../models/deposit_record_item_model.dart';
 import 'package:flutter/material.dart';
-import '../../../core/app_export.dart';
+import '../../../../core/app_export.dart';
 
 class GCashDepositRecordFilterController extends GetxController {
   final selectedFilterIndex = 0.obs;

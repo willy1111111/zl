@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import '../../../core/app_export.dart';
+import '../../../../core/app_export.dart';
 
 class AccountRecordTransactionHistoryModel {
   Rx<String>? title;

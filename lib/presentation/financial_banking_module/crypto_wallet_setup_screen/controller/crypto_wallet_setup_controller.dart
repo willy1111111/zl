@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../models/crypto_wallet_setup_model.dart';
-import '../../../core/app_export.dart';
+import '../../../../core/app_export.dart';
 
 class CryptoWalletSetupController extends GetxController {
   late TextEditingController walletAddressController;

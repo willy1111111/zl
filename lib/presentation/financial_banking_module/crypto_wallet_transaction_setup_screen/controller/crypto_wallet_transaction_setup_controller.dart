@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../models/crypto_wallet_transaction_setup_model.dart';
-import '../../../core/app_export.dart';
+import '../../../../core/app_export.dart';
 
 class CryptoWalletTransactionSetupController extends GetxController {
   // Text Controllers

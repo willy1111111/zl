@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../core/app_export.dart';
-import '../../../widgets/custom_image_view.dart';
+import '../../../../core/app_export.dart';
+import '../../../../widgets/custom_image_view.dart';
 import '../models/transaction_item_model.dart';
 
 class TransactionItemWidget extends StatelessWidget {

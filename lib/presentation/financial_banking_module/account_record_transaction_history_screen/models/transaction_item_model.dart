@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../../../core/app_export.dart';
+import '../../../../core/app_export.dart';
 
 class TransactionItemModel {
   Rx<String>? icon;

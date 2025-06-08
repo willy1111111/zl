@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../core/app_export.dart';
+import '../../../../core/app_export.dart';
 import '../models/deposit_record_item_model.dart';
 
 class DepositRecordItemWidget extends StatelessWidget {

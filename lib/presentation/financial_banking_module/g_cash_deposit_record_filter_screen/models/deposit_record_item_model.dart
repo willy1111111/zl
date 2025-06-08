@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 
 import 'package:flutter/material.dart';
-import '../../../core/app_export.dart';
+import '../../../../core/app_export.dart';
 
 class DepositRecordItemModel {
   Rx<String>? paymentMethod;
