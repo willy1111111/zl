@@ -476,6 +476,48 @@ import '../presentation/financial_banking_module/wallet_withdrawal_requirements_
 import '../presentation/financial_banking_module/account_record_transaction_history_detail_screen/binding/account_record_transaction_history_detail_binding.dart';
 import '../presentation/financial_banking_module/crypto_wallet_setup_password_screen/binding/crypto_wallet_setup_password_binding.dart';
 
+// Financial Security Casino Module Imports (from app_18)
+import '../presentation/financial_security_casino_module/user_dashboard_screen/user_dashboard_screen.dart';
+import '../presentation/financial_security_casino_module/casino_home_screen/casino_home_screen.dart';
+import '../presentation/financial_security_casino_module/ticket_event_screen/ticket_event_screen.dart';
+import '../presentation/financial_security_casino_module/security_password_configuration_screen/security_password_configuration_screen.dart';
+import '../presentation/financial_security_casino_module/bank_account_settings_screen/bank_account_settings_screen.dart';
+import '../presentation/financial_security_casino_module/forgot_transaction_password_screen/forgot_transaction_password_screen.dart';
+import '../presentation/financial_security_casino_module/ticket_records_screen/ticket_records_screen.dart';
+import '../presentation/financial_security_casino_module/my_ticket_rewards_screen/my_ticket_rewards_screen.dart';
+import '../presentation/financial_security_casino_module/email_binding_confirmation_screen/email_binding_confirmation_screen.dart';
+import '../presentation/financial_security_casino_module/app_navigation_screen/app_navigation_screen.dart';
+import '../presentation/financial_security_casino_module/ticket_event_rewards_screen/ticket_event_rewards_screen.dart';
+import '../presentation/financial_security_casino_module/ticket_event_rewards_screen_two_screen/ticket_event_rewards_screen_two_screen.dart';
+import '../presentation/financial_security_casino_module/ticket_event_rewards_screen_three_screen/ticket_event_rewards_screen_three_screen.dart';
+import '../presentation/financial_security_casino_module/ticket_event_rewards_screen_four_screen/ticket_event_rewards_screen_four_screen.dart';
+import '../presentation/financial_security_casino_module/forgot_transaction_password_screen_two_screen/forgot_transaction_password_screen_two_screen.dart';
+import '../presentation/financial_security_casino_module/forgot_transaction_password_screen_three_screen/forgot_transaction_password_screen_three_screen.dart';
+import '../presentation/financial_security_casino_module/bank_account_settings_screen_two_screen/bank_account_settings_screen_two_screen.dart';
+import '../presentation/financial_security_casino_module/bank_account_settings_screen_three_screen/bank_account_settings_screen_three_screen.dart';
+import '../presentation/financial_security_casino_module/user_profile_settings_screen/user_profile_settings_screen.dart';
+import '../presentation/financial_security_casino_module/user_dashboard_screen/user_dashboard_initial_page.dart';
+
+import '../presentation/financial_security_casino_module/user_dashboard_screen/binding/user_dashboard_binding.dart';
+import '../presentation/financial_security_casino_module/casino_home_screen/binding/casino_home_binding.dart';
+import '../presentation/financial_security_casino_module/ticket_event_screen/binding/ticket_event_binding.dart';
+import '../presentation/financial_security_casino_module/security_password_configuration_screen/binding/security_password_configuration_binding.dart';
+import '../presentation/financial_security_casino_module/bank_account_settings_screen/binding/bank_account_settings_binding.dart';
+import '../presentation/financial_security_casino_module/forgot_transaction_password_screen/binding/forgot_transaction_password_binding.dart';
+import '../presentation/financial_security_casino_module/ticket_records_screen/binding/ticket_records_binding.dart';
+import '../presentation/financial_security_casino_module/my_ticket_rewards_screen/binding/my_ticket_rewards_binding.dart';
+import '../presentation/financial_security_casino_module/email_binding_confirmation_screen/binding/email_binding_confirmation_binding.dart';
+import '../presentation/financial_security_casino_module/app_navigation_screen/binding/app_navigation_binding.dart';
+import '../presentation/financial_security_casino_module/ticket_event_rewards_screen/binding/ticket_event_rewards_binding.dart';
+import '../presentation/financial_security_casino_module/ticket_event_rewards_screen_two_screen/binding/ticket_event_rewards_screen_two_binding.dart';
+import '../presentation/financial_security_casino_module/ticket_event_rewards_screen_three_screen/binding/ticket_event_rewards_screen_three_binding.dart';
+import '../presentation/financial_security_casino_module/ticket_event_rewards_screen_four_screen/binding/ticket_event_rewards_screen_four_binding.dart';
+import '../presentation/financial_security_casino_module/forgot_transaction_password_screen_two_screen/binding/forgot_transaction_password_screen_two_binding.dart';
+import '../presentation/financial_security_casino_module/forgot_transaction_password_screen_three_screen/binding/forgot_transaction_password_screen_three_binding.dart';
+import '../presentation/financial_security_casino_module/bank_account_settings_screen_two_screen/binding/bank_account_settings_screen_two_binding.dart';
+import '../presentation/financial_security_casino_module/bank_account_settings_screen_three_screen/binding/bank_account_settings_screen_three_binding.dart';
+import '../presentation/financial_security_casino_module/user_profile_settings_screen/binding/user_profile_settings_binding.dart';
+
 // ignore_for_file: must_be_immutable
 class AppRoutes {
   // Agent Module Routes
@@ -712,6 +754,28 @@ class AppRoutes {
   static const String financialWalletWithdrawalRequirementsScreen = '/financial_banking/wallet_withdrawal_requirements_screen';
   static const String financialAccountRecordTransactionHistoryDetailScreen = '/financial_banking/account_record_transaction_history_detail_screen';
   static const String financialCryptoWalletSetupPasswordScreen = '/financial_banking/crypto_wallet_setup_password_screen';
+
+  // Financial Security Casino Module Routes (from app_18)
+  static const String financialSecurityCasinoModule = '/financial_security_casino';
+  static const String financialSecurityCasinoUserDashboardScreen = '/financial_security_casino/user_dashboard_screen';
+  static const String financialSecurityCasinoCasinoHomeScreen = '/financial_security_casino/casino_home_screen';
+  static const String financialSecurityCasinoTicketEventScreen = '/financial_security_casino/ticket_event_screen';
+  static const String financialSecurityCasinoSecurityPasswordConfigurationScreen = '/financial_security_casino/security_password_configuration_screen';
+  static const String financialSecurityCasinoBankAccountSettingsScreen = '/financial_security_casino/bank_account_settings_screen';
+  static const String financialSecurityCasinoForgotTransactionPasswordScreen = '/financial_security_casino/forgot_transaction_password_screen';
+  static const String financialSecurityCasinoTicketRecordsScreen = '/financial_security_casino/ticket_records_screen';
+  static const String financialSecurityCasinoMyTicketRewardsScreen = '/financial_security_casino/my_ticket_rewards_screen';
+  static const String financialSecurityCasinoEmailBindingConfirmationScreen = '/financial_security_casino/email_binding_confirmation_screen';
+  static const String financialSecurityCasinoAppNavigationScreen = '/financial_security_casino/app_navigation_screen';
+  static const String financialSecurityCasinoTicketEventRewardsScreen = '/financial_security_casino/ticket_event_rewards_screen';
+  static const String financialSecurityCasinoTicketEventRewardsScreenTwo = '/financial_security_casino/ticket_event_rewards_screen_two';
+  static const String financialSecurityCasinoTicketEventRewardsScreenThree = '/financial_security_casino/ticket_event_rewards_screen_three';
+  static const String financialSecurityCasinoTicketEventRewardsScreenFour = '/financial_security_casino/ticket_event_rewards_screen_four';
+  static const String financialSecurityCasinoForgotTransactionPasswordScreenTwo = '/financial_security_casino/forgot_transaction_password_screen_two';
+  static const String financialSecurityCasinoForgotTransactionPasswordScreenThree = '/financial_security_casino/forgot_transaction_password_screen_three';
+  static const String financialSecurityCasinoBankAccountSettingsScreenTwo = '/financial_security_casino/bank_account_settings_screen_two';
+  static const String financialSecurityCasinoBankAccountSettingsScreenThree = '/financial_security_casino/bank_account_settings_screen_three';
+  static const String financialSecurityCasinoUserProfileSettingsScreen = '/financial_security_casino/user_profile_settings_screen';
 
   static List<GetPage> pages = [
     // Agent Module Pages
@@ -1957,6 +2021,103 @@ class AppRoutes {
       name: userManagementNotificationsBonusDashboardScreen,
       page: () => BonusDashboardScreen(),
       bindings: [BonusDashboardBinding()],
+    ),
+
+    // Financial Security Casino Module Pages (from app_18)
+    GetPage(
+      name: financialSecurityCasinoUserDashboardScreen,
+      page: () => financial_user_dashboard.UserDashboardScreen(),
+      bindings: [financial_user_dashboard_binding.UserDashboardBinding()],
+    ),
+    GetPage(
+      name: financialSecurityCasinoCasinoHomeScreen,
+      page: () => financial_casino_home.CasinoHomeScreen(),
+      bindings: [financial_casino_home_binding.CasinoHomeBinding()],
+    ),
+    GetPage(
+      name: financialSecurityCasinoSecurityPasswordConfigurationScreen,
+      page: () => SecurityPasswordConfigurationScreen(),
+      bindings: [SecurityPasswordConfigurationBinding()],
+    ),
+    GetPage(
+      name: financialSecurityCasinoBankAccountSettingsScreen,
+      page: () => financial_bank_settings.BankAccountSettingsScreen(),
+      bindings: [financial_bank_settings_binding.BankAccountSettingsBinding()],
+    ),
+    GetPage(
+      name: financialSecurityCasinoForgotTransactionPasswordScreen,
+      page: () => financial_forgot_password.ForgotTransactionPasswordScreen(),
+      bindings: [financial_forgot_password_binding.ForgotTransactionPasswordBinding()],
+    ),
+    GetPage(
+      name: financialSecurityCasinoTicketEventScreen,
+      page: () => TicketEventScreen(),
+      bindings: [financial_ticket_event_binding.TicketEventBinding()],
+    ),
+    GetPage(
+      name: financialSecurityCasinoTicketRecordsScreen,
+      page: () => TicketRecordsScreen(),
+      bindings: [financial_ticket_records_binding.TicketRecordsBinding()],
+    ),
+    GetPage(
+      name: financialSecurityCasinoMyTicketRewardsScreen,
+      page: () => MyTicketRewardsScreen(),
+      bindings: [financial_my_ticket_rewards_binding.MyTicketRewardsBinding()],
+    ),
+    GetPage(
+      name: financialSecurityCasinoEmailBindingConfirmationScreen,
+      page: () => financial_email_binding.EmailBindingConfirmationScreen(),
+      bindings: [financial_email_binding_binding.EmailBindingConfirmationBinding()],
+    ),
+    GetPage(
+      name: financialSecurityCasinoUserProfileSettingsScreen,
+      page: () => financial_user_profile.UserProfileSettingsScreen(),
+      bindings: [financial_user_profile_binding.UserProfileSettingsBinding()],
+    ),
+    GetPage(
+      name: financialSecurityCasinoTicketEventRewardsScreen,
+      page: () => TicketEventRewardsScreen(),
+      bindings: [financial_ticket_event_rewards_binding.TicketEventRewardsBinding()],
+    ),
+    GetPage(
+      name: financialSecurityCasinoTicketEventRewardsScreenTwo,
+      page: () => TicketEventRewardsScreenTwo(),
+      bindings: [financial_ticket_event_rewards_screen_two_binding.TicketEventRewardsScreenTwoBinding()],
+    ),
+    GetPage(
+      name: financialSecurityCasinoTicketEventRewardsScreenThree,
+      page: () => TicketEventRewardsScreenThree(),
+      bindings: [financial_ticket_event_rewards_screen_three_binding.TicketEventRewardsScreenThreeBinding()],
+    ),
+    GetPage(
+      name: financialSecurityCasinoTicketEventRewardsScreenFour,
+      page: () => TicketEventRewardsScreenFour(),
+      bindings: [financial_ticket_event_rewards_screen_four_binding.TicketEventRewardsScreenFourBinding()],
+    ),
+    GetPage(
+      name: financialSecurityCasinoForgotTransactionPasswordScreenTwo,
+      page: () => ForgotTransactionPasswordScreenTwo(),
+      bindings: [financial_forgot_transaction_password_screen_two_binding.ForgotTransactionPasswordScreenTwoBinding()],
+    ),
+    GetPage(
+      name: financialSecurityCasinoForgotTransactionPasswordScreenThree,
+      page: () => ForgotTransactionPasswordScreenThree(),
+      bindings: [financial_forgot_transaction_password_screen_three_binding.ForgotTransactionPasswordScreenThreeBinding()],
+    ),
+    GetPage(
+      name: financialSecurityCasinoBankAccountSettingsScreenTwo,
+      page: () => BankAccountSettingsScreenTwo(),
+      bindings: [financial_bank_account_settings_screen_two_binding.BankAccountSettingsScreenTwoBinding()],
+    ),
+    GetPage(
+      name: financialSecurityCasinoBankAccountSettingsScreenThree,
+      page: () => BankAccountSettingsScreenThree(),
+      bindings: [financial_bank_account_settings_screen_three_binding.BankAccountSettingsScreenThreeBinding()],
+    ),
+    GetPage(
+      name: financialSecurityCasinoAppNavigationScreen,
+      page: () => financial_app_navigation.AppNavigationScreen(),
+      bindings: [financial_app_navigation_binding.AppNavigationBinding()],
     ),
   ];
 }
