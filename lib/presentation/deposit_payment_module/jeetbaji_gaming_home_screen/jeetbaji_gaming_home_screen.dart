@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import '../../core/app_export.dart';
-import '../../widgets/custom_action_button.dart';
-import '../../widgets/custom_app_bar.dart';
-import '../../widgets/custom_image_view.dart';
+import '../../../../core/app_export.dart';
+import '../../../../widgets/custom_action_button.dart';
+import '../../../../widgets/custom_app_bar.dart';
+import '../../../../widgets/custom_image_view.dart';
 import './controller/jeetbaji_gaming_home_controller.dart';
 import './widgets/game_grid_item_widget.dart';
 import './widgets/gaming_category_item_widget.dart';

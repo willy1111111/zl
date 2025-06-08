@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../core/app_export.dart';
-import '../../widgets/custom_app_bar.dart';
-import '../../widgets/custom_image_view.dart';
+import '../../../../core/app_export.dart';
+import '../../../../widgets/custom_app_bar.dart';
+import '../../../../widgets/custom_image_view.dart';
 import './controller/wallet_deposit_controller.dart';
 import './widgets/amount_button_item.dart';
 import './widgets/bank_selection_item.dart';
