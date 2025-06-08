@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../core/app_export.dart';
-import '../../widgets/custom_bottom_nav_bar.dart';
+import '../../../../core/app_export.dart';
+import '../../../../widgets/custom_bottom_nav_bar.dart';
 import './controller/jetbet_gaming_hub_controller.dart';
 import './jetbet_gaming_hub_screen_initial_page.dart';
 
