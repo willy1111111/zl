@@ -1,6 +1,43 @@
 import '../core/app_export.dart';
 import 'package:get/get.dart';
 
+// Deposit Payment Module Imports
+import '../presentation/deposit_payment_module/jeetbaji_gaming_home_screen/jeetbaji_gaming_home_screen.dart';
+import '../presentation/deposit_payment_module/narad_gaming_hub_home_screen/narad_gaming_hub_home_screen.dart';
+import '../presentation/deposit_payment_module/g_cash_deposit_detail_screen/g_cash_deposit_detail_screen.dart';
+import '../presentation/deposit_payment_module/g_cash_deposit_rejection_detail_screen/g_cash_deposit_rejection_detail_screen.dart';
+import '../presentation/deposit_payment_module/deposit_record_list_screen/deposit_record_list_screen.dart';
+import '../presentation/deposit_payment_module/deposit_confirmation_screen/deposit_confirmation_screen.dart';
+import '../presentation/deposit_payment_module/wallet_deposit_confirmation_screen/wallet_deposit_confirmation_screen.dart';
+import '../presentation/deposit_payment_module/wallet_deposit_screen/wallet_deposit_screen.dart';
+import '../presentation/deposit_payment_module/payment_status_screen/payment_status_screen.dart';
+import '../presentation/deposit_payment_module/j_bet88_deposit_bonus_screen/j_bet88_deposit_bonus_screen.dart';
+import '../presentation/deposit_payment_module/wallet_deposit_amount_screen/wallet_deposit_amount_screen.dart';
+import '../presentation/deposit_payment_module/deposit_record_method_filter_screen/deposit_record_method_filter_screen.dart';
+import '../presentation/deposit_payment_module/deposit_record_time_filter_screen/deposit_record_time_filter_screen.dart';
+import '../presentation/deposit_payment_module/wallet_deposit_payment_screen/wallet_deposit_payment_screen.dart';
+import '../presentation/deposit_payment_module/deposit_transaction_confirmation_screen/deposit_transaction_confirmation_screen.dart';
+import '../presentation/deposit_payment_module/j_bet88_deposit_promotion_screen/j_bet88_deposit_promotion_screen.dart';
+import '../presentation/deposit_payment_module/narad_gaming_casino_home_screen/narad_gaming_casino_home_screen.dart';
+
+import '../presentation/deposit_payment_module/jeetbaji_gaming_home_screen/binding/jeetbaji_gaming_home_binding.dart';
+import '../presentation/deposit_payment_module/narad_gaming_hub_home_screen/binding/narad_gaming_hub_home_binding.dart';
+import '../presentation/deposit_payment_module/g_cash_deposit_detail_screen/binding/g_cash_deposit_detail_binding.dart';
+import '../presentation/deposit_payment_module/g_cash_deposit_rejection_detail_screen/binding/gcash_deposit_rejection_detail_binding.dart';
+import '../presentation/deposit_payment_module/deposit_record_list_screen/binding/deposit_record_list_binding.dart';
+import '../presentation/deposit_payment_module/deposit_confirmation_screen/binding/deposit_confirmation_binding.dart';
+import '../presentation/deposit_payment_module/wallet_deposit_confirmation_screen/binding/wallet_deposit_confirmation_binding.dart';
+import '../presentation/deposit_payment_module/wallet_deposit_screen/binding/wallet_deposit_binding.dart';
+import '../presentation/deposit_payment_module/payment_status_screen/binding/payment_status_binding.dart';
+import '../presentation/deposit_payment_module/j_bet88_deposit_bonus_screen/binding/j_bet88_deposit_bonus_binding.dart';
+import '../presentation/deposit_payment_module/wallet_deposit_amount_screen/binding/wallet_deposit_amount_binding.dart';
+import '../presentation/deposit_payment_module/deposit_record_method_filter_screen/binding/deposit_record_method_filter_binding.dart';
+import '../presentation/deposit_payment_module/deposit_record_time_filter_screen/binding/deposit_record_time_filter_binding.dart';
+import '../presentation/deposit_payment_module/wallet_deposit_payment_screen/binding/wallet_deposit_payment_binding.dart';
+import '../presentation/deposit_payment_module/deposit_transaction_confirmation_screen/binding/deposit_transaction_confirmation_binding.dart';
+import '../presentation/deposit_payment_module/j_bet88_deposit_promotion_screen/binding/j_bet88_deposit_promotion_binding.dart';
+import '../presentation/deposit_payment_module/narad_gaming_casino_home_screen/binding/narad_gaming_casino_home_binding.dart';
+
 // Agent Module Screens (from app_3)
 import '../presentation/agent_module/referral_rewards_screen/referral_rewards_screen.dart';
 import '../presentation/agent_module/invitation_bonus_screen/invitation_bonus_screen.dart';
@@ -164,6 +201,84 @@ import '../presentation/financial_analytics_module/rewards_screen/binding/reward
 import '../presentation/financial_analytics_module/teams_dashboard_screen/binding/teams_dashboard_binding.dart';
 import '../presentation/financial_analytics_module/agent_jackpot_history_screen/binding/agent_jackpot_history_binding.dart';
 
+// Gaming Withdrawal Module Imports (from app_13)
+import '../presentation/gaming_withdrawal_module/spin_game_victory_screen/spin_game_victory_screen.dart';
+import '../presentation/gaming_withdrawal_module/withdrawal_success_screen/withdrawal_success_screen.dart';
+import '../presentation/gaming_withdrawal_module/jetbet_gaming_hub_screen/jetbet_gaming_hub_screen.dart';
+import '../presentation/gaming_withdrawal_module/narad_gaming_hub_home_screen/narad_gaming_hub_home_screen.dart';
+import '../presentation/gaming_withdrawal_module/narad_casino_home_screen/narad_casino_home_screen.dart';
+import '../presentation/gaming_withdrawal_module/spin_game_cash_withdrawal_screen/spin_game_cash_withdrawal_screen.dart';
+import '../presentation/gaming_withdrawal_module/spin_wheel_victory_screen/spin_wheel_victory_screen.dart';
+import '../presentation/gaming_withdrawal_module/notice_notifications_screen/notice_notifications_screen.dart';
+import '../presentation/gaming_withdrawal_module/withdrawal_help_screen/withdrawal_help_screen.dart';
+import '../presentation/gaming_withdrawal_module/casino_spin_win_celebration_screen/casino_spin_win_celebration_screen.dart';
+import '../presentation/gaming_withdrawal_module/narad_casino_game_hub_screen/narad_casino_game_hub_screen.dart';
+import '../presentation/gaming_withdrawal_module/narad_casino_gaming_platform_screen/narad_casino_gaming_platform_screen.dart';
+import '../presentation/gaming_withdrawal_module/lucky_bonus_withdrawal_screen/lucky_bonus_withdrawal_screen.dart';
+import '../presentation/gaming_withdrawal_module/spin_game_reward_victory_screen/spin_game_reward_victory_screen.dart';
+import '../presentation/gaming_withdrawal_module/gaming_withdrawal_confirmation_screen/gaming_withdrawal_confirmation_screen.dart';
+import '../presentation/gaming_withdrawal_module/referral_bonus_dialog_screen/referral_bonus_dialog_screen.dart';
+import '../presentation/gaming_withdrawal_module/narad_gaming_platform_home_screen/narad_gaming_platform_home_screen.dart';
+import '../presentation/gaming_withdrawal_module/notice_empty_state_screen/notice_empty_state_screen.dart';
+
+import '../presentation/gaming_withdrawal_module/spin_game_victory_screen/binding/spin_game_victory_binding.dart';
+import '../presentation/gaming_withdrawal_module/withdrawal_success_screen/binding/withdrawal_success_binding.dart';
+import '../presentation/gaming_withdrawal_module/jetbet_gaming_hub_screen/binding/jetbet_gaming_hub_binding.dart';
+import '../presentation/gaming_withdrawal_module/narad_gaming_hub_home_screen/binding/narad_gaming_hub_home_binding.dart';
+import '../presentation/gaming_withdrawal_module/narad_casino_home_screen/binding/narad_casino_home_binding.dart';
+import '../presentation/gaming_withdrawal_module/spin_game_cash_withdrawal_screen/binding/spin_game_cash_withdrawal_binding.dart';
+import '../presentation/gaming_withdrawal_module/spin_wheel_victory_screen/binding/spin_wheel_victory_binding.dart';
+import '../presentation/gaming_withdrawal_module/notice_notifications_screen/binding/notice_notifications_binding.dart';
+import '../presentation/gaming_withdrawal_module/withdrawal_help_screen/binding/withdrawal_help_binding.dart';
+import '../presentation/gaming_withdrawal_module/casino_spin_win_celebration_screen/binding/casino_spin_win_celebration_binding.dart';
+import '../presentation/gaming_withdrawal_module/narad_casino_game_hub_screen/binding/narad_casino_game_hub_binding.dart';
+import '../presentation/gaming_withdrawal_module/narad_casino_gaming_platform_screen/binding/narad_casino_gaming_platform_binding.dart';
+import '../presentation/gaming_withdrawal_module/lucky_bonus_withdrawal_screen/binding/lucky_bonus_withdrawal_binding.dart';
+import '../presentation/gaming_withdrawal_module/spin_game_reward_victory_screen/binding/spin_game_reward_victory_binding.dart';
+import '../presentation/gaming_withdrawal_module/gaming_withdrawal_confirmation_screen/binding/gaming_withdrawal_confirmation_binding.dart';
+import '../presentation/gaming_withdrawal_module/referral_bonus_dialog_screen/binding/referral_bonus_dialog_binding.dart';
+import '../presentation/gaming_withdrawal_module/narad_gaming_platform_home_screen/binding/narad_gaming_platform_home_binding.dart';
+
+// Wallet Crypto Module imports
+import '../presentation/wallet_crypto_module/lucky_spin_wheel_game_screen/lucky_spin_wheel_game_screen.dart';
+import '../presentation/wallet_crypto_module/crypto_wallet_withdrawal_screen/crypto_wallet_withdrawal_screen.dart';
+import '../presentation/wallet_crypto_module/wallet_withdrawal_type_selection_screen/wallet_withdrawal_type_selection_screen.dart';
+import '../presentation/wallet_crypto_module/bank_account_settings_screen/bank_account_settings_screen.dart';
+import '../presentation/wallet_crypto_module/crypto_wallet_withdrawal_detail_screen/crypto_wallet_withdrawal_detail_screen.dart';
+import '../presentation/wallet_crypto_module/usdt_withdrawal_screen/usdt_withdrawal_screen.dart';
+import '../presentation/wallet_crypto_module/gaming_app_share_screen/gaming_app_share_screen.dart';
+import '../presentation/wallet_crypto_module/jbet88_referral_bonus_screen/jbet88_referral_bonus_screen.dart';
+import '../presentation/wallet_crypto_module/usdt_withdrawal_form_screen/usdt_withdrawal_form_screen.dart';
+import '../presentation/wallet_crypto_module/spin_game_phone_verification_screen/spin_game_phone_verification_screen.dart';
+import '../presentation/wallet_crypto_module/wallet_deposit_type_selection_screen/wallet_deposit_type_selection_screen.dart';
+import '../presentation/wallet_crypto_module/spin_game_withdrawal_screen/spin_game_withdrawal_screen.dart';
+import '../presentation/wallet_crypto_module/crypto_wallet_password_setup_screen/crypto_wallet_password_setup_screen.dart';
+import '../presentation/wallet_crypto_module/wallet_bank_accounts_withdrawal_screen/wallet_bank_accounts_withdrawal_screen.dart';
+import '../presentation/wallet_crypto_module/jbet88_referral_rewards_screen/jbet88_referral_rewards_screen.dart';
+import '../presentation/wallet_crypto_module/jbet88_benefits_promotion_screen/jbet88_benefits_promotion_screen.dart';
+import '../presentation/wallet_crypto_module/text_safe_zone_display_screen/text_safe_zone_display_screen.dart';
+import '../presentation/wallet_crypto_module/electronic_wallet_withdrawal_screen/electronic_wallet_withdrawal_screen.dart';
+
+import '../presentation/wallet_crypto_module/lucky_spin_wheel_game_screen/binding/lucky_spin_wheel_game_binding.dart';
+import '../presentation/wallet_crypto_module/crypto_wallet_withdrawal_screen/binding/crypto_wallet_withdrawal_binding.dart';
+import '../presentation/wallet_crypto_module/wallet_withdrawal_type_selection_screen/binding/wallet_withdrawal_type_selection_binding.dart';
+import '../presentation/wallet_crypto_module/bank_account_settings_screen/binding/bank_account_settings_binding.dart';
+import '../presentation/wallet_crypto_module/crypto_wallet_withdrawal_detail_screen/binding/crypto_wallet_withdrawal_detail_binding.dart';
+import '../presentation/wallet_crypto_module/usdt_withdrawal_screen/binding/usdt_withdrawal_binding.dart';
+import '../presentation/wallet_crypto_module/gaming_app_share_screen/binding/gaming_app_share_binding.dart';
+import '../presentation/wallet_crypto_module/jbet88_referral_bonus_screen/binding/jbet88_referral_bonus_binding.dart';
+import '../presentation/wallet_crypto_module/usdt_withdrawal_form_screen/binding/usdt_withdrawal_form_binding.dart';
+import '../presentation/wallet_crypto_module/spin_game_phone_verification_screen/binding/spin_game_phone_verification_binding.dart';
+import '../presentation/wallet_crypto_module/wallet_deposit_type_selection_screen/binding/wallet_deposit_type_selection_binding.dart';
+import '../presentation/wallet_crypto_module/spin_game_withdrawal_screen/binding/spin_game_withdrawal_binding.dart';
+import '../presentation/wallet_crypto_module/crypto_wallet_password_setup_screen/binding/crypto_wallet_password_setup_binding.dart';
+import '../presentation/wallet_crypto_module/wallet_bank_accounts_withdrawal_screen/binding/wallet_bank_accounts_withdrawal_binding.dart';
+import '../presentation/wallet_crypto_module/jbet88_referral_rewards_screen/binding/jbet88_referral_rewards_binding.dart';
+import '../presentation/wallet_crypto_module/jbet88_benefits_promotion_screen/binding/jbet88_benefits_promotion_binding.dart';
+import '../presentation/wallet_crypto_module/text_safe_zone_display_screen/binding/text_safe_zone_display_binding.dart';
+import '../presentation/wallet_crypto_module/electronic_wallet_withdrawal_screen/binding/electronic_wallet_withdrawal_binding.dart';
+import '../presentation/gaming_withdrawal_module/notice_empty_state_screen/binding/notice_empty_state_binding.dart';
+
 // Gaming Casino Module Imports
 import '../presentation/gaming_casino_module/casino_game_detail_modal_screen/casino_game_detail_modal_screen.dart';
 import '../presentation/gaming_casino_module/betting_rewards_description_modal_screen/betting_rewards_description_modal_screen.dart';
@@ -318,6 +433,150 @@ import '../presentation/spin_wheel_module/spin_game_rules_modal_screen/binding/s
 import '../presentation/spin_wheel_module/jet_bet_casino_home_screen/binding/jet_bet_casino_home_binding.dart';
 import '../presentation/spin_wheel_module/app_navigation_screen/binding/app_navigation_binding.dart' as spin_nav;
 
+// Financial Banking Module Imports (from app_15)
+import '../presentation/financial_banking_module/add_bank_account_screen/add_bank_account_screen.dart';
+import '../presentation/financial_banking_module/g_cash_deposit_record_screen/g_cash_deposit_record_screen.dart';
+import '../presentation/financial_banking_module/withdrawal_limit_progress_screen/withdrawal_limit_progress_screen.dart';
+import '../presentation/financial_banking_module/vip_daily_cumulative_deposit_benefits_screen/vip_daily_cumulative_deposit_benefits_screen.dart';
+import '../presentation/financial_banking_module/withdrawal_limit_notification_screen/withdrawal_limit_notification_screen.dart';
+import '../presentation/financial_banking_module/pix_mobile_vip_withdrawal_limits_screen/pix_mobile_vip_withdrawal_limits_screen.dart';
+import '../presentation/financial_banking_module/pix_mobile_wallet_dashboard_screen/pix_mobile_wallet_dashboard_screen.dart';
+import '../presentation/financial_banking_module/account_record_screen/account_record_screen.dart';
+import '../presentation/financial_banking_module/g_cash_deposit_record_filter_screen/g_cash_deposit_record_filter_screen.dart';
+import '../presentation/financial_banking_module/account_record_transaction_history_screen/account_record_transaction_history_screen.dart';
+import '../presentation/financial_banking_module/g_cash_deposit_record_history_screen/g_cash_deposit_record_history_screen.dart';
+import '../presentation/financial_banking_module/betting_record_history_screen/betting_record_history_screen.dart';
+import '../presentation/financial_banking_module/pix_mobile_wallet_withdrawal_screen/pix_mobile_wallet_withdrawal_screen.dart';
+import '../presentation/financial_banking_module/crypto_wallet_transaction_setup_screen/crypto_wallet_transaction_setup_screen.dart';
+import '../presentation/financial_banking_module/crypto_wallet_setup_screen/crypto_wallet_setup_screen.dart';
+import '../presentation/financial_banking_module/vip_daily_cumulative_deposit_benefits_detail_screen/vip_daily_cumulative_deposit_benefits_detail_screen.dart';
+import '../presentation/financial_banking_module/add_bank_account_pix_screen/add_bank_account_pix_screen.dart';
+import '../presentation/financial_banking_module/wallet_withdrawal_requirements_screen/wallet_withdrawal_requirements_screen.dart';
+import '../presentation/financial_banking_module/account_record_transaction_history_detail_screen/account_record_transaction_history_detail_screen.dart';
+import '../presentation/financial_banking_module/crypto_wallet_setup_password_screen/crypto_wallet_setup_password_screen.dart';
+
+import '../presentation/financial_banking_module/add_bank_account_screen/binding/add_bank_account_binding.dart';
+import '../presentation/financial_banking_module/g_cash_deposit_record_screen/binding/g_cash_deposit_record_binding.dart';
+import '../presentation/financial_banking_module/withdrawal_limit_progress_screen/binding/withdrawal_limit_progress_binding.dart';
+import '../presentation/financial_banking_module/vip_daily_cumulative_deposit_benefits_screen/binding/vip_daily_cumulative_deposit_benefits_binding.dart';
+import '../presentation/financial_banking_module/withdrawal_limit_notification_screen/binding/withdrawal_limit_notification_binding.dart';
+import '../presentation/financial_banking_module/pix_mobile_vip_withdrawal_limits_screen/binding/pix_mobile_vip_withdrawal_limits_binding.dart';
+import '../presentation/financial_banking_module/pix_mobile_wallet_dashboard_screen/binding/pix_mobile_wallet_dashboard_binding.dart';
+import '../presentation/financial_banking_module/account_record_screen/binding/account_record_binding.dart';
+import '../presentation/financial_banking_module/g_cash_deposit_record_filter_screen/binding/g_cash_deposit_record_filter_binding.dart';
+import '../presentation/financial_banking_module/account_record_transaction_history_screen/binding/account_record_transaction_history_binding.dart';
+import '../presentation/financial_banking_module/g_cash_deposit_record_history_screen/binding/g_cash_deposit_record_history_binding.dart';
+import '../presentation/financial_banking_module/betting_record_history_screen/binding/betting_record_history_binding.dart';
+import '../presentation/financial_banking_module/pix_mobile_wallet_withdrawal_screen/binding/pix_mobile_wallet_withdrawal_binding.dart';
+import '../presentation/financial_banking_module/crypto_wallet_transaction_setup_screen/binding/crypto_wallet_transaction_setup_binding.dart';
+import '../presentation/financial_banking_module/crypto_wallet_setup_screen/binding/crypto_wallet_setup_binding.dart';
+import '../presentation/financial_banking_module/vip_daily_cumulative_deposit_benefits_detail_screen/binding/vip_daily_cumulative_deposit_benefits_detail_binding.dart';
+import '../presentation/financial_banking_module/add_bank_account_pix_screen/binding/add_bank_account_pix_binding.dart';
+import '../presentation/financial_banking_module/wallet_withdrawal_requirements_screen/binding/wallet_withdrawal_requirements_binding.dart';
+import '../presentation/financial_banking_module/account_record_transaction_history_detail_screen/binding/account_record_transaction_history_detail_binding.dart';
+import '../presentation/financial_banking_module/crypto_wallet_setup_password_screen/binding/crypto_wallet_setup_password_binding.dart';
+
+// Financial Security Casino Module Imports (from app_18)
+import '../presentation/financial_security_casino_module/user_dashboard_screen/user_dashboard_screen.dart';
+import '../presentation/financial_security_casino_module/casino_home_screen/casino_home_screen.dart';
+import '../presentation/financial_security_casino_module/ticket_event_screen/ticket_event_screen.dart';
+import '../presentation/financial_security_casino_module/security_password_configuration_screen/security_password_configuration_screen.dart';
+import '../presentation/financial_security_casino_module/bank_account_settings_screen/bank_account_settings_screen.dart';
+import '../presentation/financial_security_casino_module/forgot_transaction_password_screen/forgot_transaction_password_screen.dart';
+import '../presentation/financial_security_casino_module/ticket_records_screen/ticket_records_screen.dart';
+import '../presentation/financial_security_casino_module/my_ticket_rewards_screen/my_ticket_rewards_screen.dart';
+import '../presentation/financial_security_casino_module/email_binding_confirmation_screen/email_binding_confirmation_screen.dart';
+import '../presentation/financial_security_casino_module/app_navigation_screen/app_navigation_screen.dart';
+import '../presentation/financial_security_casino_module/ticket_event_rewards_screen/ticket_event_rewards_screen.dart';
+import '../presentation/financial_security_casino_module/ticket_event_rewards_screen_two_screen/ticket_event_rewards_screen_two_screen.dart';
+import '../presentation/financial_security_casino_module/ticket_event_rewards_screen_three_screen/ticket_event_rewards_screen_three_screen.dart';
+import '../presentation/financial_security_casino_module/ticket_event_rewards_screen_four_screen/ticket_event_rewards_screen_four_screen.dart';
+import '../presentation/financial_security_casino_module/forgot_transaction_password_screen_two_screen/forgot_transaction_password_screen_two_screen.dart';
+import '../presentation/financial_security_casino_module/forgot_transaction_password_screen_three_screen/forgot_transaction_password_screen_three_screen.dart';
+import '../presentation/financial_security_casino_module/bank_account_settings_screen_two_screen/bank_account_settings_screen_two_screen.dart';
+import '../presentation/financial_security_casino_module/bank_account_settings_screen_three_screen/bank_account_settings_screen_three_screen.dart';
+
+// Ticket Gaming Rewards Module Imports (from app_19)
+import '../presentation/ticket_gaming_rewards_module/golden_egg_ticket_collection_screen/golden_egg_ticket_collection_screen.dart';
+import '../presentation/ticket_gaming_rewards_module/ticket_records_dashboard_screen/ticket_records_dashboard_screen.dart';
+import '../presentation/ticket_gaming_rewards_module/gaming_ticket_spin_wheel_screen/gaming_ticket_spin_wheel_screen.dart';
+import '../presentation/ticket_gaming_rewards_module/spiritual_radiance_screen/spiritual_radiance_screen.dart';
+import '../presentation/ticket_gaming_rewards_module/ticket_claim_info_screen/ticket_claim_info_screen.dart';
+import '../presentation/ticket_gaming_rewards_module/red_package_ticket_event_screen/red_package_ticket_event_screen.dart';
+import '../presentation/ticket_gaming_rewards_module/rewards_achievements_screen/rewards_achievements_screen.dart';
+import '../presentation/ticket_gaming_rewards_module/lucky_wheel_ticket_event_screen/lucky_wheel_ticket_event_screen.dart';
+import '../presentation/ticket_gaming_rewards_module/treasure_chest_ticket_claim_screen/treasure_chest_ticket_claim_screen.dart';
+import '../presentation/ticket_gaming_rewards_module/ticket_event_confirmation_dialog_screen/ticket_event_confirmation_dialog_screen.dart';
+import '../presentation/ticket_gaming_rewards_module/spin_wheel_gameplay_screen/spin_wheel_gameplay_screen.dart';
+import '../presentation/ticket_gaming_rewards_module/ticket_event_dashboard_screen/ticket_event_dashboard_screen.dart';
+import '../presentation/ticket_gaming_rewards_module/red_envelope_icon_screen/red_envelope_icon_screen.dart';
+import '../presentation/ticket_gaming_rewards_module/treasure_chest_display_screen/treasure_chest_display_screen.dart';
+import '../presentation/ticket_gaming_rewards_module/celebration_confetti_screen/celebration_confetti_screen.dart';
+import '../presentation/ticket_gaming_rewards_module/integrated_spin_wheel_gaming_screen/integrated_spin_wheel_gaming_screen.dart';
+import '../presentation/ticket_gaming_rewards_module/cash_voucher_reward_screen/cash_voucher_reward_screen.dart';
+import '../presentation/ticket_gaming_rewards_module/app_download_bonus_ticket_screen/app_download_bonus_ticket_screen.dart';
+import '../presentation/ticket_gaming_rewards_module/app_navigation_screen/app_navigation_screen.dart' as ticket_gaming_app_navigation;
+
+// Ticket Gaming Rewards Module Binding Imports (from app_19)
+import '../presentation/ticket_gaming_rewards_module/golden_egg_ticket_collection_screen/binding/golden_egg_ticket_collection_binding.dart' as golden_egg_ticket_collection_binding;
+import '../presentation/ticket_gaming_rewards_module/ticket_records_dashboard_screen/binding/ticket_records_dashboard_binding.dart' as ticket_records_dashboard_binding;
+import '../presentation/ticket_gaming_rewards_module/gaming_ticket_spin_wheel_screen/binding/gaming_ticket_spin_wheel_binding.dart' as gaming_ticket_spin_wheel_binding;
+import '../presentation/ticket_gaming_rewards_module/spiritual_radiance_screen/binding/spiritual_radiance_binding.dart' as spiritual_radiance_binding;
+import '../presentation/ticket_gaming_rewards_module/ticket_claim_info_screen/binding/ticket_claim_info_binding.dart' as ticket_claim_info_binding;
+import '../presentation/ticket_gaming_rewards_module/red_package_ticket_event_screen/binding/red_package_ticket_event_binding.dart' as red_package_ticket_event_binding;
+import '../presentation/ticket_gaming_rewards_module/rewards_achievements_screen/binding/rewards_achievements_binding.dart' as rewards_achievements_binding;
+import '../presentation/ticket_gaming_rewards_module/lucky_wheel_ticket_event_screen/binding/lucky_wheel_ticket_event_binding.dart' as lucky_wheel_ticket_event_binding;
+import '../presentation/ticket_gaming_rewards_module/treasure_chest_ticket_claim_screen/binding/treasure_chest_ticket_claim_binding.dart' as treasure_chest_ticket_claim_binding;
+import '../presentation/ticket_gaming_rewards_module/ticket_event_confirmation_dialog_screen/binding/ticket_event_confirmation_dialog_binding.dart' as ticket_event_confirmation_dialog_binding;
+import '../presentation/ticket_gaming_rewards_module/spin_wheel_gameplay_screen/binding/spin_wheel_gameplay_binding.dart' as spin_wheel_gameplay_binding;
+import '../presentation/ticket_gaming_rewards_module/ticket_event_dashboard_screen/binding/ticket_event_dashboard_binding.dart' as ticket_event_dashboard_binding;
+import '../presentation/ticket_gaming_rewards_module/red_envelope_icon_screen/binding/red_envelope_icon_binding.dart' as red_envelope_icon_binding;
+import '../presentation/ticket_gaming_rewards_module/treasure_chest_display_screen/binding/treasure_chest_display_binding.dart' as treasure_chest_display_binding;
+import '../presentation/ticket_gaming_rewards_module/celebration_confetti_screen/binding/celebration_confetti_binding.dart' as celebration_confetti_binding;
+import '../presentation/ticket_gaming_rewards_module/integrated_spin_wheel_gaming_screen/binding/integrated_spin_wheel_gaming_binding.dart' as integrated_spin_wheel_gaming_binding;
+import '../presentation/ticket_gaming_rewards_module/cash_voucher_reward_screen/binding/cash_voucher_reward_binding.dart' as cash_voucher_reward_binding;
+import '../presentation/ticket_gaming_rewards_module/app_download_bonus_ticket_screen/binding/app_download_bonus_ticket_binding.dart' as app_download_bonus_ticket_binding;
+import '../presentation/ticket_gaming_rewards_module/app_navigation_screen/binding/app_navigation_binding.dart' as ticket_gaming_app_navigation_binding;
+import '../presentation/financial_security_casino_module/user_profile_settings_screen/user_profile_settings_screen.dart';
+import '../presentation/financial_security_casino_module/user_dashboard_screen/user_dashboard_initial_page.dart';
+
+import '../presentation/financial_security_casino_module/user_dashboard_screen/binding/user_dashboard_binding.dart';
+import '../presentation/financial_security_casino_module/casino_home_screen/binding/casino_home_binding.dart';
+import '../presentation/financial_security_casino_module/ticket_event_screen/binding/ticket_event_binding.dart';
+import '../presentation/financial_security_casino_module/security_password_configuration_screen/binding/security_password_configuration_binding.dart';
+import '../presentation/financial_security_casino_module/bank_account_settings_screen/binding/bank_account_settings_binding.dart';
+import '../presentation/financial_security_casino_module/forgot_transaction_password_screen/binding/forgot_transaction_password_binding.dart';
+import '../presentation/financial_security_casino_module/ticket_records_screen/binding/ticket_records_binding.dart';
+import '../presentation/financial_security_casino_module/my_ticket_rewards_screen/binding/my_ticket_rewards_binding.dart';
+import '../presentation/financial_security_casino_module/email_binding_confirmation_screen/binding/email_binding_confirmation_binding.dart';
+import '../presentation/financial_security_casino_module/app_navigation_screen/binding/app_navigation_binding.dart';
+import '../presentation/financial_security_casino_module/ticket_event_rewards_screen/binding/ticket_event_rewards_binding.dart';
+import '../presentation/financial_security_casino_module/ticket_event_rewards_screen_two_screen/binding/ticket_event_rewards_screen_two_binding.dart';
+import '../presentation/financial_security_casino_module/ticket_event_rewards_screen_three_screen/binding/ticket_event_rewards_screen_three_binding.dart';
+import '../presentation/financial_security_casino_module/ticket_event_rewards_screen_four_screen/binding/ticket_event_rewards_screen_four_binding.dart';
+import '../presentation/financial_security_casino_module/forgot_transaction_password_screen_two_screen/binding/forgot_transaction_password_screen_two_binding.dart';
+import '../presentation/financial_security_casino_module/forgot_transaction_password_screen_three_screen/binding/forgot_transaction_password_screen_three_binding.dart';
+import '../presentation/financial_security_casino_module/bank_account_settings_screen_two_screen/binding/bank_account_settings_screen_two_binding.dart';
+import '../presentation/financial_security_casino_module/bank_account_settings_screen_three_screen/binding/bank_account_settings_screen_three_binding.dart';
+import '../presentation/financial_security_casino_module/user_profile_settings_screen/binding/user_profile_settings_binding.dart';
+
+// Dialog Gaming Events Module Imports
+import '../presentation/dialog_gaming_events_module/red_package_purchase_dialog_screen/red_package_purchase_dialog_screen.dart';
+import '../presentation/dialog_gaming_events_module/game_failure_dialog_screen/game_failure_dialog_screen.dart';
+import '../presentation/dialog_gaming_events_module/golden_egg_reward_dialog_screen/golden_egg_reward_dialog_screen.dart';
+import '../presentation/dialog_gaming_events_module/ticket_event_task_screen/ticket_event_task_screen.dart';
+import '../presentation/dialog_gaming_events_module/lucky_wheel_spin_screen/lucky_wheel_spin_screen.dart';
+import '../presentation/dialog_gaming_events_module/help_invitation_modal_screen/help_invitation_modal_screen.dart';
+import '../presentation/dialog_gaming_events_module/app_navigation_screen/app_navigation_screen.dart' as dialog_gaming_events_app_navigation;
+
+import '../presentation/dialog_gaming_events_module/red_package_purchase_dialog_screen/binding/red_package_purchase_dialog_binding.dart';
+import '../presentation/dialog_gaming_events_module/game_failure_dialog_screen/binding/game_failure_dialog_binding.dart';
+import '../presentation/dialog_gaming_events_module/golden_egg_reward_dialog_screen/binding/golden_egg_reward_dialog_binding.dart';
+import '../presentation/dialog_gaming_events_module/ticket_event_task_screen/binding/ticket_event_task_binding.dart';
+import '../presentation/dialog_gaming_events_module/lucky_wheel_spin_screen/binding/lucky_wheel_spin_binding.dart';
+import '../presentation/dialog_gaming_events_module/help_invitation_modal_screen/binding/help_invitation_modal_binding.dart';
+import '../presentation/dialog_gaming_events_module/app_navigation_screen/binding/app_navigation_binding.dart' as dialog_gaming_events_app_navigation_binding;
+
 // ignore_for_file: must_be_immutable
 class AppRoutes {
   // Agent Module Routes
@@ -463,6 +722,49 @@ class AppRoutes {
   static const String accountSetupCompletionScreen = '/casino_sign_in/account_setup_completion_screen';
   static const String jBet88LoginScreenTwo = '/casino_sign_in/j_bet88_login_screen_two';
 
+  // Deposit Payment Module Routes
+  static const String depositPaymentModule = '/deposit_payment';
+  static const String jeetbajiGamingHomeScreen = '/deposit_payment/jeetbaji_gaming_home_screen';
+  static const String naradGamingHubHomeScreen = '/deposit_payment/narad_gaming_hub_home_screen';
+  static const String gCashDepositDetailScreen = '/deposit_payment/g_cash_deposit_detail_screen';
+  static const String gCashDepositRejectionDetailScreen = '/deposit_payment/g_cash_deposit_rejection_detail_screen';
+  static const String depositRecordListScreen = '/deposit_payment/deposit_record_list_screen';
+  static const String depositConfirmationScreen = '/deposit_payment/deposit_confirmation_screen';
+  static const String walletDepositConfirmationScreen = '/deposit_payment/wallet_deposit_confirmation_screen';
+  static const String walletDepositScreen = '/deposit_payment/wallet_deposit_screen';
+  static const String paymentStatusScreen = '/deposit_payment/payment_status_screen';
+  static const String jBet88DepositBonusScreen = '/deposit_payment/j_bet88_deposit_bonus_screen';
+  static const String walletDepositAmountScreen = '/deposit_payment/wallet_deposit_amount_screen';
+  static const String depositRecordMethodFilterScreen = '/deposit_payment/deposit_record_method_filter_screen';
+  static const String depositRecordTimeFilterScreen = '/deposit_payment/deposit_record_time_filter_screen';
+  static const String walletDepositPaymentScreen = '/deposit_payment/wallet_deposit_payment_screen';
+  static const String depositTransactionConfirmationScreen = '/deposit_payment/deposit_transaction_confirmation_screen';
+  static const String jBet88DepositPromotionScreen = '/deposit_payment/j_bet88_deposit_promotion_screen';
+  static const String naradGamingCasinoHomeScreen = '/deposit_payment/narad_gaming_casino_home_screen';
+
+  // Gaming Withdrawal Module Routes (from app_13)
+  static const String gamingWithdrawalModule = '/gaming_withdrawal';
+  static const String spinGameVictoryScreen = '/gaming_withdrawal/spin_game_victory_screen';
+  static const String withdrawalSuccessScreen = '/gaming_withdrawal/withdrawal_success_screen';
+  static const String jetbetGamingHubScreen = '/gaming_withdrawal/jetbet_gaming_hub_screen';
+  static const String jetbetGamingHubScreenInitialPage = '/gaming_withdrawal/jetbet_gaming_hub_screen_initial_page';
+  static const String naradGamingHubHomeScreen = '/gaming_withdrawal/narad_gaming_hub_home_screen';
+  static const String naradCasinoHomeScreen = '/gaming_withdrawal/narad_casino_home_screen';
+  static const String spinGameCashWithdrawalScreen = '/gaming_withdrawal/spin_game_cash_withdrawal_screen';
+  static const String spinWheelVictoryScreen = '/gaming_withdrawal/spin_wheel_victory_screen';
+  static const String noticeNotificationsScreen = '/gaming_withdrawal/notice_notifications_screen';
+  static const String withdrawalHelpScreen = '/gaming_withdrawal/withdrawal_help_screen';
+  static const String casinoSpinWinCelebrationScreen = '/gaming_withdrawal/casino_spin_win_celebration_screen';
+  static const String naradCasinoGameHubScreen = '/gaming_withdrawal/narad_casino_game_hub_screen';
+  static const String naradCasinoGamingPlatformScreen = '/gaming_withdrawal/narad_casino_gaming_platform_screen';
+  static const String luckyBonusWithdrawalScreen = '/gaming_withdrawal/lucky_bonus_withdrawal_screen';
+  static const String spinGameRewardVictoryScreen = '/gaming_withdrawal/spin_game_reward_victory_screen';
+  static const String gamingWithdrawalConfirmationScreen = '/gaming_withdrawal/gaming_withdrawal_confirmation_screen';
+  static const String referralBonusDialogScreen = '/gaming_withdrawal/referral_bonus_dialog_screen';
+  static const String naradGamingPlatformHomeScreen = '/gaming_withdrawal/narad_gaming_platform_home_screen';
+  static const String noticeEmptyStateScreen = '/gaming_withdrawal/notice_empty_state_screen';
+  static const String gamingWithdrawalAppNavigationScreen = '/gaming_withdrawal/app_navigation_screen';
+
   // Shared Routes
   static const String splashScreen = '/splash_screen';
   static const String appNavigationScreen = '/app_navigation_screen';
@@ -488,6 +790,102 @@ class AppRoutes {
   static const String withdrawalHistoryEmptyScreen = '/spin_wheel/withdrawal_history_empty_screen';
   static const String spinGameRulesModalScreen = '/spin_wheel/spin_game_rules_modal_screen';
   static const String jetBetCasinoHomeScreen = '/spin_wheel/jet_bet_casino_home_screen';
+
+  // Financial Banking Module Routes (from app_15)
+  static const String financialBankingModule = '/financial_banking';
+  static const String financialAddBankAccountScreen = '/financial_banking/add_bank_account_screen';
+  static const String financialGCashDepositRecordScreen = '/financial_banking/g_cash_deposit_record_screen';
+  static const String financialWithdrawalLimitProgressScreen = '/financial_banking/withdrawal_limit_progress_screen';
+  static const String financialVipDailyCumulativeDepositBenefitsScreen = '/financial_banking/vip_daily_cumulative_deposit_benefits_screen';
+  static const String financialWithdrawalLimitNotificationScreen = '/financial_banking/withdrawal_limit_notification_screen';
+  static const String financialPixMobileVipWithdrawalLimitsScreen = '/financial_banking/pix_mobile_vip_withdrawal_limits_screen';
+  static const String financialPixMobileWalletDashboardScreen = '/financial_banking/pix_mobile_wallet_dashboard_screen';
+  static const String financialAccountRecordScreen = '/financial_banking/account_record_screen';
+  static const String financialGCashDepositRecordFilterScreen = '/financial_banking/g_cash_deposit_record_filter_screen';
+  static const String financialAccountRecordTransactionHistoryScreen = '/financial_banking/account_record_transaction_history_screen';
+  static const String financialGCashDepositRecordHistoryScreen = '/financial_banking/g_cash_deposit_record_history_screen';
+  static const String financialBettingRecordHistoryScreen = '/financial_banking/betting_record_history_screen';
+  static const String financialPixMobileWalletWithdrawalScreen = '/financial_banking/pix_mobile_wallet_withdrawal_screen';
+  static const String financialCryptoWalletTransactionSetupScreen = '/financial_banking/crypto_wallet_transaction_setup_screen';
+  static const String financialCryptoWalletSetupScreen = '/financial_banking/crypto_wallet_setup_screen';
+  static const String financialVipDailyCumulativeDepositBenefitsDetailScreen = '/financial_banking/vip_daily_cumulative_deposit_benefits_detail_screen';
+  static const String financialAddBankAccountPixScreen = '/financial_banking/add_bank_account_pix_screen';
+  static const String financialWalletWithdrawalRequirementsScreen = '/financial_banking/wallet_withdrawal_requirements_screen';
+  static const String financialAccountRecordTransactionHistoryDetailScreen = '/financial_banking/account_record_transaction_history_detail_screen';
+  static const String financialCryptoWalletSetupPasswordScreen = '/financial_banking/crypto_wallet_setup_password_screen';
+
+  // Financial Security Casino Module Routes (from app_18)
+  static const String financialSecurityCasinoModule = '/financial_security_casino';
+  static const String financialSecurityCasinoUserDashboardScreen = '/financial_security_casino/user_dashboard_screen';
+  static const String financialSecurityCasinoCasinoHomeScreen = '/financial_security_casino/casino_home_screen';
+  static const String financialSecurityCasinoTicketEventScreen = '/financial_security_casino/ticket_event_screen';
+  static const String financialSecurityCasinoSecurityPasswordConfigurationScreen = '/financial_security_casino/security_password_configuration_screen';
+  static const String financialSecurityCasinoBankAccountSettingsScreen = '/financial_security_casino/bank_account_settings_screen';
+  static const String financialSecurityCasinoForgotTransactionPasswordScreen = '/financial_security_casino/forgot_transaction_password_screen';
+  static const String financialSecurityCasinoTicketRecordsScreen = '/financial_security_casino/ticket_records_screen';
+  static const String financialSecurityCasinoMyTicketRewardsScreen = '/financial_security_casino/my_ticket_rewards_screen';
+  static const String financialSecurityCasinoEmailBindingConfirmationScreen = '/financial_security_casino/email_binding_confirmation_screen';
+  static const String financialSecurityCasinoAppNavigationScreen = '/financial_security_casino/app_navigation_screen';
+
+  // Ticket Gaming Rewards Module Routes (from app_19)
+  static const String ticketGamingRewardsGoldenEggTicketCollectionScreen =
+      '/ticket_gaming_rewards_golden_egg_ticket_collection_screen';
+  static const String ticketGamingRewardsTicketRecordsDashboardScreen =
+      '/ticket_gaming_rewards_ticket_records_dashboard_screen';
+  static const String ticketGamingRewardsGamingTicketSpinWheelScreen =
+      '/ticket_gaming_rewards_gaming_ticket_spin_wheel_screen';
+  static const String ticketGamingRewardsSpiritualRadianceScreen =
+      '/ticket_gaming_rewards_spiritual_radiance_screen';
+  static const String ticketGamingRewardsTicketClaimInfoScreen =
+      '/ticket_gaming_rewards_ticket_claim_info_screen';
+  static const String ticketGamingRewardsRedPackageTicketEventScreen =
+      '/ticket_gaming_rewards_red_package_ticket_event_screen';
+  static const String ticketGamingRewardsRewardsAchievementsScreen =
+      '/ticket_gaming_rewards_rewards_achievements_screen';
+  static const String ticketGamingRewardsLuckyWheelTicketEventScreen =
+      '/ticket_gaming_rewards_lucky_wheel_ticket_event_screen';
+  static const String ticketGamingRewardsTreasureChestTicketClaimScreen =
+      '/ticket_gaming_rewards_treasure_chest_ticket_claim_screen';
+  static const String ticketGamingRewardsTicketEventConfirmationDialogScreen =
+      '/ticket_gaming_rewards_ticket_event_confirmation_dialog_screen';
+  static const String ticketGamingRewardsSpinWheelGameplayScreen =
+      '/ticket_gaming_rewards_spin_wheel_gameplay_screen';
+  static const String ticketGamingRewardsTicketEventDashboardScreen =
+      '/ticket_gaming_rewards_ticket_event_dashboard_screen';
+  static const String ticketGamingRewardsRedEnvelopeIconScreen =
+      '/ticket_gaming_rewards_red_envelope_icon_screen';
+  static const String ticketGamingRewardsTreasureChestDisplayScreen =
+      '/ticket_gaming_rewards_treasure_chest_display_screen';
+  static const String ticketGamingRewardsCelebrationConfettiScreen =
+      '/ticket_gaming_rewards_celebration_confetti_screen';
+  static const String ticketGamingRewardsIntegratedSpinWheelGamingScreen =
+      '/ticket_gaming_rewards_integrated_spin_wheel_gaming_screen';
+  static const String ticketGamingRewardsCashVoucherRewardScreen =
+      '/ticket_gaming_rewards_cash_voucher_reward_screen';
+  static const String ticketGamingRewardsAppDownloadBonusTicketScreen =
+      '/ticket_gaming_rewards_app_download_bonus_ticket_screen';
+  static const String ticketGamingRewardsAppNavigationScreen =
+      '/ticket_gaming_rewards_app_navigation_screen';
+
+  // Dialog Gaming Events Module Routes
+  static const String redPackagePurchaseDialogScreen = '/dialog_gaming_events/red_package_purchase_dialog';
+  static const String redPackagePurchaseDialogScreenInitialPage = '/dialog_gaming_events/red_package_purchase_dialog_initial_page';
+  static const String gameFailureDialogScreen = '/dialog_gaming_events/game_failure_dialog';
+  static const String goldenEggRewardDialogScreen = '/dialog_gaming_events/golden_egg_reward_dialog';
+  static const String ticketEventTaskScreen = '/dialog_gaming_events/ticket_event_task';
+  static const String luckyWheelSpinScreen = '/dialog_gaming_events/lucky_wheel_spin';
+  static const String helpInvitationModalScreen = '/dialog_gaming_events/help_invitation_modal';
+  static const String ticketEventProgressScreen = '/dialog_gaming_events/ticket_event_progress';
+  static const String dialogGamingEventsAppNavigationScreen = '/dialog_gaming_events/app_navigation';
+  static const String financialSecurityCasinoTicketEventRewardsScreen = '/financial_security_casino/ticket_event_rewards_screen';
+  static const String financialSecurityCasinoTicketEventRewardsScreenTwo = '/financial_security_casino/ticket_event_rewards_screen_two';
+  static const String financialSecurityCasinoTicketEventRewardsScreenThree = '/financial_security_casino/ticket_event_rewards_screen_three';
+  static const String financialSecurityCasinoTicketEventRewardsScreenFour = '/financial_security_casino/ticket_event_rewards_screen_four';
+  static const String financialSecurityCasinoForgotTransactionPasswordScreenTwo = '/financial_security_casino/forgot_transaction_password_screen_two';
+  static const String financialSecurityCasinoForgotTransactionPasswordScreenThree = '/financial_security_casino/forgot_transaction_password_screen_three';
+  static const String financialSecurityCasinoBankAccountSettingsScreenTwo = '/financial_security_casino/bank_account_settings_screen_two';
+  static const String financialSecurityCasinoBankAccountSettingsScreenThree = '/financial_security_casino/bank_account_settings_screen_three';
+  static const String financialSecurityCasinoUserProfileSettingsScreen = '/financial_security_casino/user_profile_settings_screen';
 
   static List<GetPage> pages = [
     // Agent Module Pages
@@ -1231,6 +1629,739 @@ class AppRoutes {
       name: jetBetCasinoHomeScreen,
       page: () => JetBetCasinoHomeScreen(),
       bindings: [JetBetCasinoHomeBinding()],
+    ),
+
+    // Deposit Payment Module Pages
+    GetPage(
+      name: jeetbajiGamingHomeScreen,
+      page: () => JeetbajiGamingHomeScreen(),
+      bindings: [JeetbajiGamingHomeBinding()],
+    ),
+    GetPage(
+      name: naradGamingHubHomeScreen,
+      page: () => NaradGamingHubHomeScreen(),
+      bindings: [NaradGamingHubHomeBinding()],
+    ),
+    GetPage(
+      name: gCashDepositDetailScreen,
+      page: () => GCashDepositDetailScreen(),
+      bindings: [GCashDepositDetailBinding()],
+    ),
+    GetPage(
+      name: gCashDepositRejectionDetailScreen,
+      page: () => GCashDepositRejectionDetailScreen(),
+      bindings: [GCashDepositRejectionDetailBinding()],
+    ),
+    GetPage(
+      name: depositRecordListScreen,
+      page: () => DepositRecordListScreen(),
+      bindings: [DepositRecordListBinding()],
+    ),
+    GetPage(
+      name: depositConfirmationScreen,
+      page: () => DepositConfirmationScreen(),
+      bindings: [DepositConfirmationBinding()],
+    ),
+    GetPage(
+      name: walletDepositConfirmationScreen,
+      page: () => WalletDepositConfirmationScreen(),
+      bindings: [WalletDepositConfirmationBinding()],
+    ),
+    GetPage(
+      name: walletDepositScreen,
+      page: () => WalletDepositScreen(),
+      bindings: [WalletDepositBinding()],
+    ),
+    GetPage(
+      name: paymentStatusScreen,
+      page: () => PaymentStatusScreen(),
+      bindings: [PaymentStatusBinding()],
+    ),
+    GetPage(
+      name: jBet88DepositBonusScreen,
+      page: () => JBet88DepositBonusScreen(),
+      bindings: [JBet88DepositBonusBinding()],
+    ),
+    GetPage(
+      name: walletDepositAmountScreen,
+      page: () => WalletDepositAmountScreen(),
+      bindings: [WalletDepositAmountBinding()],
+    ),
+    GetPage(
+      name: depositRecordMethodFilterScreen,
+      page: () => DepositRecordMethodFilterScreen(),
+      bindings: [DepositRecordMethodFilterBinding()],
+    ),
+    GetPage(
+      name: depositRecordTimeFilterScreen,
+      page: () => DepositRecordTimeFilterScreen(),
+      bindings: [DepositRecordTimeFilterBinding()],
+    ),
+    GetPage(
+      name: walletDepositPaymentScreen,
+      page: () => WalletDepositPaymentScreen(),
+      bindings: [WalletDepositPaymentBinding()],
+    ),
+    GetPage(
+      name: depositTransactionConfirmationScreen,
+      page: () => DepositTransactionConfirmationScreen(),
+      bindings: [DepositTransactionConfirmationBinding()],
+    ),
+    GetPage(
+      name: jBet88DepositPromotionScreen,
+      page: () => JBet88DepositPromotionScreen(),
+      bindings: [JBet88DepositPromotionBinding()],
+    ),
+    GetPage(
+      name: naradGamingCasinoHomeScreen,
+      page: () => NaradGamingCasinoHomeScreen(),
+      bindings: [NaradGamingCasinoHomeBinding()],
+    ),
+
+    // Gaming Withdrawal Module Pages (from app_13)
+    GetPage(
+      name: spinGameVictoryScreen,
+      page: () => SpinGameVictoryScreen(),
+      bindings: [SpinGameVictoryBinding()],
+    ),
+    GetPage(
+      name: withdrawalSuccessScreen,
+      page: () => WithdrawalSuccessScreen(),
+      bindings: [WithdrawalSuccessBinding()],
+    ),
+    GetPage(
+      name: jetbetGamingHubScreen,
+      page: () => JetbetGamingHubScreen(),
+      bindings: [JetbetGamingHubBinding()],
+    ),
+    GetPage(
+      name: naradGamingHubHomeScreen,
+      page: () => NaradGamingHubHomeScreen(),
+      bindings: [NaradGamingHubHomeBinding()],
+    ),
+    GetPage(
+      name: naradCasinoHomeScreen,
+      page: () => NaradCasinoHomeScreen(),
+      bindings: [NaradCasinoHomeBinding()],
+    ),
+    GetPage(
+      name: spinGameCashWithdrawalScreen,
+      page: () => SpinGameCashWithdrawalScreen(),
+      bindings: [SpinGameCashWithdrawalBinding()],
+    ),
+    GetPage(
+      name: spinWheelVictoryScreen,
+      page: () => SpinWheelVictoryScreen(),
+      bindings: [SpinWheelVictoryBinding()],
+    ),
+    GetPage(
+      name: noticeNotificationsScreen,
+      page: () => NoticeNotificationsScreen(),
+      bindings: [NoticeNotificationsBinding()],
+    ),
+    GetPage(
+      name: withdrawalHelpScreen,
+      page: () => WithdrawalHelpScreen(),
+      bindings: [WithdrawalHelpBinding()],
+    ),
+    GetPage(
+      name: casinoSpinWinCelebrationScreen,
+      page: () => CasinoSpinWinCelebrationScreen(),
+      bindings: [CasinoSpinWinCelebrationBinding()],
+    ),
+    GetPage(
+      name: naradCasinoGameHubScreen,
+      page: () => NaradCasinoGameHubScreen(),
+      bindings: [NaradCasinoGameHubBinding()],
+    ),
+    GetPage(
+      name: naradCasinoGamingPlatformScreen,
+      page: () => NaradCasinoGamingPlatformScreen(),
+      bindings: [NaradCasinoGamingPlatformBinding()],
+    ),
+    GetPage(
+      name: luckyBonusWithdrawalScreen,
+      page: () => LuckyBonusWithdrawalScreen(),
+      bindings: [LuckyBonusWithdrawalBinding()],
+    ),
+    GetPage(
+      name: spinGameRewardVictoryScreen,
+      page: () => SpinGameRewardVictoryScreen(),
+      bindings: [SpinGameRewardVictoryBinding()],
+    ),
+    GetPage(
+      name: gamingWithdrawalConfirmationScreen,
+      page: () => GamingWithdrawalConfirmationScreen(),
+      bindings: [GamingWithdrawalConfirmationBinding()],
+    ),
+    GetPage(
+      name: referralBonusDialogScreen,
+      page: () => ReferralBonusDialogScreen(),
+      bindings: [ReferralBonusDialogBinding()],
+    ),
+    GetPage(
+      name: naradGamingPlatformHomeScreen,
+      page: () => NaradGamingPlatformHomeScreen(),
+      bindings: [NaradGamingPlatformHomeBinding()],
+    ),
+    GetPage(
+      name: noticeEmptyStateScreen,
+      page: () => NoticeEmptyStateScreen(),
+      bindings: [NoticeEmptyStateBinding()],
+    ),
+
+    // Wallet Crypto Module Pages (from app_14)
+    GetPage(
+      name: walletCryptoLuckySpinWheelGameScreen,
+      page: () => LuckySpinWheelGameScreen(),
+      bindings: [LuckySpinWheelGameBinding()],
+    ),
+    GetPage(
+      name: walletCryptoCryptoWalletWithdrawalScreen,
+      page: () => CryptoWalletWithdrawalScreen(),
+      bindings: [CryptoWalletWithdrawalBinding()],
+    ),
+    GetPage(
+      name: walletCryptoWalletWithdrawalTypeSelectionScreen,
+      page: () => WalletWithdrawalTypeSelectionScreen(),
+      bindings: [WalletWithdrawalTypeSelectionBinding()],
+    ),
+    GetPage(
+      name: walletCryptoBankAccountSettingsScreen,
+      page: () => BankAccountSettingsScreen(),
+      bindings: [BankAccountSettingsBinding()],
+    ),
+    GetPage(
+      name: walletCryptoCryptoWalletWithdrawalDetailScreen,
+      page: () => CryptoWalletWithdrawalDetailScreen(),
+      bindings: [CryptoWalletWithdrawalDetailBinding()],
+    ),
+    GetPage(
+      name: walletCryptoUsdtWithdrawalScreen,
+      page: () => UsdtWithdrawalScreen(),
+      bindings: [UsdtWithdrawalBinding()],
+    ),
+    GetPage(
+      name: walletCryptoGamingAppShareScreen,
+      page: () => GamingAppShareScreen(),
+      bindings: [GamingAppShareBinding()],
+    ),
+    GetPage(
+      name: walletCryptoJbet88ReferralBonusScreen,
+      page: () => Jbet88ReferralBonusScreen(),
+      bindings: [Jbet88ReferralBonusBinding()],
+    ),
+    GetPage(
+      name: walletCryptoUsdtWithdrawalFormScreen,
+      page: () => UsdtWithdrawalFormScreen(),
+      bindings: [UsdtWithdrawalFormBinding()],
+    ),
+    GetPage(
+      name: walletCryptoSpinGamePhoneVerificationScreen,
+      page: () => SpinGamePhoneVerificationScreen(),
+      bindings: [SpinGamePhoneVerificationBinding()],
+    ),
+    GetPage(
+      name: walletCryptoWalletDepositTypeSelectionScreen,
+      page: () => WalletDepositTypeSelectionScreen(),
+      bindings: [WalletDepositTypeSelectionBinding()],
+    ),
+    GetPage(
+      name: walletCryptoSpinGameWithdrawalScreen,
+      page: () => SpinGameWithdrawalScreen(),
+      bindings: [SpinGameWithdrawalBinding()],
+    ),
+    GetPage(
+      name: walletCryptoCryptoWalletPasswordSetupScreen,
+      page: () => CryptoWalletPasswordSetupScreen(),
+      bindings: [CryptoWalletPasswordSetupBinding()],
+    ),
+    GetPage(
+      name: walletCryptoWalletBankAccountsWithdrawalScreen,
+      page: () => WalletBankAccountsWithdrawalScreen(),
+      bindings: [WalletBankAccountsWithdrawalBinding()],
+    ),
+    GetPage(
+      name: walletCryptoJbet88ReferralRewardsScreen,
+      page: () => Jbet88ReferralRewardsScreen(),
+      bindings: [Jbet88ReferralRewardsBinding()],
+    ),
+    GetPage(
+      name: walletCryptoJbet88BenefitsPromotionScreen,
+      page: () => Jbet88BenefitsPromotionScreen(),
+      bindings: [Jbet88BenefitsPromotionBinding()],
+    ),
+    GetPage(
+      name: walletCryptoTextSafeZoneDisplayScreen,
+      page: () => TextSafeZoneDisplayScreen(),
+      bindings: [TextSafeZoneDisplayBinding()],
+    ),
+    GetPage(
+      name: walletCryptoElectronicWalletWithdrawalScreen,
+      page: () => ElectronicWalletWithdrawalScreen(),
+      bindings: [ElectronicWalletWithdrawalBinding()],
+    ),
+
+    // Financial Banking Module Pages (from app_15)
+    GetPage(
+      name: financialAddBankAccountScreen,
+      page: () => AddBankAccountScreen(),
+      bindings: [AddBankAccountBinding()],
+    ),
+    GetPage(
+      name: financialGCashDepositRecordScreen,
+      page: () => GCashDepositRecordScreen(),
+      bindings: [GCashDepositRecordBinding()],
+    ),
+    GetPage(
+      name: financialWithdrawalLimitProgressScreen,
+      page: () => WithdrawalLimitProgressScreen(),
+      bindings: [WithdrawalLimitProgressBinding()],
+    ),
+    GetPage(
+      name: financialVipDailyCumulativeDepositBenefitsScreen,
+      page: () => VipDailyCumulativeDepositBenefitsScreen(),
+      bindings: [VipDailyCumulativeDepositBenefitsBinding()],
+    ),
+    GetPage(
+      name: financialWithdrawalLimitNotificationScreen,
+      page: () => WithdrawalLimitNotificationScreen(),
+      bindings: [WithdrawalLimitNotificationBinding()],
+    ),
+    GetPage(
+      name: financialPixMobileVipWithdrawalLimitsScreen,
+      page: () => PixMobileVipWithdrawalLimitsScreen(),
+      bindings: [PixMobileVipWithdrawalLimitsBinding()],
+    ),
+    GetPage(
+      name: financialPixMobileWalletDashboardScreen,
+      page: () => PixMobileWalletDashboardScreen(),
+      bindings: [PixMobileWalletDashboardBinding()],
+    ),
+    GetPage(
+      name: financialAccountRecordScreen,
+      page: () => AccountRecordScreen(),
+      bindings: [AccountRecordBinding()],
+    ),
+    GetPage(
+      name: financialGCashDepositRecordFilterScreen,
+      page: () => GCashDepositRecordFilterScreen(),
+      bindings: [GCashDepositRecordFilterBinding()],
+    ),
+    GetPage(
+      name: financialAccountRecordTransactionHistoryScreen,
+      page: () => AccountRecordTransactionHistoryScreen(),
+      bindings: [AccountRecordTransactionHistoryBinding()],
+    ),
+    GetPage(
+      name: financialGCashDepositRecordHistoryScreen,
+      page: () => GCashDepositRecordHistoryScreen(),
+      bindings: [GCashDepositRecordHistoryBinding()],
+    ),
+    GetPage(
+      name: financialBettingRecordHistoryScreen,
+      page: () => BettingRecordHistoryScreen(),
+      bindings: [BettingRecordHistoryBinding()],
+    ),
+    GetPage(
+      name: financialPixMobileWalletWithdrawalScreen,
+      page: () => PixMobileWalletWithdrawalScreen(),
+      bindings: [PixMobileWalletWithdrawalBinding()],
+    ),
+    GetPage(
+      name: financialCryptoWalletTransactionSetupScreen,
+      page: () => CryptoWalletTransactionSetupScreen(),
+      bindings: [CryptoWalletTransactionSetupBinding()],
+    ),
+    GetPage(
+      name: financialCryptoWalletSetupScreen,
+      page: () => CryptoWalletSetupScreen(),
+      bindings: [CryptoWalletSetupBinding()],
+    ),
+    GetPage(
+      name: financialVipDailyCumulativeDepositBenefitsDetailScreen,
+      page: () => VipDailyCumulativeDepositBenefitsDetailScreen(),
+      bindings: [VipDailyCumulativeDepositBenefitsDetailBinding()],
+    ),
+    GetPage(
+      name: financialAddBankAccountPixScreen,
+      page: () => AddBankAccountPixScreen(),
+      bindings: [AddBankAccountPixBinding()],
+    ),
+    GetPage(
+      name: financialWalletWithdrawalRequirementsScreen,
+      page: () => WalletWithdrawalRequirementsScreen(),
+      bindings: [WalletWithdrawalRequirementsBinding()],
+    ),
+    GetPage(
+      name: financialAccountRecordTransactionHistoryDetailScreen,
+      page: () => AccountRecordTransactionHistoryDetailScreen(),
+      bindings: [AccountRecordTransactionHistoryDetailBinding()],
+    ),
+    GetPage(
+      name: financialCryptoWalletSetupPasswordScreen,
+      page: () => CryptoWalletSetupPasswordScreen(),
+      bindings: [CryptoWalletSetupPasswordBinding()],
+    ),
+
+    // Gaming Casino Bonus Module Pages (from app_16)
+    GetPage(
+      name: gamingCasinoBonusGCashDepositRecordDetailScreen,
+      page: () => GCashDepositRecordDetailScreen(),
+      bindings: [GCashDepositRecordDetailBinding()],
+    ),
+    GetPage(
+      name: gamingCasinoBonusExperienceBonusGameScreen,
+      page: () => ExperienceBonusGameScreen(),
+      bindings: [ExperienceBonusGameBinding()],
+    ),
+    GetPage(
+      name: gamingCasinoBonusGamingCasinoVipRewardsScreen,
+      page: () => GamingCasinoVipRewardsScreen(),
+      bindings: [GamingCasinoVipRewardsBinding()],
+    ),
+    GetPage(
+      name: gamingCasinoBonusBonusCenterScreen,
+      page: () => BonusCenterScreen(),
+      bindings: [BonusCenterBinding()],
+    ),
+    GetPage(
+      name: gamingCasinoBonusGCashDepositRecordScreen,
+      page: () => GCashDepositRecordScreen(),
+      bindings: [GCashDepositRecordBinding()],
+    ),
+    GetPage(
+      name: gamingCasinoBonusGamingExperienceBonusActivationScreen,
+      page: () => GamingExperienceBonusActivationScreen(),
+      bindings: [GamingExperienceBonusActivationBinding()],
+    ),
+    GetPage(
+      name: gamingCasinoBonusExperienceBonusGameScreenTwo,
+      page: () => ExperienceBonusGameScreenTwo(),
+      bindings: [ExperienceBonusGameScreenTwoBinding()],
+    ),
+    GetPage(
+      name: gamingCasinoBonusGamingRewardsCongratulationsScreen,
+      page: () => GamingRewardsCongratulationsScreen(),
+      bindings: [GamingRewardsCongratulationsBinding()],
+    ),
+    GetPage(
+      name: gamingCasinoBonusJBet88GamingHubScreen,
+      page: () => JBet88GamingHubScreen(),
+      bindings: [JBet88GamingHubBinding()],
+    ),
+    GetPage(
+      name: gamingCasinoBonusDepositRecordListScreen,
+      page: () => DepositRecordListScreen(),
+      bindings: [DepositRecordListBinding()],
+    ),
+    GetPage(
+      name: gamingCasinoBonusGamingExperienceBonusActivationScreenTwo,
+      page: () => GamingExperienceBonusActivationScreenTwo(),
+      bindings: [GamingExperienceBonusActivationScreenTwoBinding()],
+    ),
+    GetPage(
+      name: gamingCasinoBonusNotificationsScreen,
+      page: () => NotificationsScreen(),
+      bindings: [NotificationsBinding()],
+    ),
+    GetPage(
+      name: gamingCasinoBonusGamingCasinoMobileAppHomeScreen,
+      page: () => GamingCasinoMobileAppHomeScreen(),
+      bindings: [GamingCasinoMobileAppHomeBinding()],
+    ),
+    GetPage(
+      name: gamingCasinoBonusGamingTipsBonusModalScreen,
+      page: () => GamingTipsBonusModalScreen(),
+      bindings: [GamingTipsBonusModalBinding()],
+    ),
+    GetPage(
+      name: gamingCasinoBonusJBet88GamingHubScreenTwo,
+      page: () => JBet88GamingHubScreenTwo(),
+      bindings: [JBet88GamingHubScreenTwoBinding()],
+    ),
+    GetPage(
+      name: gamingCasinoBonusAchievementBonusReceivedScreen,
+      page: () => AchievementBonusReceivedScreen(),
+      bindings: [AchievementBonusReceivedBinding()],
+    ),
+    GetPage(
+      name: gamingCasinoBonusGamingCasinoVipRewardsScreenTwo,
+      page: () => GamingCasinoVipRewardsScreenTwo(),
+      bindings: [GamingCasinoVipRewardsScreenTwoBinding()],
+    ),
+    GetPage(
+      name: gamingCasinoBonusNaradGamingDashboardScreen,
+      page: () => NaradGamingDashboardScreen(),
+      bindings: [NaradGamingDashboardBinding()],
+    ),
+    GetPage(
+      name: gamingCasinoBonusJBet88GamingHubScreenThree,
+      page: () => JBet88GamingHubScreenThree(),
+      bindings: [JBet88GamingHubScreenThreeBinding()],
+    ),
+    GetPage(
+      name: gamingCasinoBonusGCashDepositRecordListScreen,
+      page: () => GCashDepositRecordListScreen(),
+      bindings: [GCashDepositRecordListBinding()],
+    ),
+
+    // User Management Notifications Module Pages (from app_17)
+    GetPage(
+      name: userManagementNotificationsUserDashboardScreen,
+      page: () => UserDashboardScreen(),
+      bindings: [UserDashboardBinding()],
+    ),
+    GetPage(
+      name: userManagementNotificationsNotificationsManagementScreen,
+      page: () => NotificationsManagementScreen(),
+      bindings: [NotificationsManagementBinding()],
+    ),
+    GetPage(
+      name: userManagementNotificationsCustomerSupportSuggestionScreen,
+      page: () => CustomerSupportSuggestionScreen(),
+      bindings: [CustomerSupportSuggestionBinding()],
+    ),
+    GetPage(
+      name: userManagementNotificationsGamingPlatformNotificationsScreen,
+      page: () => GamingPlatformNotificationsScreen(),
+      bindings: [GamingPlatformNotificationsBinding()],
+    ),
+    GetPage(
+      name: userManagementNotificationsBonusDashboardScreen,
+      page: () => BonusDashboardScreen(),
+      bindings: [BonusDashboardBinding()],
+    ),
+
+    // Financial Security Casino Module Pages (from app_18)
+    GetPage(
+      name: financialSecurityCasinoUserDashboardScreen,
+      page: () => financial_user_dashboard.UserDashboardScreen(),
+      bindings: [financial_user_dashboard_binding.UserDashboardBinding()],
+    ),
+    GetPage(
+      name: financialSecurityCasinoCasinoHomeScreen,
+      page: () => financial_casino_home.CasinoHomeScreen(),
+      bindings: [financial_casino_home_binding.CasinoHomeBinding()],
+    ),
+    GetPage(
+      name: financialSecurityCasinoSecurityPasswordConfigurationScreen,
+      page: () => SecurityPasswordConfigurationScreen(),
+      bindings: [SecurityPasswordConfigurationBinding()],
+    ),
+    GetPage(
+      name: financialSecurityCasinoBankAccountSettingsScreen,
+      page: () => financial_bank_settings.BankAccountSettingsScreen(),
+      bindings: [financial_bank_settings_binding.BankAccountSettingsBinding()],
+    ),
+    GetPage(
+      name: financialSecurityCasinoForgotTransactionPasswordScreen,
+      page: () => financial_forgot_password.ForgotTransactionPasswordScreen(),
+      bindings: [financial_forgot_password_binding.ForgotTransactionPasswordBinding()],
+    ),
+    GetPage(
+      name: financialSecurityCasinoTicketEventScreen,
+      page: () => TicketEventScreen(),
+      bindings: [financial_ticket_event_binding.TicketEventBinding()],
+    ),
+    GetPage(
+      name: financialSecurityCasinoTicketRecordsScreen,
+      page: () => TicketRecordsScreen(),
+      bindings: [financial_ticket_records_binding.TicketRecordsBinding()],
+    ),
+    GetPage(
+      name: financialSecurityCasinoMyTicketRewardsScreen,
+      page: () => MyTicketRewardsScreen(),
+      bindings: [financial_my_ticket_rewards_binding.MyTicketRewardsBinding()],
+    ),
+    GetPage(
+      name: financialSecurityCasinoEmailBindingConfirmationScreen,
+      page: () => financial_email_binding.EmailBindingConfirmationScreen(),
+      bindings: [financial_email_binding_binding.EmailBindingConfirmationBinding()],
+    ),
+    GetPage(
+      name: financialSecurityCasinoUserProfileSettingsScreen,
+      page: () => financial_user_profile.UserProfileSettingsScreen(),
+      bindings: [financial_user_profile_binding.UserProfileSettingsBinding()],
+    ),
+    GetPage(
+      name: financialSecurityCasinoTicketEventRewardsScreen,
+      page: () => TicketEventRewardsScreen(),
+      bindings: [financial_ticket_event_rewards_binding.TicketEventRewardsBinding()],
+    ),
+    GetPage(
+      name: financialSecurityCasinoTicketEventRewardsScreenTwo,
+      page: () => TicketEventRewardsScreenTwo(),
+      bindings: [financial_ticket_event_rewards_screen_two_binding.TicketEventRewardsScreenTwoBinding()],
+    ),
+    GetPage(
+      name: financialSecurityCasinoTicketEventRewardsScreenThree,
+      page: () => TicketEventRewardsScreenThree(),
+      bindings: [financial_ticket_event_rewards_screen_three_binding.TicketEventRewardsScreenThreeBinding()],
+    ),
+    GetPage(
+      name: financialSecurityCasinoTicketEventRewardsScreenFour,
+      page: () => TicketEventRewardsScreenFour(),
+      bindings: [financial_ticket_event_rewards_screen_four_binding.TicketEventRewardsScreenFourBinding()],
+    ),
+    GetPage(
+      name: financialSecurityCasinoForgotTransactionPasswordScreenTwo,
+      page: () => ForgotTransactionPasswordScreenTwo(),
+      bindings: [financial_forgot_transaction_password_screen_two_binding.ForgotTransactionPasswordScreenTwoBinding()],
+    ),
+    GetPage(
+      name: financialSecurityCasinoForgotTransactionPasswordScreenThree,
+      page: () => ForgotTransactionPasswordScreenThree(),
+      bindings: [financial_forgot_transaction_password_screen_three_binding.ForgotTransactionPasswordScreenThreeBinding()],
+    ),
+    GetPage(
+      name: financialSecurityCasinoBankAccountSettingsScreenTwo,
+      page: () => BankAccountSettingsScreenTwo(),
+      bindings: [financial_bank_account_settings_screen_two_binding.BankAccountSettingsScreenTwoBinding()],
+    ),
+    GetPage(
+      name: financialSecurityCasinoBankAccountSettingsScreenThree,
+      page: () => BankAccountSettingsScreenThree(),
+      bindings: [financial_bank_account_settings_screen_three_binding.BankAccountSettingsScreenThreeBinding()],
+    ),
+    GetPage(
+      name: financialSecurityCasinoAppNavigationScreen,
+      page: () => financial_app_navigation.AppNavigationScreen(),
+      bindings: [financial_app_navigation_binding.AppNavigationBinding()],
+    ),
+
+    // Ticket Gaming Rewards Module Routes (from app_19)
+    GetPage(
+      name: ticketGamingRewardsGoldenEggTicketCollectionScreen,
+      page: () => GoldenEggTicketCollectionScreen(),
+      bindings: [golden_egg_ticket_collection_binding.GoldenEggTicketCollectionBinding()],
+    ),
+    GetPage(
+      name: ticketGamingRewardsTicketRecordsDashboardScreen,
+      page: () => TicketRecordsDashboardScreen(),
+      bindings: [ticket_records_dashboard_binding.TicketRecordsDashboardBinding()],
+    ),
+    GetPage(
+      name: ticketGamingRewardsGamingTicketSpinWheelScreen,
+      page: () => GamingTicketSpinWheelScreen(),
+      bindings: [gaming_ticket_spin_wheel_binding.GamingTicketSpinWheelBinding()],
+    ),
+    GetPage(
+      name: ticketGamingRewardsSpiritualRadianceScreen,
+      page: () => SpiritualRadianceScreen(),
+      bindings: [spiritual_radiance_binding.SpiritualRadianceBinding()],
+    ),
+    GetPage(
+      name: ticketGamingRewardsTicketClaimInfoScreen,
+      page: () => TicketClaimInfoScreen(),
+      bindings: [ticket_claim_info_binding.TicketClaimInfoBinding()],
+    ),
+    GetPage(
+      name: ticketGamingRewardsRedPackageTicketEventScreen,
+      page: () => RedPackageTicketEventScreen(),
+      bindings: [red_package_ticket_event_binding.RedPackageTicketEventBinding()],
+    ),
+    GetPage(
+      name: ticketGamingRewardsRewardsAchievementsScreen,
+      page: () => RewardsAchievementsScreen(),
+      bindings: [rewards_achievements_binding.RewardsAchievementsBinding()],
+    ),
+    GetPage(
+      name: ticketGamingRewardsLuckyWheelTicketEventScreen,
+      page: () => LuckyWheelTicketEventScreen(),
+      bindings: [lucky_wheel_ticket_event_binding.LuckyWheelTicketEventBinding()],
+    ),
+    GetPage(
+      name: ticketGamingRewardsTreasureChestTicketClaimScreen,
+      page: () => TreasureChestTicketClaimScreen(),
+      bindings: [treasure_chest_ticket_claim_binding.TreasureChestTicketClaimBinding()],
+    ),
+    GetPage(
+      name: ticketGamingRewardsTicketEventConfirmationDialogScreen,
+      page: () => TicketEventConfirmationDialogScreen(),
+      bindings: [ticket_event_confirmation_dialog_binding.TicketEventConfirmationDialogBinding()],
+    ),
+    GetPage(
+      name: ticketGamingRewardsSpinWheelGameplayScreen,
+      page: () => SpinWheelGameplayScreen(),
+      bindings: [spin_wheel_gameplay_binding.SpinWheelGameplayBinding()],
+    ),
+    GetPage(
+      name: ticketGamingRewardsTicketEventDashboardScreen,
+      page: () => TicketEventDashboardScreen(),
+      bindings: [ticket_event_dashboard_binding.TicketEventDashboardBinding()],
+    ),
+    GetPage(
+      name: ticketGamingRewardsRedEnvelopeIconScreen,
+      page: () => RedEnvelopeIconScreen(),
+      bindings: [red_envelope_icon_binding.RedEnvelopeIconBinding()],
+    ),
+    GetPage(
+      name: ticketGamingRewardsTreasureChestDisplayScreen,
+      page: () => TreasureChestDisplayScreen(),
+      bindings: [treasure_chest_display_binding.TreasureChestDisplayBinding()],
+    ),
+    GetPage(
+      name: ticketGamingRewardsCelebrationConfettiScreen,
+      page: () => CelebrationConfettiScreen(),
+      bindings: [celebration_confetti_binding.CelebrationConfettiBinding()],
+    ),
+    GetPage(
+      name: ticketGamingRewardsIntegratedSpinWheelGamingScreen,
+      page: () => IntegratedSpinWheelGamingScreen(),
+      bindings: [integrated_spin_wheel_gaming_binding.IntegratedSpinWheelGamingBinding()],
+    ),
+    GetPage(
+      name: ticketGamingRewardsCashVoucherRewardScreen,
+      page: () => CashVoucherRewardScreen(),
+      bindings: [cash_voucher_reward_binding.CashVoucherRewardBinding()],
+    ),
+    GetPage(
+      name: ticketGamingRewardsAppDownloadBonusTicketScreen,
+      page: () => AppDownloadBonusTicketScreen(),
+      bindings: [app_download_bonus_ticket_binding.AppDownloadBonusTicketBinding()],
+    ),
+    GetPage(
+      name: ticketGamingRewardsAppNavigationScreen,
+      page: () => ticket_gaming_app_navigation.AppNavigationScreen(),
+      bindings: [ticket_gaming_app_navigation_binding.AppNavigationBinding()],
+    ),
+
+    // Dialog Gaming Events Module Routes
+    GetPage(
+      name: redPackagePurchaseDialogScreen,
+      page: () => RedPackagePurchaseDialogScreen(),
+      bindings: [RedPackagePurchaseDialogBinding()],
+    ),
+    GetPage(
+      name: gameFailureDialogScreen,
+      page: () => GameFailureDialogScreen(),
+      bindings: [GameFailureDialogBinding()],
+    ),
+    GetPage(
+      name: goldenEggRewardDialogScreen,
+      page: () => GoldenEggRewardDialogScreen(),
+      bindings: [GoldenEggRewardDialogBinding()],
+    ),
+    GetPage(
+      name: ticketEventTaskScreen,
+      page: () => TicketEventTaskScreen(),
+      bindings: [TicketEventTaskBinding()],
+    ),
+    GetPage(
+      name: luckyWheelSpinScreen,
+      page: () => LuckyWheelSpinScreen(),
+      bindings: [LuckyWheelSpinBinding()],
+    ),
+    GetPage(
+      name: helpInvitationModalScreen,
+      page: () => HelpInvitationModalScreen(),
+      bindings: [HelpInvitationModalBinding()],
+    ),
+    GetPage(
+      name: dialogGamingEventsAppNavigationScreen,
+      page: () => dialog_gaming_events_app_navigation.AppNavigationScreen(),
+      bindings: [dialog_gaming_events_app_navigation_binding.AppNavigationBinding()],
     ),
   ];
 }

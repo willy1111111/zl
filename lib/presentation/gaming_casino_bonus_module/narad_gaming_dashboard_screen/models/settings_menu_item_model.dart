@@ -1,0 +1,17 @@
+import 'package:get/get.dart';
+
+import '../../../core/app_export.dart';
+
+class SettingsMenuItemModel {
+  Rx<String>? icon;
+  Rx<String>? title;
+  Rx<bool>? hasButton;
+  Rx<String>? buttonText;
+
+  SettingsMenuItemModel({
+    this.icon,
+    this.title,
+    this.hasButton,
+    this.buttonText,
+  });
+}

@@ -1,0 +1,322 @@
+## 统一Flutter项目中的所有功能模块列表
+
+### 大模块分类 (16个主要模块)
+
+1. **agent_module** - 代理功能模块
+2. **auth_system_module** - 认证系统模块  
+3. **vip_rewards_module** - VIP奖励模块
+4. **financial_analytics_module** - 财务分析模块
+5. **gaming_casino_module** - 游戏赌场模块
+6. **bonus_rewards_module** - 奖励系统模块
+7. **casino_sign_in_module** - 赌场签到模块
+8. **spin_wheel_module** - 转盘游戏模块
+9. **deposit_payment_module** - 存款支付模块
+10. **gaming_withdrawal_module** - 游戏提现模块
+11. **wallet_crypto_module** - 钱包加密货币模块
+12. **financial_banking_module** - 金融银行模块
+13. **gaming_casino_bonus_module** - 游戏赌场奖励模块
+14. **user_management_notifications_module** - 用户管理通知模块
+15. **financial_security_casino_module** - 金融安全赌场模块
+16. **ticket_gaming_rewards_module** - 票务游戏奖励模块
+
+### 小页面模块统计 (按模块分类)
+
+#### Agent Module (16个屏幕)
+- achievement_rewards_screen
+- agent_income_overview_screen
+- agent_referral_program_screen
+- casino_home_screen
+- congratulations_reward_screen
+- elite_agent_dashboard_screen
+- gaming_hub_screen
+- intermediate_agent_dashboard_screen
+- invitation_bonus_screen
+- junior_agent_dashboard_screen
+- master_agent_dashboard_screen
+- max_tier_agent_dashboard_screen
+- referral_rewards_screen
+- senior_agent_dashboard_screen
+- app_navigation_screen (共享)
+
+#### Auth System Module (20个屏幕)
+- achievement_dashboard_screen
+- achievement_rewards_screen
+- agent_dashboard_screen
+- agent_invite_dashboard_screen
+- agent_referral_program_screen
+- app_download_promotion_screen
+- card_matka_game_screen
+- casino_app_promotion_screen
+- content_modal_screen
+- forgot_password_screen
+- forgot_password_screen_two_screen
+- j_bet_agent_dashboard_screen
+- login_session_expired_screen
+- system_maintenance_screen
+- system_maintenance_screen_two_screen
+- system_maintenance_screen_three_screen
+- system_maintenance_screen_four_screen
+- ticket_records_network_error_screen
+
+#### VIP Rewards Module (19个屏幕)
+- jbet88_vip_rewards_dashboard_screen
+- jbet88_vip_upgrade_bonus_screen
+- vip_cashback_dashboard_screen
+- vip_cashback_eligible_screen
+- vip_daily_salary_claimed_screen
+- vip_daily_salary_dashboard_screen
+- vip_daily_salary_rewards_screen
+- vip_monthly_salary_benefits_screen
+- vip_monthly_salary_details_screen
+- vip_rank_icons_gallery_screen
+- vip_rewards_and_benefits_screen
+- vip_rewards_benefits_screen
+- vip_rewards_dashboard_screen
+- vip_upgrade_requirements_screen
+- vip_weekly_rewards_dashboard_screen
+- vip_weekly_salary_details_screen
+- vip_weekly_salary_pending_screen
+- vip_weekly_salary_submitted_screen
+
+#### Financial Analytics Module (18个屏幕)
+- agent_jackpot_history_screen
+- agent_jackpot_history_screen_two_screen
+- gift_code_exchange_screen
+- income_analytics_dashboard_screen
+- income_dashboard_screen
+- income_dashboard_screen_two_screen
+- income_dashboard_screen_three_screen
+- jackpot_history_screen
+- phone_verification_screen
+- phone_verification_screen_two_screen
+- phone_verification_screen_three_screen
+- phone_verification_screen_four_screen
+- phone_verification_screen_five_screen
+- rewards_congratulations_screen
+- rewards_screen
+- social_share_screen
+- team_hierarchy_modal_screen
+- teams_dashboard_screen
+
+#### Gaming Casino Module (35个屏幕)
+- agent_jackpot_history_ranking_screen
+- agent_ranking_bonus_rules_screen
+- bet88_agent_jackpot_ranking_screen
+- bet88_agent_jackpot_ranking_screen_two_screen
+- betbo_rewards_screen
+- betbo_rewards_screen_two_screen
+- betting_rewards_description_modal_screen
+- casino_game_detail_modal_screen
+- current_ranking_leaderboard_screen
+- current_ranking_leaderboard_screen_two_screen
+- gaming_bonus_rewards_screen
+- jbet88_user_dashboard_screen
+- jet_bet_gaming_hub_screen
+- jet_br_gaming_promotions_screen
+- jetso_casino_home_screen
+- narad_gaming_dashboard_screen
+- provedor_de_jogos_bonus_screen
+- vip_daily_salary_dashboard_screen
+
+#### Bonus Rewards Module (40个屏幕)
+- achievement_bonus_screen
+- agent_income_modal_screen
+- agent_level_system_screen
+- app_download_screen
+- betting_bonus_screen
+- bonus_dashboard_screen
+- casino_gaming_hub_screen
+- continuous_sign_in_activity_screen
+- continuous_sign_in_makeup_screen
+- continuous_sign_in_screen
+- deposit_bonus_history_screen
+- gaming_app_download_screen
+- gaming_home_screen
+- jet_bet_casino_screen
+- qualified_bonus_screen
+- registration_bonus_screen
+- sign_in_rewards_screen
+- signed_in_rewards_screen
+
+#### Casino Sign In Module (15个屏幕)
+- daily_sign_in_rewards_screen
+- registration_success_screen
+- sign_in_activity_screen
+- sign_in_bonus_screen
+- sign_in_completion_screen
+- sign_in_day_four_screen
+- sign_in_day_five_screen
+- sign_in_free_makeup_screen
+- sign_in_guide_screen
+- sign_in_keyboard_screen
+- sign_in_makeup_screen
+- sign_in_success_screen
+- third_party_login_screen
+- registration_screen
+- agreement_screen
+
+#### Spin Wheel Module (18个屏幕)
+- gaming_money_rain_promotion_screen
+- jeet98_spin_wheel_bonus_screen
+- jet_bet_casino_home_screen
+- lucky_spin_invitation_guide_screen
+- money_rain_game_screen
+- money_rain_gaming_app_screen
+- money_rain_promotion_screen
+- money_rain_rewards_screen
+- narad_money_rain_promotion_screen
+- phone_verification_screen
+- spin_bonus_leaderboard_screen
+- spin_game_rules_modal_screen
+- spin_referral_bonus_modal_screen
+- spin_wheel_dashboard_screen
+- spin_wheel_withdrawal_confirmation_screen
+- withdrawal_confirmation_screen
+- withdrawal_history_empty_screen
+- withdrawal_history_screen
+
+#### Deposit Payment Module (2个屏幕)
+- jeetbaji_gaming_home_screen
+- wallet_deposit_screen
+
+#### Gaming Withdrawal Module (17个屏幕)
+- casino_spin_win_celebration_screen
+- gaming_withdrawal_confirmation_screen
+- jetbet_gaming_hub_screen
+- lucky_bonus_withdrawal_screen
+- narad_casino_game_hub_screen
+- narad_casino_gaming_platform_screen
+- narad_casino_home_screen
+- narad_gaming_hub_home_screen
+- narad_gaming_platform_home_screen
+- notice_empty_state_screen
+- notice_notifications_screen
+- referral_bonus_dialog_screen
+- spin_game_cash_withdrawal_screen
+- spin_game_reward_victory_screen
+- spin_game_victory_screen
+- spin_wheel_victory_screen
+- withdrawal_help_screen
+- withdrawal_success_screen
+
+#### Wallet Crypto Module (17个屏幕)
+- bank_account_settings_screen
+- crypto_wallet_password_setup_screen
+- crypto_wallet_withdrawal_detail_screen
+- crypto_wallet_withdrawal_screen
+- electronic_wallet_withdrawal_screen
+- gaming_app_share_screen
+- jbet88_benefits_promotion_screen
+- jbet88_referral_bonus_screen
+- jbet88_referral_rewards_screen
+- lucky_spin_wheel_game_screen
+- spin_game_phone_verification_screen
+- spin_game_withdrawal_screen
+- text_safe_zone_display_screen
+- usdt_withdrawal_form_screen
+- usdt_withdrawal_screen
+- wallet_bank_accounts_withdrawal_screen
+- wallet_deposit_type_selection_screen
+- wallet_withdrawal_type_selection_screen
+
+#### Financial Banking Module (5个屏幕)
+- account_record_transaction_history_screen
+- add_bank_account_screen
+- crypto_wallet_setup_screen
+- crypto_wallet_transaction_setup_screen
+- g_cash_deposit_record_filter_screen
+
+#### Gaming Casino Bonus Module (9个屏幕)
+- bonus_center_screen
+- deposit_record_list_screen
+- experience_bonus_game_screen
+- gaming_casino_mobile_app_home_screen
+- gaming_casino_vip_rewards_screen
+- gaming_tips_bonus_modal_screen
+- j_bet88_gaming_hub_screen
+- narad_gaming_dashboard_screen
+- notifications_screen
+
+#### User Management Notifications Module (20个屏幕)
+- bonus_dashboard_screen
+- customer_support_suggestion_screen
+- email_binding_confirmation_screen
+- gaming_app_notifications_screen
+- gaming_app_notifications_screen_two_screen
+- gaming_app_notifications_screen_three_screen
+- gaming_bonus_dashboard_screen
+- gaming_platform_notifications_screen
+- notifications_empty_state_screen
+- notifications_help_guide_screen
+- notifications_information_screen
+- notifications_management_screen
+- notifications_screen
+- notifications_screen_two_screen
+- notifications_screen_three_screen
+- suggestion_feedback_modal_screen
+- suggestion_feedback_modal_screen_two_screen
+- teams_center_dashboard_screen
+- user_dashboard_screen
+- user_profile_settings_screen
+
+#### Financial Security Casino Module (19个屏幕)
+- bank_account_settings_screen
+- bank_account_settings_screen_two_screen
+- bank_account_settings_screen_three_screen
+- casino_home_screen
+- email_binding_confirmation_screen
+- forgot_transaction_password_screen
+- forgot_transaction_password_screen_two_screen
+- forgot_transaction_password_screen_three_screen
+- my_ticket_rewards_screen
+- security_password_configuration_screen
+- ticket_event_rewards_screen
+- ticket_event_rewards_screen_two_screen
+- ticket_event_rewards_screen_three_screen
+- ticket_event_rewards_screen_four_screen
+- ticket_event_screen
+- ticket_records_screen
+- user_dashboard_screen
+- user_profile_settings_screen
+
+#### Ticket Gaming Rewards Module (19个屏幕)
+- app_download_bonus_ticket_screen
+- cash_voucher_reward_screen
+- celebration_confetti_screen
+- gaming_ticket_spin_wheel_screen
+- golden_egg_ticket_collection_screen
+- integrated_spin_wheel_gaming_screen
+- lucky_wheel_ticket_event_screen
+- red_envelope_icon_screen
+- red_package_ticket_event_screen
+- rewards_achievements_screen
+- spin_wheel_gameplay_screen
+- spiritual_radiance_screen
+- ticket_claim_info_screen
+- ticket_event_confirmation_dialog_screen
+- ticket_event_dashboard_screen
+- ticket_records_dashboard_screen
+- treasure_chest_display_screen
+- treasure_chest_ticket_claim_screen
+
+#### Shared Module (1个屏幕)
+- app_navigation_screen
+
+### 总计统计
+- **大模块数量**: 16个
+- **小页面模块总数**: 约300+个独立屏幕
+- **最新集成**: ticket_gaming_rewards_module (19个屏幕)
+- **项目状态**: 已完成所有19个仓库的集成
+
+### 技术架构
+- **框架**: Flutter + GetX
+- **路由管理**: 统一的app_routes.dart文件
+- **模块化结构**: 每个模块独立的presentation层
+- **资源管理**: 统一的assets和fonts配置
+- **依赖管理**: 合并的pubspec.yaml配置
+
+### 最近更新
+- 集成了illy_s_application_19的票务游戏奖励功能
+- 更新了import路径以匹配统一项目结构
+- 添加了19个新的路由定义
+- 复制了164个图像资源文件
