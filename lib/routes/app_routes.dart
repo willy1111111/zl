@@ -238,6 +238,45 @@ import '../presentation/gaming_withdrawal_module/spin_game_reward_victory_screen
 import '../presentation/gaming_withdrawal_module/gaming_withdrawal_confirmation_screen/binding/gaming_withdrawal_confirmation_binding.dart';
 import '../presentation/gaming_withdrawal_module/referral_bonus_dialog_screen/binding/referral_bonus_dialog_binding.dart';
 import '../presentation/gaming_withdrawal_module/narad_gaming_platform_home_screen/binding/narad_gaming_platform_home_binding.dart';
+
+// Wallet Crypto Module imports
+import '../presentation/wallet_crypto_module/lucky_spin_wheel_game_screen/lucky_spin_wheel_game_screen.dart';
+import '../presentation/wallet_crypto_module/crypto_wallet_withdrawal_screen/crypto_wallet_withdrawal_screen.dart';
+import '../presentation/wallet_crypto_module/wallet_withdrawal_type_selection_screen/wallet_withdrawal_type_selection_screen.dart';
+import '../presentation/wallet_crypto_module/bank_account_settings_screen/bank_account_settings_screen.dart';
+import '../presentation/wallet_crypto_module/crypto_wallet_withdrawal_detail_screen/crypto_wallet_withdrawal_detail_screen.dart';
+import '../presentation/wallet_crypto_module/usdt_withdrawal_screen/usdt_withdrawal_screen.dart';
+import '../presentation/wallet_crypto_module/gaming_app_share_screen/gaming_app_share_screen.dart';
+import '../presentation/wallet_crypto_module/jbet88_referral_bonus_screen/jbet88_referral_bonus_screen.dart';
+import '../presentation/wallet_crypto_module/usdt_withdrawal_form_screen/usdt_withdrawal_form_screen.dart';
+import '../presentation/wallet_crypto_module/spin_game_phone_verification_screen/spin_game_phone_verification_screen.dart';
+import '../presentation/wallet_crypto_module/wallet_deposit_type_selection_screen/wallet_deposit_type_selection_screen.dart';
+import '../presentation/wallet_crypto_module/spin_game_withdrawal_screen/spin_game_withdrawal_screen.dart';
+import '../presentation/wallet_crypto_module/crypto_wallet_password_setup_screen/crypto_wallet_password_setup_screen.dart';
+import '../presentation/wallet_crypto_module/wallet_bank_accounts_withdrawal_screen/wallet_bank_accounts_withdrawal_screen.dart';
+import '../presentation/wallet_crypto_module/jbet88_referral_rewards_screen/jbet88_referral_rewards_screen.dart';
+import '../presentation/wallet_crypto_module/jbet88_benefits_promotion_screen/jbet88_benefits_promotion_screen.dart';
+import '../presentation/wallet_crypto_module/text_safe_zone_display_screen/text_safe_zone_display_screen.dart';
+import '../presentation/wallet_crypto_module/electronic_wallet_withdrawal_screen/electronic_wallet_withdrawal_screen.dart';
+
+import '../presentation/wallet_crypto_module/lucky_spin_wheel_game_screen/binding/lucky_spin_wheel_game_binding.dart';
+import '../presentation/wallet_crypto_module/crypto_wallet_withdrawal_screen/binding/crypto_wallet_withdrawal_binding.dart';
+import '../presentation/wallet_crypto_module/wallet_withdrawal_type_selection_screen/binding/wallet_withdrawal_type_selection_binding.dart';
+import '../presentation/wallet_crypto_module/bank_account_settings_screen/binding/bank_account_settings_binding.dart';
+import '../presentation/wallet_crypto_module/crypto_wallet_withdrawal_detail_screen/binding/crypto_wallet_withdrawal_detail_binding.dart';
+import '../presentation/wallet_crypto_module/usdt_withdrawal_screen/binding/usdt_withdrawal_binding.dart';
+import '../presentation/wallet_crypto_module/gaming_app_share_screen/binding/gaming_app_share_binding.dart';
+import '../presentation/wallet_crypto_module/jbet88_referral_bonus_screen/binding/jbet88_referral_bonus_binding.dart';
+import '../presentation/wallet_crypto_module/usdt_withdrawal_form_screen/binding/usdt_withdrawal_form_binding.dart';
+import '../presentation/wallet_crypto_module/spin_game_phone_verification_screen/binding/spin_game_phone_verification_binding.dart';
+import '../presentation/wallet_crypto_module/wallet_deposit_type_selection_screen/binding/wallet_deposit_type_selection_binding.dart';
+import '../presentation/wallet_crypto_module/spin_game_withdrawal_screen/binding/spin_game_withdrawal_binding.dart';
+import '../presentation/wallet_crypto_module/crypto_wallet_password_setup_screen/binding/crypto_wallet_password_setup_binding.dart';
+import '../presentation/wallet_crypto_module/wallet_bank_accounts_withdrawal_screen/binding/wallet_bank_accounts_withdrawal_binding.dart';
+import '../presentation/wallet_crypto_module/jbet88_referral_rewards_screen/binding/jbet88_referral_rewards_binding.dart';
+import '../presentation/wallet_crypto_module/jbet88_benefits_promotion_screen/binding/jbet88_benefits_promotion_binding.dart';
+import '../presentation/wallet_crypto_module/text_safe_zone_display_screen/binding/text_safe_zone_display_binding.dart';
+import '../presentation/wallet_crypto_module/electronic_wallet_withdrawal_screen/binding/electronic_wallet_withdrawal_binding.dart';
 import '../presentation/gaming_withdrawal_module/notice_empty_state_screen/binding/notice_empty_state_binding.dart';
 
 // Gaming Casino Module Imports
@@ -1529,6 +1568,98 @@ class AppRoutes {
       name: noticeEmptyStateScreen,
       page: () => NoticeEmptyStateScreen(),
       bindings: [NoticeEmptyStateBinding()],
+    ),
+
+    // Wallet Crypto Module Pages (from app_14)
+    GetPage(
+      name: walletCryptoLuckySpinWheelGameScreen,
+      page: () => LuckySpinWheelGameScreen(),
+      bindings: [LuckySpinWheelGameBinding()],
+    ),
+    GetPage(
+      name: walletCryptoCryptoWalletWithdrawalScreen,
+      page: () => CryptoWalletWithdrawalScreen(),
+      bindings: [CryptoWalletWithdrawalBinding()],
+    ),
+    GetPage(
+      name: walletCryptoWalletWithdrawalTypeSelectionScreen,
+      page: () => WalletWithdrawalTypeSelectionScreen(),
+      bindings: [WalletWithdrawalTypeSelectionBinding()],
+    ),
+    GetPage(
+      name: walletCryptoBankAccountSettingsScreen,
+      page: () => BankAccountSettingsScreen(),
+      bindings: [BankAccountSettingsBinding()],
+    ),
+    GetPage(
+      name: walletCryptoCryptoWalletWithdrawalDetailScreen,
+      page: () => CryptoWalletWithdrawalDetailScreen(),
+      bindings: [CryptoWalletWithdrawalDetailBinding()],
+    ),
+    GetPage(
+      name: walletCryptoUsdtWithdrawalScreen,
+      page: () => UsdtWithdrawalScreen(),
+      bindings: [UsdtWithdrawalBinding()],
+    ),
+    GetPage(
+      name: walletCryptoGamingAppShareScreen,
+      page: () => GamingAppShareScreen(),
+      bindings: [GamingAppShareBinding()],
+    ),
+    GetPage(
+      name: walletCryptoJbet88ReferralBonusScreen,
+      page: () => Jbet88ReferralBonusScreen(),
+      bindings: [Jbet88ReferralBonusBinding()],
+    ),
+    GetPage(
+      name: walletCryptoUsdtWithdrawalFormScreen,
+      page: () => UsdtWithdrawalFormScreen(),
+      bindings: [UsdtWithdrawalFormBinding()],
+    ),
+    GetPage(
+      name: walletCryptoSpinGamePhoneVerificationScreen,
+      page: () => SpinGamePhoneVerificationScreen(),
+      bindings: [SpinGamePhoneVerificationBinding()],
+    ),
+    GetPage(
+      name: walletCryptoWalletDepositTypeSelectionScreen,
+      page: () => WalletDepositTypeSelectionScreen(),
+      bindings: [WalletDepositTypeSelectionBinding()],
+    ),
+    GetPage(
+      name: walletCryptoSpinGameWithdrawalScreen,
+      page: () => SpinGameWithdrawalScreen(),
+      bindings: [SpinGameWithdrawalBinding()],
+    ),
+    GetPage(
+      name: walletCryptoCryptoWalletPasswordSetupScreen,
+      page: () => CryptoWalletPasswordSetupScreen(),
+      bindings: [CryptoWalletPasswordSetupBinding()],
+    ),
+    GetPage(
+      name: walletCryptoWalletBankAccountsWithdrawalScreen,
+      page: () => WalletBankAccountsWithdrawalScreen(),
+      bindings: [WalletBankAccountsWithdrawalBinding()],
+    ),
+    GetPage(
+      name: walletCryptoJbet88ReferralRewardsScreen,
+      page: () => Jbet88ReferralRewardsScreen(),
+      bindings: [Jbet88ReferralRewardsBinding()],
+    ),
+    GetPage(
+      name: walletCryptoJbet88BenefitsPromotionScreen,
+      page: () => Jbet88BenefitsPromotionScreen(),
+      bindings: [Jbet88BenefitsPromotionBinding()],
+    ),
+    GetPage(
+      name: walletCryptoTextSafeZoneDisplayScreen,
+      page: () => TextSafeZoneDisplayScreen(),
+      bindings: [TextSafeZoneDisplayBinding()],
+    ),
+    GetPage(
+      name: walletCryptoElectronicWalletWithdrawalScreen,
+      page: () => ElectronicWalletWithdrawalScreen(),
+      bindings: [ElectronicWalletWithdrawalBinding()],
     ),
   ];
 }
