@@ -433,6 +433,49 @@ import '../presentation/spin_wheel_module/spin_game_rules_modal_screen/binding/s
 import '../presentation/spin_wheel_module/jet_bet_casino_home_screen/binding/jet_bet_casino_home_binding.dart';
 import '../presentation/spin_wheel_module/app_navigation_screen/binding/app_navigation_binding.dart' as spin_nav;
 
+// Financial Banking Module Imports (from app_15)
+import '../presentation/financial_banking_module/add_bank_account_screen/add_bank_account_screen.dart';
+import '../presentation/financial_banking_module/g_cash_deposit_record_screen/g_cash_deposit_record_screen.dart';
+import '../presentation/financial_banking_module/withdrawal_limit_progress_screen/withdrawal_limit_progress_screen.dart';
+import '../presentation/financial_banking_module/vip_daily_cumulative_deposit_benefits_screen/vip_daily_cumulative_deposit_benefits_screen.dart';
+import '../presentation/financial_banking_module/withdrawal_limit_notification_screen/withdrawal_limit_notification_screen.dart';
+import '../presentation/financial_banking_module/pix_mobile_vip_withdrawal_limits_screen/pix_mobile_vip_withdrawal_limits_screen.dart';
+import '../presentation/financial_banking_module/pix_mobile_wallet_dashboard_screen/pix_mobile_wallet_dashboard_screen.dart';
+import '../presentation/financial_banking_module/account_record_screen/account_record_screen.dart';
+import '../presentation/financial_banking_module/g_cash_deposit_record_filter_screen/g_cash_deposit_record_filter_screen.dart';
+import '../presentation/financial_banking_module/account_record_transaction_history_screen/account_record_transaction_history_screen.dart';
+import '../presentation/financial_banking_module/g_cash_deposit_record_history_screen/g_cash_deposit_record_history_screen.dart';
+import '../presentation/financial_banking_module/betting_record_history_screen/betting_record_history_screen.dart';
+import '../presentation/financial_banking_module/pix_mobile_wallet_withdrawal_screen/pix_mobile_wallet_withdrawal_screen.dart';
+import '../presentation/financial_banking_module/crypto_wallet_transaction_setup_screen/crypto_wallet_transaction_setup_screen.dart';
+import '../presentation/financial_banking_module/crypto_wallet_setup_screen/crypto_wallet_setup_screen.dart';
+import '../presentation/financial_banking_module/vip_daily_cumulative_deposit_benefits_detail_screen/vip_daily_cumulative_deposit_benefits_detail_screen.dart';
+import '../presentation/financial_banking_module/add_bank_account_pix_screen/add_bank_account_pix_screen.dart';
+import '../presentation/financial_banking_module/wallet_withdrawal_requirements_screen/wallet_withdrawal_requirements_screen.dart';
+import '../presentation/financial_banking_module/account_record_transaction_history_detail_screen/account_record_transaction_history_detail_screen.dart';
+import '../presentation/financial_banking_module/crypto_wallet_setup_password_screen/crypto_wallet_setup_password_screen.dart';
+
+import '../presentation/financial_banking_module/add_bank_account_screen/binding/add_bank_account_binding.dart';
+import '../presentation/financial_banking_module/g_cash_deposit_record_screen/binding/g_cash_deposit_record_binding.dart';
+import '../presentation/financial_banking_module/withdrawal_limit_progress_screen/binding/withdrawal_limit_progress_binding.dart';
+import '../presentation/financial_banking_module/vip_daily_cumulative_deposit_benefits_screen/binding/vip_daily_cumulative_deposit_benefits_binding.dart';
+import '../presentation/financial_banking_module/withdrawal_limit_notification_screen/binding/withdrawal_limit_notification_binding.dart';
+import '../presentation/financial_banking_module/pix_mobile_vip_withdrawal_limits_screen/binding/pix_mobile_vip_withdrawal_limits_binding.dart';
+import '../presentation/financial_banking_module/pix_mobile_wallet_dashboard_screen/binding/pix_mobile_wallet_dashboard_binding.dart';
+import '../presentation/financial_banking_module/account_record_screen/binding/account_record_binding.dart';
+import '../presentation/financial_banking_module/g_cash_deposit_record_filter_screen/binding/g_cash_deposit_record_filter_binding.dart';
+import '../presentation/financial_banking_module/account_record_transaction_history_screen/binding/account_record_transaction_history_binding.dart';
+import '../presentation/financial_banking_module/g_cash_deposit_record_history_screen/binding/g_cash_deposit_record_history_binding.dart';
+import '../presentation/financial_banking_module/betting_record_history_screen/binding/betting_record_history_binding.dart';
+import '../presentation/financial_banking_module/pix_mobile_wallet_withdrawal_screen/binding/pix_mobile_wallet_withdrawal_binding.dart';
+import '../presentation/financial_banking_module/crypto_wallet_transaction_setup_screen/binding/crypto_wallet_transaction_setup_binding.dart';
+import '../presentation/financial_banking_module/crypto_wallet_setup_screen/binding/crypto_wallet_setup_binding.dart';
+import '../presentation/financial_banking_module/vip_daily_cumulative_deposit_benefits_detail_screen/binding/vip_daily_cumulative_deposit_benefits_detail_binding.dart';
+import '../presentation/financial_banking_module/add_bank_account_pix_screen/binding/add_bank_account_pix_binding.dart';
+import '../presentation/financial_banking_module/wallet_withdrawal_requirements_screen/binding/wallet_withdrawal_requirements_binding.dart';
+import '../presentation/financial_banking_module/account_record_transaction_history_detail_screen/binding/account_record_transaction_history_detail_binding.dart';
+import '../presentation/financial_banking_module/crypto_wallet_setup_password_screen/binding/crypto_wallet_setup_password_binding.dart';
+
 // ignore_for_file: must_be_immutable
 class AppRoutes {
   // Agent Module Routes
@@ -646,6 +689,29 @@ class AppRoutes {
   static const String withdrawalHistoryEmptyScreen = '/spin_wheel/withdrawal_history_empty_screen';
   static const String spinGameRulesModalScreen = '/spin_wheel/spin_game_rules_modal_screen';
   static const String jetBetCasinoHomeScreen = '/spin_wheel/jet_bet_casino_home_screen';
+
+  // Financial Banking Module Routes (from app_15)
+  static const String financialBankingModule = '/financial_banking';
+  static const String financialAddBankAccountScreen = '/financial_banking/add_bank_account_screen';
+  static const String financialGCashDepositRecordScreen = '/financial_banking/g_cash_deposit_record_screen';
+  static const String financialWithdrawalLimitProgressScreen = '/financial_banking/withdrawal_limit_progress_screen';
+  static const String financialVipDailyCumulativeDepositBenefitsScreen = '/financial_banking/vip_daily_cumulative_deposit_benefits_screen';
+  static const String financialWithdrawalLimitNotificationScreen = '/financial_banking/withdrawal_limit_notification_screen';
+  static const String financialPixMobileVipWithdrawalLimitsScreen = '/financial_banking/pix_mobile_vip_withdrawal_limits_screen';
+  static const String financialPixMobileWalletDashboardScreen = '/financial_banking/pix_mobile_wallet_dashboard_screen';
+  static const String financialAccountRecordScreen = '/financial_banking/account_record_screen';
+  static const String financialGCashDepositRecordFilterScreen = '/financial_banking/g_cash_deposit_record_filter_screen';
+  static const String financialAccountRecordTransactionHistoryScreen = '/financial_banking/account_record_transaction_history_screen';
+  static const String financialGCashDepositRecordHistoryScreen = '/financial_banking/g_cash_deposit_record_history_screen';
+  static const String financialBettingRecordHistoryScreen = '/financial_banking/betting_record_history_screen';
+  static const String financialPixMobileWalletWithdrawalScreen = '/financial_banking/pix_mobile_wallet_withdrawal_screen';
+  static const String financialCryptoWalletTransactionSetupScreen = '/financial_banking/crypto_wallet_transaction_setup_screen';
+  static const String financialCryptoWalletSetupScreen = '/financial_banking/crypto_wallet_setup_screen';
+  static const String financialVipDailyCumulativeDepositBenefitsDetailScreen = '/financial_banking/vip_daily_cumulative_deposit_benefits_detail_screen';
+  static const String financialAddBankAccountPixScreen = '/financial_banking/add_bank_account_pix_screen';
+  static const String financialWalletWithdrawalRequirementsScreen = '/financial_banking/wallet_withdrawal_requirements_screen';
+  static const String financialAccountRecordTransactionHistoryDetailScreen = '/financial_banking/account_record_transaction_history_detail_screen';
+  static const String financialCryptoWalletSetupPasswordScreen = '/financial_banking/crypto_wallet_setup_password_screen';
 
   static List<GetPage> pages = [
     // Agent Module Pages
@@ -1660,6 +1726,108 @@ class AppRoutes {
       name: walletCryptoElectronicWalletWithdrawalScreen,
       page: () => ElectronicWalletWithdrawalScreen(),
       bindings: [ElectronicWalletWithdrawalBinding()],
+    ),
+
+    // Financial Banking Module Pages (from app_15)
+    GetPage(
+      name: financialAddBankAccountScreen,
+      page: () => AddBankAccountScreen(),
+      bindings: [AddBankAccountBinding()],
+    ),
+    GetPage(
+      name: financialGCashDepositRecordScreen,
+      page: () => GCashDepositRecordScreen(),
+      bindings: [GCashDepositRecordBinding()],
+    ),
+    GetPage(
+      name: financialWithdrawalLimitProgressScreen,
+      page: () => WithdrawalLimitProgressScreen(),
+      bindings: [WithdrawalLimitProgressBinding()],
+    ),
+    GetPage(
+      name: financialVipDailyCumulativeDepositBenefitsScreen,
+      page: () => VipDailyCumulativeDepositBenefitsScreen(),
+      bindings: [VipDailyCumulativeDepositBenefitsBinding()],
+    ),
+    GetPage(
+      name: financialWithdrawalLimitNotificationScreen,
+      page: () => WithdrawalLimitNotificationScreen(),
+      bindings: [WithdrawalLimitNotificationBinding()],
+    ),
+    GetPage(
+      name: financialPixMobileVipWithdrawalLimitsScreen,
+      page: () => PixMobileVipWithdrawalLimitsScreen(),
+      bindings: [PixMobileVipWithdrawalLimitsBinding()],
+    ),
+    GetPage(
+      name: financialPixMobileWalletDashboardScreen,
+      page: () => PixMobileWalletDashboardScreen(),
+      bindings: [PixMobileWalletDashboardBinding()],
+    ),
+    GetPage(
+      name: financialAccountRecordScreen,
+      page: () => AccountRecordScreen(),
+      bindings: [AccountRecordBinding()],
+    ),
+    GetPage(
+      name: financialGCashDepositRecordFilterScreen,
+      page: () => GCashDepositRecordFilterScreen(),
+      bindings: [GCashDepositRecordFilterBinding()],
+    ),
+    GetPage(
+      name: financialAccountRecordTransactionHistoryScreen,
+      page: () => AccountRecordTransactionHistoryScreen(),
+      bindings: [AccountRecordTransactionHistoryBinding()],
+    ),
+    GetPage(
+      name: financialGCashDepositRecordHistoryScreen,
+      page: () => GCashDepositRecordHistoryScreen(),
+      bindings: [GCashDepositRecordHistoryBinding()],
+    ),
+    GetPage(
+      name: financialBettingRecordHistoryScreen,
+      page: () => BettingRecordHistoryScreen(),
+      bindings: [BettingRecordHistoryBinding()],
+    ),
+    GetPage(
+      name: financialPixMobileWalletWithdrawalScreen,
+      page: () => PixMobileWalletWithdrawalScreen(),
+      bindings: [PixMobileWalletWithdrawalBinding()],
+    ),
+    GetPage(
+      name: financialCryptoWalletTransactionSetupScreen,
+      page: () => CryptoWalletTransactionSetupScreen(),
+      bindings: [CryptoWalletTransactionSetupBinding()],
+    ),
+    GetPage(
+      name: financialCryptoWalletSetupScreen,
+      page: () => CryptoWalletSetupScreen(),
+      bindings: [CryptoWalletSetupBinding()],
+    ),
+    GetPage(
+      name: financialVipDailyCumulativeDepositBenefitsDetailScreen,
+      page: () => VipDailyCumulativeDepositBenefitsDetailScreen(),
+      bindings: [VipDailyCumulativeDepositBenefitsDetailBinding()],
+    ),
+    GetPage(
+      name: financialAddBankAccountPixScreen,
+      page: () => AddBankAccountPixScreen(),
+      bindings: [AddBankAccountPixBinding()],
+    ),
+    GetPage(
+      name: financialWalletWithdrawalRequirementsScreen,
+      page: () => WalletWithdrawalRequirementsScreen(),
+      bindings: [WalletWithdrawalRequirementsBinding()],
+    ),
+    GetPage(
+      name: financialAccountRecordTransactionHistoryDetailScreen,
+      page: () => AccountRecordTransactionHistoryDetailScreen(),
+      bindings: [AccountRecordTransactionHistoryDetailBinding()],
+    ),
+    GetPage(
+      name: financialCryptoWalletSetupPasswordScreen,
+      page: () => CryptoWalletSetupPasswordScreen(),
+      bindings: [CryptoWalletSetupPasswordBinding()],
     ),
   ];
 }
