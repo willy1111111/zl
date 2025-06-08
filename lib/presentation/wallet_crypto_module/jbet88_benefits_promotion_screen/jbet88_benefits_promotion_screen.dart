@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../core/app_export.dart';
-import '../../widgets/custom_image_view.dart';
+import '../../../../core/app_export.dart';
+import '../../../../widgets/custom_image_view.dart';
 import './controller/jbet88_benefits_promotion_controller.dart';
 
 class Jbet88BenefitsPromotionScreen

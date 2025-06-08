@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import '../../core/app_export.dart';
-import '../../widgets/custom_app_bar.dart';
-import '../../widgets/custom_gradient_button.dart';
-import '../../widgets/custom_image_view.dart';
+import '../../../../core/app_export.dart';
+import '../../../../widgets/custom_app_bar.dart';
+import '../../../../widgets/custom_gradient_button.dart';
+import '../../../../widgets/custom_image_view.dart';
 import '../../widgets/custom_info_row.dart';
 import '../../widgets/custom_labeled_text.dart';
 import './controller/wallet_bank_accounts_withdrawal_controller.dart';

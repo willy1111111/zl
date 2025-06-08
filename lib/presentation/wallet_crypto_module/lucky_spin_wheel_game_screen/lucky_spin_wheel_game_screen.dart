@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../core/app_export.dart';
-import '../../widgets/custom_image_view.dart';
+import '../../../../core/app_export.dart';
+import '../../../../widgets/custom_image_view.dart';
 import './controller/lucky_spin_wheel_game_controller.dart';
 
 class LuckySpinWheelGameScreen extends GetWidget<LuckySpinWheelGameController> {
