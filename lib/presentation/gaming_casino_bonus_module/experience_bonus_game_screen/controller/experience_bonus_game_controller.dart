@@ -1,4 +1,4 @@
-import '../../../core/app_export.dart';
+import '../../../../../core/app_export.dart';
 import '../models/experience_bonus_game_model.dart';
 import '../models/game_tile_model.dart';
 

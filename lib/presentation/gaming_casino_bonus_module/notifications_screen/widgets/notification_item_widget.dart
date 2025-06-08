@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../core/app_export.dart';
-import '../../../widgets/custom_image_view.dart';
+import '../../../../../core/app_export.dart';
+import '../../../../../widgets/custom_image_view.dart';
 import '../models/notification_item_model.dart';
 
 class NotificationItemWidget extends StatelessWidget {
