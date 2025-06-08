@@ -1,6 +1,43 @@
 import '../core/app_export.dart';
 import 'package:get/get.dart';
 
+// Deposit Payment Module Imports
+import '../presentation/deposit_payment_module/jeetbaji_gaming_home_screen/jeetbaji_gaming_home_screen.dart';
+import '../presentation/deposit_payment_module/narad_gaming_hub_home_screen/narad_gaming_hub_home_screen.dart';
+import '../presentation/deposit_payment_module/g_cash_deposit_detail_screen/g_cash_deposit_detail_screen.dart';
+import '../presentation/deposit_payment_module/g_cash_deposit_rejection_detail_screen/g_cash_deposit_rejection_detail_screen.dart';
+import '../presentation/deposit_payment_module/deposit_record_list_screen/deposit_record_list_screen.dart';
+import '../presentation/deposit_payment_module/deposit_confirmation_screen/deposit_confirmation_screen.dart';
+import '../presentation/deposit_payment_module/wallet_deposit_confirmation_screen/wallet_deposit_confirmation_screen.dart';
+import '../presentation/deposit_payment_module/wallet_deposit_screen/wallet_deposit_screen.dart';
+import '../presentation/deposit_payment_module/payment_status_screen/payment_status_screen.dart';
+import '../presentation/deposit_payment_module/j_bet88_deposit_bonus_screen/j_bet88_deposit_bonus_screen.dart';
+import '../presentation/deposit_payment_module/wallet_deposit_amount_screen/wallet_deposit_amount_screen.dart';
+import '../presentation/deposit_payment_module/deposit_record_method_filter_screen/deposit_record_method_filter_screen.dart';
+import '../presentation/deposit_payment_module/deposit_record_time_filter_screen/deposit_record_time_filter_screen.dart';
+import '../presentation/deposit_payment_module/wallet_deposit_payment_screen/wallet_deposit_payment_screen.dart';
+import '../presentation/deposit_payment_module/deposit_transaction_confirmation_screen/deposit_transaction_confirmation_screen.dart';
+import '../presentation/deposit_payment_module/j_bet88_deposit_promotion_screen/j_bet88_deposit_promotion_screen.dart';
+import '../presentation/deposit_payment_module/narad_gaming_casino_home_screen/narad_gaming_casino_home_screen.dart';
+
+import '../presentation/deposit_payment_module/jeetbaji_gaming_home_screen/binding/jeetbaji_gaming_home_binding.dart';
+import '../presentation/deposit_payment_module/narad_gaming_hub_home_screen/binding/narad_gaming_hub_home_binding.dart';
+import '../presentation/deposit_payment_module/g_cash_deposit_detail_screen/binding/g_cash_deposit_detail_binding.dart';
+import '../presentation/deposit_payment_module/g_cash_deposit_rejection_detail_screen/binding/gcash_deposit_rejection_detail_binding.dart';
+import '../presentation/deposit_payment_module/deposit_record_list_screen/binding/deposit_record_list_binding.dart';
+import '../presentation/deposit_payment_module/deposit_confirmation_screen/binding/deposit_confirmation_binding.dart';
+import '../presentation/deposit_payment_module/wallet_deposit_confirmation_screen/binding/wallet_deposit_confirmation_binding.dart';
+import '../presentation/deposit_payment_module/wallet_deposit_screen/binding/wallet_deposit_binding.dart';
+import '../presentation/deposit_payment_module/payment_status_screen/binding/payment_status_binding.dart';
+import '../presentation/deposit_payment_module/j_bet88_deposit_bonus_screen/binding/j_bet88_deposit_bonus_binding.dart';
+import '../presentation/deposit_payment_module/wallet_deposit_amount_screen/binding/wallet_deposit_amount_binding.dart';
+import '../presentation/deposit_payment_module/deposit_record_method_filter_screen/binding/deposit_record_method_filter_binding.dart';
+import '../presentation/deposit_payment_module/deposit_record_time_filter_screen/binding/deposit_record_time_filter_binding.dart';
+import '../presentation/deposit_payment_module/wallet_deposit_payment_screen/binding/wallet_deposit_payment_binding.dart';
+import '../presentation/deposit_payment_module/deposit_transaction_confirmation_screen/binding/deposit_transaction_confirmation_binding.dart';
+import '../presentation/deposit_payment_module/j_bet88_deposit_promotion_screen/binding/j_bet88_deposit_promotion_binding.dart';
+import '../presentation/deposit_payment_module/narad_gaming_casino_home_screen/binding/narad_gaming_casino_home_binding.dart';
+
 // Agent Module Screens (from app_3)
 import '../presentation/agent_module/referral_rewards_screen/referral_rewards_screen.dart';
 import '../presentation/agent_module/invitation_bonus_screen/invitation_bonus_screen.dart';
@@ -462,6 +499,26 @@ class AppRoutes {
   static const String casinoBonusRewardsScreen = '/casino_sign_in/casino_bonus_rewards_screen';
   static const String accountSetupCompletionScreen = '/casino_sign_in/account_setup_completion_screen';
   static const String jBet88LoginScreenTwo = '/casino_sign_in/j_bet88_login_screen_two';
+
+  // Deposit Payment Module Routes
+  static const String depositPaymentModule = '/deposit_payment';
+  static const String jeetbajiGamingHomeScreen = '/deposit_payment/jeetbaji_gaming_home_screen';
+  static const String naradGamingHubHomeScreen = '/deposit_payment/narad_gaming_hub_home_screen';
+  static const String gCashDepositDetailScreen = '/deposit_payment/g_cash_deposit_detail_screen';
+  static const String gCashDepositRejectionDetailScreen = '/deposit_payment/g_cash_deposit_rejection_detail_screen';
+  static const String depositRecordListScreen = '/deposit_payment/deposit_record_list_screen';
+  static const String depositConfirmationScreen = '/deposit_payment/deposit_confirmation_screen';
+  static const String walletDepositConfirmationScreen = '/deposit_payment/wallet_deposit_confirmation_screen';
+  static const String walletDepositScreen = '/deposit_payment/wallet_deposit_screen';
+  static const String paymentStatusScreen = '/deposit_payment/payment_status_screen';
+  static const String jBet88DepositBonusScreen = '/deposit_payment/j_bet88_deposit_bonus_screen';
+  static const String walletDepositAmountScreen = '/deposit_payment/wallet_deposit_amount_screen';
+  static const String depositRecordMethodFilterScreen = '/deposit_payment/deposit_record_method_filter_screen';
+  static const String depositRecordTimeFilterScreen = '/deposit_payment/deposit_record_time_filter_screen';
+  static const String walletDepositPaymentScreen = '/deposit_payment/wallet_deposit_payment_screen';
+  static const String depositTransactionConfirmationScreen = '/deposit_payment/deposit_transaction_confirmation_screen';
+  static const String jBet88DepositPromotionScreen = '/deposit_payment/j_bet88_deposit_promotion_screen';
+  static const String naradGamingCasinoHomeScreen = '/deposit_payment/narad_gaming_casino_home_screen';
 
   // Shared Routes
   static const String splashScreen = '/splash_screen';
@@ -1231,6 +1288,93 @@ class AppRoutes {
       name: jetBetCasinoHomeScreen,
       page: () => JetBetCasinoHomeScreen(),
       bindings: [JetBetCasinoHomeBinding()],
+    ),
+
+    // Deposit Payment Module Pages
+    GetPage(
+      name: jeetbajiGamingHomeScreen,
+      page: () => JeetbajiGamingHomeScreen(),
+      bindings: [JeetbajiGamingHomeBinding()],
+    ),
+    GetPage(
+      name: naradGamingHubHomeScreen,
+      page: () => NaradGamingHubHomeScreen(),
+      bindings: [NaradGamingHubHomeBinding()],
+    ),
+    GetPage(
+      name: gCashDepositDetailScreen,
+      page: () => GCashDepositDetailScreen(),
+      bindings: [GCashDepositDetailBinding()],
+    ),
+    GetPage(
+      name: gCashDepositRejectionDetailScreen,
+      page: () => GCashDepositRejectionDetailScreen(),
+      bindings: [GCashDepositRejectionDetailBinding()],
+    ),
+    GetPage(
+      name: depositRecordListScreen,
+      page: () => DepositRecordListScreen(),
+      bindings: [DepositRecordListBinding()],
+    ),
+    GetPage(
+      name: depositConfirmationScreen,
+      page: () => DepositConfirmationScreen(),
+      bindings: [DepositConfirmationBinding()],
+    ),
+    GetPage(
+      name: walletDepositConfirmationScreen,
+      page: () => WalletDepositConfirmationScreen(),
+      bindings: [WalletDepositConfirmationBinding()],
+    ),
+    GetPage(
+      name: walletDepositScreen,
+      page: () => WalletDepositScreen(),
+      bindings: [WalletDepositBinding()],
+    ),
+    GetPage(
+      name: paymentStatusScreen,
+      page: () => PaymentStatusScreen(),
+      bindings: [PaymentStatusBinding()],
+    ),
+    GetPage(
+      name: jBet88DepositBonusScreen,
+      page: () => JBet88DepositBonusScreen(),
+      bindings: [JBet88DepositBonusBinding()],
+    ),
+    GetPage(
+      name: walletDepositAmountScreen,
+      page: () => WalletDepositAmountScreen(),
+      bindings: [WalletDepositAmountBinding()],
+    ),
+    GetPage(
+      name: depositRecordMethodFilterScreen,
+      page: () => DepositRecordMethodFilterScreen(),
+      bindings: [DepositRecordMethodFilterBinding()],
+    ),
+    GetPage(
+      name: depositRecordTimeFilterScreen,
+      page: () => DepositRecordTimeFilterScreen(),
+      bindings: [DepositRecordTimeFilterBinding()],
+    ),
+    GetPage(
+      name: walletDepositPaymentScreen,
+      page: () => WalletDepositPaymentScreen(),
+      bindings: [WalletDepositPaymentBinding()],
+    ),
+    GetPage(
+      name: depositTransactionConfirmationScreen,
+      page: () => DepositTransactionConfirmationScreen(),
+      bindings: [DepositTransactionConfirmationBinding()],
+    ),
+    GetPage(
+      name: jBet88DepositPromotionScreen,
+      page: () => JBet88DepositPromotionScreen(),
+      bindings: [JBet88DepositPromotionBinding()],
+    ),
+    GetPage(
+      name: naradGamingCasinoHomeScreen,
+      page: () => NaradGamingCasinoHomeScreen(),
+      bindings: [NaradGamingCasinoHomeBinding()],
     ),
   ];
 }
