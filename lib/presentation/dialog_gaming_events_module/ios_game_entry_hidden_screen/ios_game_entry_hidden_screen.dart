@@ -119,12 +119,14 @@ class IosGameEntryHiddenScreen extends GetWidget<IosGameEntryHiddenController> {
             obscureText: true,
             suffix: Container(
               margin: EdgeInsets.fromLTRB(30.h, 12.v, 16.h, 12.v),
-              child: CustomImageView(
-                imagePath: controller.isSecretCodeVisible.value
-                    ? ImageConstant.imgEyeOpen
-                    : ImageConstant.imgEyeClosed,
-                height: 24.adaptSize,
-                width: 24.adaptSize,
+              child: Obx(
+                () => CustomImageView(
+                  imagePath: controller.isSecretCodeVisible.value
+                      ? ImageConstant.imgEyeOpen
+                      : ImageConstant.imgEyeClosed,
+                  height: 24.adaptSize,
+                  width: 24.adaptSize,
+                ),
               ),
             ),
             suffixConstraints: BoxConstraints(
@@ -193,10 +195,12 @@ class IosGameEntryHiddenScreen extends GetWidget<IosGameEntryHiddenController> {
                       color: appTheme.gray400,
                     ),
                     SizedBox(height: 8.v),
-                    Text(
-                      "进度: ${controller.gestureProgress.value}/5",
-                      style: theme.textTheme.bodySmall?.copyWith(
-                        color: appTheme.gray600,
+                    Obx(
+                      () => Text(
+                        "进度: ${controller.gestureProgress.value}/5",
+                        style: theme.textTheme.bodySmall?.copyWith(
+                          color: appTheme.gray600,
+                        ),
                       ),
                     ),
                   ],

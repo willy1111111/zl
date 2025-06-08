@@ -159,11 +159,13 @@ class TicketEventTaskScreen extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       // Custom Sidebar
-                      CustomSidebar(
-                        sidebarItems: controller.sidebarItems,
-                        selectedIndex: controller.selectedSidebarIndex.value,
-                        onItemTap: (index, item) =>
-                            controller.onSidebarItemTap(index, item),
+                      Obx(
+                        () => CustomSidebar(
+                          sidebarItems: controller.sidebarItems,
+                          selectedIndex: controller.selectedSidebarIndex.value,
+                          onItemTap: (index, item) =>
+                              controller.onSidebarItemTap(index, item),
+                        ),
                       ),
 
                       // Right Content
@@ -266,10 +268,12 @@ class TicketEventTaskScreen extends StatelessWidget {
             bottom: 0,
             left: 0,
             right: 0,
-            child: CustomBottomNavigationBar(
-              items: controller.bottomNavItems,
-              selectedIndex: controller.selectedBottomIndex.value,
-              onTap: (index) => controller.onBottomNavTap(index),
+            child: Obx(
+              () => CustomBottomNavigationBar(
+                items: controller.bottomNavItems,
+                selectedIndex: controller.selectedBottomIndex.value,
+                onTap: (index) => controller.onBottomNavTap(index),
+              ),
             ),
           ),
 

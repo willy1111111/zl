@@ -267,17 +267,18 @@ class PhoneVerificationScreenFour
   }
 
   Widget _buildCompleteVerificationButton() {
-    return CustomButton(
-      text:
-          controller.phoneVerificationModel.value?.completeButtonText?.value ??
-              'Complete verification',
-      gradientColors: [Color(0xFF363C41), Color(0xFF2B3035)],
-      textColor: appTheme.colorFF8089,
-      fontSize: 16.fSize,
-      fontWeight: FontWeight.w700,
-      isFullWidth: true,
-      borderRadius: 24.h,
-      hasShadow: true,
+    return Obx(
+      () => CustomButton(
+        text:
+            controller.phoneVerificationModel.value?.completeButtonText?.value ??
+                'Complete verification',
+        gradientColors: [Color(0xFF363C41), Color(0xFF2B3035)],
+        textColor: appTheme.colorFF8089,
+        fontSize: 16.fSize,
+        fontWeight: FontWeight.w700,
+        isFullWidth: true,
+        borderRadius: 24.h,
+        hasShadow: true,
       onPressed: () => controller.onCompleteVerificationPressed(),
     );
   }
