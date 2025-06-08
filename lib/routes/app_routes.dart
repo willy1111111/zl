@@ -278,6 +278,46 @@ import '../presentation/casino_sign_in_module/j_bet88_login_screen_two_screen/bi
 import '../presentation/shared/app_navigation_screen/binding/app_navigation_binding.dart';
 import '../presentation/splash_screen/splash_screen/binding/splash_binding.dart';
 
+// Spin Wheel Module imports
+import '../presentation/spin_wheel_module/money_rain_rewards_screen/money_rain_rewards_screen.dart';
+import '../presentation/spin_wheel_module/spin_wheel_withdrawal_confirmation_screen/spin_wheel_withdrawal_confirmation_screen.dart';
+import '../presentation/spin_wheel_module/withdrawal_confirmation_screen/withdrawal_confirmation_screen.dart';
+import '../presentation/spin_wheel_module/spin_bonus_leaderboard_screen/spin_bonus_leaderboard_screen.dart';
+import '../presentation/spin_wheel_module/money_rain_game_screen/money_rain_game_screen.dart';
+import '../presentation/spin_wheel_module/money_rain_promotion_screen/money_rain_promotion_screen.dart';
+import '../presentation/spin_wheel_module/spin_wheel_dashboard_screen/spin_wheel_dashboard_screen.dart';
+import '../presentation/spin_wheel_module/narad_money_rain_promotion_screen/narad_money_rain_promotion_screen.dart';
+import '../presentation/spin_wheel_module/money_rain_gaming_app_screen/money_rain_gaming_app_screen.dart';
+import '../presentation/spin_wheel_module/spin_referral_bonus_modal_screen/spin_referral_bonus_modal_screen.dart';
+import '../presentation/spin_wheel_module/lucky_spin_invitation_guide_screen/lucky_spin_invitation_guide_screen.dart';
+import '../presentation/spin_wheel_module/gaming_money_rain_promotion_screen/gaming_money_rain_promotion_screen.dart';
+import '../presentation/spin_wheel_module/jeet98_spin_wheel_bonus_screen/jeet98_spin_wheel_bonus_screen.dart';
+import '../presentation/spin_wheel_module/phone_verification_screen/phone_verification_screen.dart';
+import '../presentation/spin_wheel_module/withdrawal_history_screen/withdrawal_history_screen.dart';
+import '../presentation/spin_wheel_module/withdrawal_history_empty_screen/withdrawal_history_empty_screen.dart';
+import '../presentation/spin_wheel_module/spin_game_rules_modal_screen/spin_game_rules_modal_screen.dart';
+import '../presentation/spin_wheel_module/jet_bet_casino_home_screen/jet_bet_casino_home_screen.dart';
+
+import '../presentation/spin_wheel_module/money_rain_rewards_screen/binding/money_rain_rewards_binding.dart';
+import '../presentation/spin_wheel_module/spin_wheel_withdrawal_confirmation_screen/binding/spin_wheel_withdrawal_confirmation_binding.dart';
+import '../presentation/spin_wheel_module/withdrawal_confirmation_screen/binding/withdrawal_confirmation_binding.dart';
+import '../presentation/spin_wheel_module/spin_bonus_leaderboard_screen/binding/spin_bonus_leaderboard_binding.dart';
+import '../presentation/spin_wheel_module/money_rain_game_screen/binding/money_rain_game_binding.dart';
+import '../presentation/spin_wheel_module/money_rain_promotion_screen/binding/money_rain_promotion_binding.dart';
+import '../presentation/spin_wheel_module/spin_wheel_dashboard_screen/binding/spin_wheel_dashboard_binding.dart';
+import '../presentation/spin_wheel_module/narad_money_rain_promotion_screen/binding/narad_money_rain_promotion_binding.dart';
+import '../presentation/spin_wheel_module/money_rain_gaming_app_screen/binding/money_rain_gaming_app_binding.dart';
+import '../presentation/spin_wheel_module/spin_referral_bonus_modal_screen/binding/spin_referral_bonus_modal_binding.dart';
+import '../presentation/spin_wheel_module/lucky_spin_invitation_guide_screen/binding/lucky_spin_invitation_guide_binding.dart';
+import '../presentation/spin_wheel_module/gaming_money_rain_promotion_screen/binding/gaming_money_rain_promotion_binding.dart';
+import '../presentation/spin_wheel_module/jeet98_spin_wheel_bonus_screen/binding/jeet98_spin_wheel_bonus_binding.dart';
+import '../presentation/spin_wheel_module/phone_verification_screen/binding/phone_verification_binding.dart';
+import '../presentation/spin_wheel_module/withdrawal_history_screen/binding/withdrawal_history_binding.dart';
+import '../presentation/spin_wheel_module/withdrawal_history_empty_screen/binding/withdrawal_history_empty_binding.dart';
+import '../presentation/spin_wheel_module/spin_game_rules_modal_screen/binding/spin_game_rules_modal_binding.dart';
+import '../presentation/spin_wheel_module/jet_bet_casino_home_screen/binding/jet_bet_casino_home_binding.dart';
+import '../presentation/spin_wheel_module/app_navigation_screen/binding/app_navigation_binding.dart' as spin_nav;
+
 // ignore_for_file: must_be_immutable
 class AppRoutes {
   // Agent Module Routes
@@ -427,6 +467,27 @@ class AppRoutes {
   static const String splashScreen = '/splash_screen';
   static const String appNavigationScreen = '/app_navigation_screen';
   static const String initialRoute = '/initialRoute';
+
+  // Spin Wheel Module Routes
+  static const String spinWheelModule = '/spin_wheel';
+  static const String moneyRainRewardsScreen = '/spin_wheel/money_rain_rewards_screen';
+  static const String spinWheelWithdrawalConfirmationScreen = '/spin_wheel/spin_wheel_withdrawal_confirmation_screen';
+  static const String withdrawalConfirmationScreen = '/spin_wheel/withdrawal_confirmation_screen';
+  static const String spinBonusLeaderboardScreen = '/spin_wheel/spin_bonus_leaderboard_screen';
+  static const String moneyRainGameScreen = '/spin_wheel/money_rain_game_screen';
+  static const String moneyRainPromotionScreen = '/spin_wheel/money_rain_promotion_screen';
+  static const String spinWheelDashboardScreen = '/spin_wheel/spin_wheel_dashboard_screen';
+  static const String naradMoneyRainPromotionScreen = '/spin_wheel/narad_money_rain_promotion_screen';
+  static const String moneyRainGamingAppScreen = '/spin_wheel/money_rain_gaming_app_screen';
+  static const String spinReferralBonusModalScreen = '/spin_wheel/spin_referral_bonus_modal_screen';
+  static const String luckySpinInvitationGuideScreen = '/spin_wheel/lucky_spin_invitation_guide_screen';
+  static const String gamingMoneyRainPromotionScreen = '/spin_wheel/gaming_money_rain_promotion_screen';
+  static const String jeet98SpinWheelBonusScreen = '/spin_wheel/jeet98_spin_wheel_bonus_screen';
+  static const String spinPhoneVerificationScreen = '/spin_wheel/phone_verification_screen';
+  static const String withdrawalHistoryScreen = '/spin_wheel/withdrawal_history_screen';
+  static const String withdrawalHistoryEmptyScreen = '/spin_wheel/withdrawal_history_empty_screen';
+  static const String spinGameRulesModalScreen = '/spin_wheel/spin_game_rules_modal_screen';
+  static const String jetBetCasinoHomeScreen = '/spin_wheel/jet_bet_casino_home_screen';
 
   static List<GetPage> pages = [
     // Agent Module Pages
@@ -1078,6 +1139,98 @@ class AppRoutes {
       name: initialRoute,
       page: () => AppNavigationScreen(),
       bindings: [AppNavigationBinding()],
+    ),
+
+    // Spin Wheel Module Routes
+    GetPage(
+      name: moneyRainRewardsScreen,
+      page: () => MoneyRainRewardsScreen(),
+      bindings: [MoneyRainRewardsBinding()],
+    ),
+    GetPage(
+      name: spinWheelWithdrawalConfirmationScreen,
+      page: () => SpinWheelWithdrawalConfirmationScreen(),
+      bindings: [SpinWheelWithdrawalConfirmationBinding()],
+    ),
+    GetPage(
+      name: withdrawalConfirmationScreen,
+      page: () => WithdrawalConfirmationScreen(),
+      bindings: [WithdrawalConfirmationBinding()],
+    ),
+    GetPage(
+      name: spinBonusLeaderboardScreen,
+      page: () => SpinBonusLeaderboardScreen(),
+      bindings: [SpinBonusLeaderboardBinding()],
+    ),
+    GetPage(
+      name: moneyRainGameScreen,
+      page: () => MoneyRainGameScreen(),
+      bindings: [MoneyRainGameBinding()],
+    ),
+    GetPage(
+      name: moneyRainPromotionScreen,
+      page: () => MoneyRainPromotionScreen(),
+      bindings: [MoneyRainPromotionBinding()],
+    ),
+    GetPage(
+      name: spinWheelDashboardScreen,
+      page: () => SpinWheelDashboardScreen(),
+      bindings: [SpinWheelDashboardBinding()],
+    ),
+    GetPage(
+      name: naradMoneyRainPromotionScreen,
+      page: () => NaradMoneyRainPromotionScreen(),
+      bindings: [NaradMoneyRainPromotionBinding()],
+    ),
+    GetPage(
+      name: moneyRainGamingAppScreen,
+      page: () => MoneyRainGamingAppScreen(),
+      bindings: [MoneyRainGamingAppBinding()],
+    ),
+    GetPage(
+      name: spinReferralBonusModalScreen,
+      page: () => SpinReferralBonusModalScreen(),
+      bindings: [SpinReferralBonusModalBinding()],
+    ),
+    GetPage(
+      name: luckySpinInvitationGuideScreen,
+      page: () => LuckySpinInvitationGuideScreen(),
+      bindings: [LuckySpinInvitationGuideBinding()],
+    ),
+    GetPage(
+      name: gamingMoneyRainPromotionScreen,
+      page: () => GamingMoneyRainPromotionScreen(),
+      bindings: [GamingMoneyRainPromotionBinding()],
+    ),
+    GetPage(
+      name: jeet98SpinWheelBonusScreen,
+      page: () => Jeet98SpinWheelBonusScreen(),
+      bindings: [Jeet98SpinWheelBonusBinding()],
+    ),
+    GetPage(
+      name: spinPhoneVerificationScreen,
+      page: () => PhoneVerificationScreen(),
+      bindings: [PhoneVerificationBinding()],
+    ),
+    GetPage(
+      name: withdrawalHistoryScreen,
+      page: () => WithdrawalHistoryScreen(),
+      bindings: [WithdrawalHistoryBinding()],
+    ),
+    GetPage(
+      name: withdrawalHistoryEmptyScreen,
+      page: () => WithdrawalHistoryEmptyScreen(),
+      bindings: [WithdrawalHistoryEmptyBinding()],
+    ),
+    GetPage(
+      name: spinGameRulesModalScreen,
+      page: () => SpinGameRulesModalScreen(),
+      bindings: [SpinGameRulesModalBinding()],
+    ),
+    GetPage(
+      name: jetBetCasinoHomeScreen,
+      page: () => JetBetCasinoHomeScreen(),
+      bindings: [JetBetCasinoHomeBinding()],
     ),
   ];
 }

@@ -1,6 +1,6 @@
-<svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-<ellipse cx="15" cy="15.2214" rx="15" ry="15.2214" fill="#7889A6"/>
-<rect x="7.5" y="7.60352" width="15" height="15.2361" rx="2.5" stroke="#191E24"/>
-<rect x="11.5" y="11.6621" width="7" height="7.11806" rx="3.5" stroke="#191E24"/>
-<rect x="19" y="9.13281" width="2" height="2.02951" rx="1" fill="#191E24"/>
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="15" cy="15" r="15" fill="#7889A6"/>
+<rect x="7.5" y="7.5" width="15" height="15" rx="2.5" stroke="#191E24"/>
+<rect x="11.5" y="11.5" width="7" height="7" rx="3.5" stroke="#191E24"/>
+<rect x="19" y="9" width="2" height="2" rx="1" fill="#191E24"/>
 </svg>
